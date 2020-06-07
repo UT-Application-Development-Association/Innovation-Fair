@@ -6,3 +6,4 @@
 ## 2.2 我们会用一个新的branch叫做dev来代替我们平常的master
 ## 2.3 大家在做开发的时候每个人也都是要create自己的branch
 ## 2.4 等完成一个feature后请回复issue这样我们可以merge你的branch到dev上
+## 2.5

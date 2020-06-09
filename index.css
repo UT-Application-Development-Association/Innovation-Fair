@@ -25,6 +25,7 @@ header {
     height: 30em;
     margin: 5em;
     border: 1px solid;
+    background-color: hsla(50, 33%, 25%, .75);
     display: flex;
     flex-wrap: wrap;
     align-content: center;

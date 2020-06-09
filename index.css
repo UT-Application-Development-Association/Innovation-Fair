@@ -45,3 +45,8 @@ header {
 .introduction-part{
     display: flex;
 }
+
+#about-img{
+    width: 400px;
+    height: 400px;
+}

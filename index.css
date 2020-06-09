@@ -12,9 +12,18 @@ header {
     backdrop-filter: blur(50px);
     background-color: rgba(255, 255, 255, .4);
     box-shadow: 0px 0px 20px gray;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 
 .navbar-brand {
     font-weight: bold;
+}
+
+.carousel.slide {
+    height: 3em;
+    background-color: rgb(231, 231, 231);
+}
+
+.carousel-item p {
+    margin-top: 1em;
 }

@@ -27,3 +27,13 @@ header {
 .navbar-brand {
     font-weight: bold;
 }
+
+.accordion {
+    position: absolute;
+    left: 30%;
+    width: 40%;
+}
+
+.card {
+    border-radius: 10px;
+}

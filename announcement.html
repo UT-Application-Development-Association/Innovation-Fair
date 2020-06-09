@@ -47,7 +47,39 @@
         </nav>
     </header>
 
-    Announcement subpage under construction.
+    <div class="accordion" id="announcements">
+        <div class="card">
+            <div class="card-header" id="announcement_heading1">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#announcement1" aria-expanded="false" aria-controls="announcement1">
+                      Announcement #1
+                    </button>
+                </h2>
+            </div>
+            
+            <div class="collapse" id="announcement1" aria-labelledby="announcement_heading1">
+                <div class="card-body">
+                    Sample announcement 1
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header bg-success" id="announcement_heading2">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#announcement2" aria-expanded="false" aria-controls="announcement2">
+                      Another announcement
+                    </button>
+                </h2>
+            </div>
+            
+            <div class="collapse" id="announcement2" aria-labelledby="announcement_heading2">
+                <div class="card-body">
+                    abcdef
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

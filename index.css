@@ -20,11 +20,11 @@ header {
 }
 
 .carousel-indicators .indicator {
-    background-color: blue;
+    background-color: lightblue;
 }
 
 .carousel-indicators .active{
-    background-color: #f00;
+    background-color: rgba(111, 191, 218, 0.801);
 }
 
 #multi-item-carousel {
@@ -46,12 +46,23 @@ header {
 .carousel-control-next-icon:after
 {
   content: '>';
-  font-size: 55px;
-  color: red;
+  font-size: 50px;
+  color: lightblue;
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
-  font-size: 55px;
-  color: red;
+  font-size: 50px;
+  color: lightblue;
+}
+
+.button {
+    background-color: rgba(173, 216, 230, 0.836);
+    border-radius: 10px;
+    padding: 8px 10px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: rgba(111, 191, 218, 0.801);
 }

@@ -18,3 +18,40 @@ header {
 .navbar-brand {
     font-weight: bold;
 }
+
+.carousel-indicators .indicator {
+    background-color: blue;
+}
+
+.carousel-indicators .active{
+    background-color: #f00;
+}
+
+#multi-item-carousel {
+    display: flex;
+}
+
+.carousel-inner {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}

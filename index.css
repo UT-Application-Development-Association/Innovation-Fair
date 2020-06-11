@@ -24,14 +24,31 @@ header {
     font-size: 18px;
 }
 
+
+.sidenav {
+    height: 30%; 
+    width: 15%; 
+    position: fixed; 
+    padding-top: 20px;
+
+}
+
+.announcement-container{
+    margin-left:15%;
+}
+
+.announcement-section{
+    margin:5%;
+    padding-top:10%;
+}
+
 .navbar-brand {
     font-weight: bold;
 }
 
 .accordion {
-    position: absolute;
     left: 30%;
-    width: 40%;
+    /* width: 40%; */
 }
 
 .card {

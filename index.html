@@ -9,16 +9,17 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="css/timeline.css">
-
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
 
-
-
-
+    <!-- Styles css -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Language js -->
+    <script src="js/lang.js"></script>
 
     <title>Innovation Fair</title>
 </head>
@@ -34,31 +35,31 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link lang" href="#" data-key="navAbout">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Timeline</a>
+                        <a class="nav-link lang" href="#" data-key="navTimeline">Timeline</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Judges</a>
+                        <a class="nav-link lang" href="#" data-key="navJudges">Judges</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
-                  <a>中文</a> |
-                  <a>ENG</a>
+                  <a href="#" id="zhBtn">中文</a> |
+                  <a href="#" id="enBtn">ENG</a>
                 </span>
             </div>
         </nav>
     </header>
 
-    <!-- Announcement -->
+    <!-- Announcement section -->
     <div id="announcement" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <p>Hello</p>
+                <p class="lang" data-key="announcement-1">First Announcement!</p>
             </div>
             <div class="carousel-item">
-                <p>Hello.</p>
+                <p class="lang" data-key="announcement-2">Second Announcement!</p>
             </div>
         </div>
     </div>
@@ -71,13 +72,6 @@
         </div>
     </section>
 
-    <!-- Announcement section -->
-    <section class="fill you class">
-        <div class="container" id="fill the section id">
-            <!--Write the design for the section-->
-            Helloworld
-        </div>
-    </section>
 
     <!-- Timeline section -->
     <section class="timelin-section">

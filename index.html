@@ -88,15 +88,19 @@
 
         <div class="card" id="aboutTextbox">
             <div class="card-body">
-                <h5 class="card-title">About this event</h5>
-                <p class="card-text">Innovation Fair的运作规则是让参赛者们在有限的时间内通过提供的主题进行头脑风暴，从而做出专属于自己队伍的作品以及产品。本次比赛形式是让参赛者自由组成2-5人团队，在规定的时间内进行作品创作。每个团队则需要在创作结束后统一向评审展示他们的作品或者产品原型，由评委选出表现最优团队赢得比赛。而比赛的具体形式根据比赛内容，比赛的标准形式和比赛目的而有所差别。</p>
+                <h2 class="about-title">About this event</h2>
+                <p class="about-text">Innovation Fair的运作规则是让参赛者们在有限的时间内通过提供的主题进行头脑风暴，从而做出专属于自己队伍的作品以及产品。本次比赛形式是让参赛者自由组成2-5人团队，在规定的时间内进行作品创作。每个团队则需要在创作结束后统一向评审展示他们的作品或者产品原型，由评委选出表现最优团队赢得比赛。而比赛的具体形式根据比赛内容，比赛的标准形式和比赛目的而有所差别。</p>
             </div>
         </div>
     </div>
 
 
     <!-- Timeline section -->
+    <div class="section-title">
+        <h2>Timeline</h2>
+    </div>
     <section class="timeline-section">
+
         <div class="timeline-selection">
             <button id="timeline_btn_1" class="button">前期</button>
             <button id="timeline_btn_2" class="button">当天</button>
@@ -161,23 +165,133 @@
     </section>
 
     <!-- Judges section -->
-    <section class="fill you class">
-        <div class="container" id="fill the section id">
+    <div class="section-title">
+        <h2>Judges</h2>
+    </div>
+    <section id="judges">
+        <div class="container">
             <!--Write the design for the section-->
-            Helloworld
+            <!--Carousel Wrapper-->
+            <div id="multi-item-carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
+                <!--Controls-->
+                <a class="carousel-control-prev" href="#multi-item-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#multi-item-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+
+                <!--Indicators-->
+                <!-- <ol class="carousel-indicators">
+                    <li data-target="#multi-item-carousel" data-slide-to="0" class="indicator" class="active"></li>
+                    <li data-target="#multi-item-carousel" data-slide-to="1" class="indicator"></li>
+                </ol> -->
+                <!--/.Indicators-->
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+                    <!--First slide-->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" alt="Card image cap" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a class="judges-more-button">More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a class="judges-more-button">More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a class="judges-more-button">More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a class="judges-more-button">More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a class="judges-more-button">More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a class="judges-more-button">More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Second slide-->
+
+                </div>
+                <!--/.Slides-->
+            </div>
+            <!--/.Carousel Wrapper-->
         </div>
     </section>
 
-    <!-- Footer section
-    <section class="fill you class">
-        <div class="container" id="fill the section id">
-            
-    Helloworld
-    </div>
 
-    </section> -->
-
-    <!-- <hr> -->
+    <hr style="width:90%;">
     <!-- Footer -->
     <footer class="page-footer font-small mx-auto">
 

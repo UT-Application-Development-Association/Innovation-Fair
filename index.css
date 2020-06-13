@@ -38,7 +38,7 @@ header {
     margin: 5em;
     display: flex;
     backdrop-filter: blur(50px);
-    background-color:rgba(233, 230, 230, 0.856);
+    background-color:rgba(248, 244, 244, 0.959);
     box-shadow: 3px 3px 5px 6px #ccc;
     align-content: center;
 }

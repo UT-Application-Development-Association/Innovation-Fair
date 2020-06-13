@@ -10,6 +10,19 @@ body {
     align-items: center;
 }
 
+p,
+a,
+a:hover,
+a:active,
+h5 {
+    text-decoration: none;
+    text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
+    color: #211725;
+}
+
+
+/* Header */
+
 header {
     height: 3.5em;
     align-items: center;
@@ -35,59 +48,19 @@ header a {
 }
 
 header a:hover {
-    color: #000;
+    /* color: #000; */
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 header a:focus {
-    color: #000;
+    /* color: #000; */
     /* Neomorph effect */
     text-shadow: inset 2px 2px 4px #c7cbca, inset -2px -2px 4px #ffffff;
 }
 
-footer {
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    backdrop-filter: blur(50px);
-    background-color: rgba(255, 255, 255, .4);
-    box-shadow: 0px 0px 10px gray;
-    margin-top: 1em;
-}
-
 .navbar-brand {
     font-weight: bold;
-}
-
-
-#carouselExampleIndicators{
-    width: 45em;
-    height: 30em;
-    margin: 5em;
-    border: 1px solid;
-    background-color: hsla(50, 33%, 25%, .75);
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-
-.card{
-    width: 35em;
-    height: 30em;
-    margin: 5em;
-    display: flex;
-    backdrop-filter: blur(50px);
-    background-color:rgba(248, 244, 244, 0.959);
-    box-shadow: 3px 3px 5px 6px #ccc;
-    align-content: center;
-}
-.about-section{
-    display: flex;
-}
-
-#about-img{
-    width: 400px;
-    height: 400px;
 }
 
 .navbar-toggler {
@@ -108,6 +81,9 @@ footer {
     background: linear-gradient(145deg, #dbdedd, #ffffff);
     box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
 }
+
+
+/* Announcement */
 
 #announcement {
     left: 5%;
@@ -132,3 +108,99 @@ footer {
     /* margin-bottom: 0.5em; */
 }
 
+
+/* About */
+
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutCarousel,
+#aboutTextbox {
+    height: 30em;
+    margin-bottom: 2em;
+    border-width: 0;
+}
+
+#aboutCarousel {
+    /* width: 45em; */
+    width: 60%;
+    margin-right: 1em;
+    /* border: 1px solid; */
+    /* background-color: hsla(50, 33%, 25%, .75); */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    /* Neomorph */
+    border-radius: 25px;
+    background: #F3F7F6;
+    box-shadow: 5px 5px 10px #cacdcc, -5px -5px 10px #ffffff;
+}
+
+#aboutTextbox {
+    /* width: 35em; */
+    width: 40%;
+    display: flex;
+    padding-top: 5em;
+    padding-bottom: auto;
+    margin-left: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    /* backdrop-filter: blur(50px);
+    background-color: rgba(248, 244, 244, 0.959);
+    box-shadow: 3px 3px 5px 6px #ccc; */
+    /* align-content: center; */
+    background: transparent;
+}
+
+#aboutTextbox h5 {
+    font-size: xx-large;
+    text-align: start;
+}
+
+#aboutTextbox p {
+    text-align: start;
+}
+
+#about-img {
+    /* width: 400px; */
+    height: 440px;
+    /* height: 100%; */
+}
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #aboutCarousel,
+    #aboutTextbox {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+    #aboutTextbox {
+        height: auto;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    align-items: center;
+    justify-content: center;
+    /* position: sticky; */
+    /* backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, .4);
+    box-shadow: 0px 0px 10px gray;
+    backgroud-color: #45B5E8; */
+    /* margin-top: 1em; */
+}

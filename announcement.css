@@ -58,25 +58,24 @@ footer {
     height: 30%; 
     width: 15%; 
     position: fixed; 
+    left: 8%;
     padding-top: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    background-color:rgba(248, 244, 244, 0.959);
+    box-shadow: 1px 1px 3px 3px #ccc;
 }
 
 .announcement-container{
-    margin-left:15%;
+    margin-left: 20%;
 }
 
 .announcement-section{
-    margin:5%;
-    padding-top:10%;
+    margin: 5%;
 }
 
 .navbar-brand {
     font-weight: bold;
-}
-
-.accordion {
-    left: 30%;
-    /* width: 40%; */
 }
 
 .card {

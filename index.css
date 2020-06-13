@@ -1,20 +1,101 @@
+/*  UTADA-color: #45B5E8 
+    white-color: #F3F7F6
+    black-color: #211725
+*/
+
 body {
     text-align: center;
+    background-color: #F3F7F6;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
-    height: 3em;
+    height: 3.5em;
     align-items: center;
     justify-content: center;
     position: sticky;
     top: 0;
     z-index: 50;
+    /* backdrop-filter: blur(50px);
+    background-color: rgba(243, 247, 246, .6); */
+    /* box-shadow: 0px 0px 20px gray; */
+    /* margin-bottom: 1em; */
+}
+
+#header {
+    background-color: #F3F7F6;
+    color: #F3F7F6;
+}
+
+header a {
+    color: #211725;
+    /* Neomorph effect */
+    text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
+}
+
+header a:hover {
+    color: #000;
+}
+
+header a:focus {
+    color: #000;
+    /* Neomorph effect */
+    text-shadow: inset 2px 2px 4px #c7cbca, inset -2px -2px 4px #ffffff;
+}
+
+footer {
+    align-items: center;
+    justify-content: center;
+    position: sticky;
     backdrop-filter: blur(50px);
     background-color: rgba(255, 255, 255, .4);
-    box-shadow: 0px 0px 20px gray;
-    margin-bottom: 1em;
+    box-shadow: 0px 0px 10px gray;
+    margin-top: 1em;
 }
 
 .navbar-brand {
     font-weight: bold;
+}
+
+.navbar-toggler {
+    border-width: 0;
+    /* Neomorph effect */
+    border-radius: 50px;
+    background: linear-gradient(145deg, #ffffff, #dbdedd);
+    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+}
+
+.navbar-toggler:active {
+    /* Neomorph effect */
+    border-radius: 50px;
+    background: linear-gradient(145deg, #dbdedd, #ffffff);
+    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
+}
+
+#announcement {
+    left: 5%;
+    height: 3em;
+    width: 90%;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    /* Neomorph effect */
+    border-radius: 19px;
+    background: #F3F7F6;
+    box-shadow: 6px 6px 13px #d8dcdb, -6px -6px 13px #ffffff;
+}
+
+#announcement p {
+    /* Neomorph effect */
+    text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
+}
+
+.carousel-item p {
+    margin-top: 0.8em;
+    /* margin-bottom: 0.5em; */
 }

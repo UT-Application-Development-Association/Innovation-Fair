@@ -7,43 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="index.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />		
+		<link rel="stylesheet" href="index.css">
+		<!-- Timeline css -->
+		<link rel="stylesheet" href="css/timeline.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
     <title>Innovation Fair</title>
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id="header">
             <a class="navbar-brand" href="#">INNOVATION FAIR 2020</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link lang" href="#" data-key="navAbout">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Announcement</a>
+                        <a class="nav-link lang" href="#" data-key="navTimeline">Timeline</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Timeline</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Judges</a>
+                        <a class="nav-link lang" href="#" data-key="navJudges">Judges</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
-                  <a>中文</a> |
-                  <a>ENG</a>
+                  <a href="#" id="zhBtn">中文</a> |
+                  <a href="#" id="enBtn">ENG</a>
                 </span>
             </div>
         </nav>
     </header>
+
+    <!-- Announcement section -->
+    <div id="announcement" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <p class="lang" data-key="announcement-1">First Announcement!</p>
+            </div>
+            <div class="carousel-item">
+                <p class="lang" data-key="announcement-2">Second Announcement!</p>
+            </div>
+        </div>
+    </div>
 
     <!-- About section -->
 
@@ -84,21 +95,70 @@
 </div>
 
 
-    <!-- Announcement section -->
-    <section class="fill you class">
-        <div class="container" id="fill the section id">
-            <!--Write the design for the section-->
-            Helloworld
-        </div>
-    </section>
-
     <!-- Timeline section -->
-    <section class="fill you class">
-        <div class="container" id="fill the section id">
-            <!--Write the design for the section-->
-            Helloworld
-        </div>
-    </section>
+    <section class="timelin-section">
+			<div class="timeline-selection">
+				<button id="timeline_btn_1" class="button">前期</button>
+				<button id="timeline_btn_2" class="button">当天</button>
+			</div>
+
+			<div class="container">
+				<section class="timeline" id="timeline1">
+					<div class="container">
+						<!-- even start -->
+						<div class="timeline-item">
+							<div class="timeline-img"></div>
+							<div class="timeline-content js--fadeInLeft">
+								<h2>Title</h2>
+								<div class="date">1 July 2020</div>
+								<p>something happened</p>
+								<a class="bnt-more" href="#">More</a>
+							</div>
+						</div>
+
+						<div class="timeline-item">
+							<div class="timeline-img"></div>
+							<div class="timeline-content timeline-card js--fadeInRight">
+								<div class="timeline-img-header">
+									<h2>Card Title</h2>
+								</div>
+								<div class="date">1 July 2020</div>
+								<p>something else happened</p>
+								<a class="bnt-more" href="#">More</a>
+							</div>
+						</div>
+						<!-- event end -->
+					</div>
+				</section>
+				
+				<section class="timeline" id="timeline2">
+					<div class="container">
+						<!-- even start -->
+						<div class="timeline-item">
+							<div class="timeline-img"></div>
+							<div class="timeline-content js--fadeInLeft">
+								<h2>Title</h2>
+								<div class="date">0:00</div>
+								<p>something happened</p>
+								<a class="bnt-more" href="#">More</a>
+							</div>
+						</div>
+				
+						<div class="timeline-item">
+							<div class="timeline-img"></div>
+							<div class="timeline-content timeline-card js--fadeInRight">
+								<div class="timeline-img-header">
+									<h2>Card Title</h2>
+								</div>
+								<div class="date">24:00</div>
+								<p>something else happened</p>
+								<a class="bnt-more" href="#">More</a>
+							</div>
+						</div>
+						<!-- event end -->
+					</div>
+				</section>
+		</section>
 
     <!-- Judges section -->
     <section class="fill you class">
@@ -114,12 +174,45 @@
             <!--Write the design for the section-->
             Helloworld
         </div>
+		
     </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small fixed-bottom py-3">
+
+        <div class="row">
+            <!-- Copyright -->
+            <div class="col">
+                <div id="footer_name" class="container">UT Application Development Association
+                </div>
+            </div>
+            <div class="col">
+                <div id="footer_wechat" class="container">WeChat ID:
+                </div>
+            </div>
+            <div class="col">
+                <div id="footer_website" class="container">Web Link:
+                    <a href="https://www.google.ca/">google.ca</a>
+                </div>
+            </div>
+            <div class="col">
+                <div id="footer_email" class="container">Email:
+                    <a href="uoftada@gmail.com">uoftada@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 
     <!-- Bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<!-- Timeline js -->
+		<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+		<script src="js/timeline.js"></script>
 </body>
 
 </html>

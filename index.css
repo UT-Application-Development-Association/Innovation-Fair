@@ -58,6 +58,38 @@ footer {
     font-weight: bold;
 }
 
+
+#carouselExampleIndicators{
+    width: 45em;
+    height: 30em;
+    margin: 5em;
+    border: 1px solid;
+    background-color: hsla(50, 33%, 25%, .75);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+.card{
+    width: 35em;
+    height: 30em;
+    margin: 5em;
+    display: flex;
+    backdrop-filter: blur(50px);
+    background-color:rgba(248, 244, 244, 0.959);
+    box-shadow: 3px 3px 5px 6px #ccc;
+    align-content: center;
+}
+.about-section{
+    display: flex;
+}
+
+#about-img{
+    width: 400px;
+    height: 400px;
+}
+
 .navbar-toggler {
     border-width: 0;
     /* Neomorph effect */
@@ -99,3 +131,4 @@ footer {
     margin-top: 0.8em;
     /* margin-bottom: 0.5em; */
 }
+

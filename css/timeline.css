@@ -1,9 +1,20 @@
 .timelin-section section {
-  padding: 100px 0;
+  padding: 2ex 0;
 }
 
 .timelin-section html, body {
   overflow-x: hidden;
+}
+.timelin-section .button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+		margin: 1ex 0;
 }
 
 .timelin-section body {
@@ -54,10 +65,6 @@
   color: #757575;
   border-left-color: #3F51B5;
   padding: 0 20px;
-}
-
-.timelin-section .padding{
-	  height: 50px;
 }
 
 .timeline {

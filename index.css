@@ -58,7 +58,83 @@ footer {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
+
+#carouselExampleIndicators{
+    width: 45em;
+    height: 30em;
+    margin: 5em;
+    border: 1px solid;
+    background-color: hsla(50, 33%, 25%, .75);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+.card{
+    width: 35em;
+    height: 30em;
+    margin: 5em;
+    display: flex;
+    backdrop-filter: blur(50px);
+    background-color:rgba(248, 244, 244, 0.959);
+    box-shadow: 3px 3px 5px 6px #ccc;
+    align-content: center;
+}
+.about-section{
+    display: flex;
+}
+
+#about-img{
+    width: 400px;
+    height: 400px;
+}
+
+.navbar-toggler {
+    border-width: 0;
+    /* Neomorph effect */
+    border-radius: 50px;
+    background: linear-gradient(145deg, #ffffff, #dbdedd);
+    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+}
+
+.navbar-toggler:active {
+    /* Neomorph effect */
+    border-radius: 50px;
+    background: linear-gradient(145deg, #dbdedd, #ffffff);
+    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
+}
+
+#announcement {
+    left: 5%;
+    height: 3em;
+    width: 90%;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    /* Neomorph effect */
+    border-radius: 19px;
+    background: #F3F7F6;
+    box-shadow: 6px 6px 13px #d8dcdb, -6px -6px 13px #ffffff;
+}
+
+#announcement p {
+    /* Neomorph effect */
+    text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
+}
+
+.carousel-item p {
+    margin-top: 0.8em;
+    /* margin-bottom: 0.5em; */
+}
+
+/* Frank Hua: Below are the code for Eve and Youhai, please change it and resubmit a PR, thanks!  */
+/* Also delete this comment before submit PR */
+
 .carousel-indicators .indicator {
     background-color: lightblue;
 }
@@ -105,46 +181,4 @@ footer {
 
 .button:hover {
     background-color: rgba(111, 191, 218, 0.801);
-=======
-.navbar-toggler {
-    border-width: 0;
-    /* Neomorph effect */
-    border-radius: 50px;
-    background: linear-gradient(145deg, #ffffff, #dbdedd);
-    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
-}
-
-.navbar-toggler:focus {
-    outline: none !important;
-}
-
-.navbar-toggler:active {
-    /* Neomorph effect */
-    border-radius: 50px;
-    background: linear-gradient(145deg, #dbdedd, #ffffff);
-    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
-}
-
-#announcement {
-    left: 5%;
-    height: 3em;
-    width: 90%;
-    text-align: center;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    /* Neomorph effect */
-    border-radius: 19px;
-    background: #F3F7F6;
-    box-shadow: 6px 6px 13px #d8dcdb, -6px -6px 13px #ffffff;
-}
-
-#announcement p {
-    /* Neomorph effect */
-    text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
-}
-
-.carousel-item p {
-    margin-top: 0.8em;
-    /* margin-bottom: 0.5em; */
->>>>>>> dev
 }

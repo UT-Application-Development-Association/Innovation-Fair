@@ -132,3 +132,53 @@ footer {
     /* margin-bottom: 0.5em; */
 }
 
+/* Frank Hua: Below are the code for Eve and Youhai, please change it and resubmit a PR, thanks!  */
+/* Also delete this comment before submit PR */
+
+.carousel-indicators .indicator {
+    background-color: lightblue;
+}
+
+.carousel-indicators .active{
+    background-color: rgba(111, 191, 218, 0.801);
+}
+
+#multi-item-carousel {
+    display: flex;
+}
+
+.carousel-inner {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 50px;
+  color: lightblue;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 50px;
+  color: lightblue;
+}
+
+.button {
+    background-color: rgba(173, 216, 230, 0.836);
+    border-radius: 10px;
+    padding: 8px 10px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: rgba(111, 191, 218, 0.801);
+}

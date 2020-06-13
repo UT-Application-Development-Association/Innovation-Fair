@@ -9,7 +9,7 @@ body {
 
 .timeline-section .button {
     /* background-color: #008CBA; */
-    border: none;
+    /* border: none; */
     /* color: white; */
     /* padding: 15px 32px; */
     height: 3.5em;
@@ -21,20 +21,27 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    background: transparent;
     /* margin: 1ex 0; */
-    /* Neomorph */
+    border-width: 0.5px;
+    border-color: #211725;
     border-radius: 27px;
-    background: #F3F7F6;
-    box-shadow: 5px 5px 10px #cacdcc, -5px -5px 10px #ffffff;
 }
 
 .timeline-section .button:focus {
     outline: none !important;
 }
 
+.timeline-section .button:hover {
+    /* Neomorph */
+    border-width: 0;
+    background: #F3F7F6;
+    box-shadow: 5px 5px 10px #cacdcc, -5px -5px 10px #ffffff;
+}
+
 .timeline-section .button:active {
     /* Neomorph effect */
-    border-radius: 27px;
+    border-width: 0;
     background: #F3F7F6;
     box-shadow: inset 6px 6px 11px #cacdcc, inset -6px -6px 11px #ffffff;
 }
@@ -242,17 +249,17 @@ body {
 }
 
 .date {
-    /* background: #FF4081; */
+    background: #FF4081;
     display: inline-block;
-    /* color: #FFFFFF; */
-    color: #211725;
+    color: #FFFFFF;
+    /* color: #211725; */
     padding: 10px;
     position: absolute;
     top: 0;
     right: 0;
-    /* neomorph */
+    /* neomorph
     background: #F3F7F6;
-    box-shadow: 4px 4px 8px #b1b4b4, -4px -4px 8px #ffffff;
+    box-shadow: 4px 4px 8px #b1b4b4, -4px -4px 8px #ffffff; */
 }
 
 @media screen and (max-width: 768px) {

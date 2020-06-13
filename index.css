@@ -1,6 +1,6 @@
 /*  UTADA-color: #45B5E8 
-    white-color: #F3F7F6
-    black-color: #211725
+white-color: #F3F7F6
+black-color: #211725
 */
 
 body {
@@ -31,7 +31,7 @@ header {
     top: 0;
     z-index: 50;
     /* backdrop-filter: blur(50px);
-    background-color: rgba(243, 247, 246, .6); */
+background-color: rgba(243, 247, 246, .6); */
     /* box-shadow: 0px 0px 20px gray; */
     /* margin-bottom: 1em; */
 }
@@ -153,8 +153,8 @@ header a:focus {
     padding-left: 1em;
     padding-right: 1em;
     /* backdrop-filter: blur(50px);
-    background-color: rgba(248, 244, 244, 0.959);
-    box-shadow: 3px 3px 5px 6px #ccc; */
+background-color: rgba(248, 244, 244, 0.959);
+box-shadow: 3px 3px 5px 6px #ccc; */
     /* align-content: center; */
     background: transparent;
 }
@@ -170,7 +170,7 @@ header a:focus {
 
 #about-img {
     /* width: 400px; */
-    height: 440px;
+    height: 29em;
     /* height: 100%; */
 }
 
@@ -188,6 +188,7 @@ header a:focus {
     }
     #aboutTextbox {
         height: auto;
+        padding-top: 0em;
     }
 }
 
@@ -195,12 +196,73 @@ header a:focus {
 /* Footer */
 
 footer {
+    display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: space-evenly; */
+    flex-direction: row;
     /* position: sticky; */
     /* backdrop-filter: blur(50px);
     background-color: rgba(255, 255, 255, .4);
     box-shadow: 0px 0px 10px gray;
     backgroud-color: #45B5E8; */
-    /* margin-top: 1em; */
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 90%;
+    margin: auto;
+    text-align: start;
+    /* neomorph */
+    border-radius: 17px;
+    background: #F3F7F6;
+    box-shadow: 0px -9px 18px #cfd2d1, 9px 9px 18px #ffffff;
+}
+
+#footerBrand {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    margin-right: auto;
+    margin: 1em;
+}
+
+#footerContacts {
+    width: 50%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+.footer-contact {
+    width: 58px;
+    height: 58px;
+    margin: 1em;
+    /* neomorph */
+    outline: none !important;
+    border: none;
+    border-radius: 14px;
+    background: #F3F7F6;
+    box-shadow: 5px 5px 7px #bbbebd, -5px -5px 7px #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #footerBrand,
+    #footerContacts {
+        width: 100%;
+        /* margin-left: 1em; */
+    }
+    #footerBrand {
+        margin-bottom: 0;
+    }
+    #footerContacts,
+    .footer-contact {
+        /* margin-left: 1em; */
+        margin-top: 0em;
+        margin-bottom: 0.5em;
+    }
 }

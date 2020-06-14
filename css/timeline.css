@@ -1,13 +1,13 @@
-.timeline-section section {
+#timeline section {
     padding: 2ex 0;
 }
 
-.timeline-section html,
+#timeline html,
 body {
     overflow-x: hidden;
 }
 
-.timeline-section .button {
+#timeline .button {
     /* background-color: #008CBA; */
     /* border: none; */
     /* color: white; */
@@ -28,45 +28,45 @@ body {
     border-radius: 27px;
 }
 
-.timeline-section .button:focus {
+#timeline .button:focus {
     outline: none !important;
 }
 
-.timeline-section .button:hover {
+#timeline .button:hover {
     /* Neomorph */
     border-width: 0;
     background: #F3F7F6;
     box-shadow: 5px 5px 10px #cacdcc, -5px -5px 10px #ffffff;
 }
 
-.timeline-section .button:active {
+#timeline .button:active {
     /* Neomorph effect */
     border-width: 0;
     background: #F3F7F6;
     box-shadow: inset 6px 6px 11px #cacdcc, inset -6px -6px 11px #ffffff;
 }
 
-.timeline-section body {
+#timeline body {
     font-family: 'Roboto';
     font-size: 17px;
     font-weight: 400;
     /* background-color: #eee; */
 }
 
-.timeline-section h1 {
+#timeline h1 {
     font-size: 200%;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 400;
 }
 
-.timeline-section header {
+#timeline header {
     /* background: #3F51B5;
     color: #FFFFFF; */
     padding: 150px 0;
 }
 
-.timeline-section header p {
+#timeline header p {
     font-family: 'Allura';
     color: rgba(255, 255, 255, 0.2);
     margin-bottom: 0;
@@ -74,7 +74,7 @@ body {
     margin-top: -30px;
 }
 
-.timeline-section a {
+#timeline a {
     /* background: #3F51B5; */
     /* color: #FFFFFF; */
     padding: 8px 20px;
@@ -86,24 +86,24 @@ body {
     /* border-radius: 2px; */
     /* box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6); */
     /* neomorph */
-    border-radius: 11px;
+    border-radius: 10px;
     background: #F3F7F6;
     box-shadow: 4px 4px 8px #b1b4b4, -4px -4px 8px #ffffff;
 }
 
-.timeline-section a:active {
+#timeline a:active {
     /* background: #32408f; */
     /* color: #FFFFFF; */
     text-decoration: none;
     /* neomorph */
-    border-radius: 11px;
+    border-radius: 10px;
     background: #F3F7F6;
     box-shadow: inset 4px 4px 8px #b1b4b4, inset -4px -4px 8px #ffffff;
     text-shadow: none;
     color: #211725;
 }
 
-.timeline-section blockquote {
+#timeline blockquote {
     margin-top: 30px;
     color: #757575;
     border-left-color: #3F51B5;

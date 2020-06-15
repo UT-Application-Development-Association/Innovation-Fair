@@ -167,13 +167,15 @@ footer {
   font-size: 65px;
   font-weight: bold;
   color: rgba(173, 216, 230, 0.8);
+  margin: auto;
 }
 
-.judge .carousel-control-prev-icon:before {
+.judge .carousel-control-prev-icon:before{
   content: '<';
   font-size: 65px;
   font-weight: bold;
   color: rgba(173, 216, 230, 0.8);
+  margin-left: -25px;
 }
 
 .judge .nav-link{

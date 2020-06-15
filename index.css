@@ -161,23 +161,35 @@ footer {
     margin-bottom: 3%;
 }
 
-.judge .carousel-control-prev-icon, .judge .carousel-control-next-icon {
-    height: 100px;
-    width: 100px;
-}
-
-.judge .carousel-control-next-icon:after
+.judge .carousel-control-next-icon:before
 {
   content: '>';
-  font-size: 50px;
-  color: lightblue;
+  font-size: 65px;
+  font-weight: bold;
+  color: rgba(173, 216, 230, 0.8);
 }
 
-.judge .carousel-control-prev-icon:after {
+.judge .carousel-control-prev-icon:before {
   content: '<';
-  font-size: 50px;
-  color: lightblue;
+  font-size: 65px;
+  font-weight: bold;
+  color: rgba(173, 216, 230, 0.8);
 }
+
+.judge .nav-link{
+    padding: 16px;
+    color: rgb(70, 139, 161);
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(173, 216, 230, 0.171);
+}
+
+.judge .nav-link:hover{
+    color: rgb(28, 28, 121);
+    background-color: white;
+}
+
+
 
 .judge .profile-card{
     position:relative;
@@ -255,7 +267,7 @@ footer {
    
 }
 .judge .profile-card .profile-content:hover{
-    background-color: rgba(255, 43, 131, 0.5);
+    background-color: rgba(173, 216, 230, 0.603);
 }
 
 .judge .profile-card .profile-content .title{

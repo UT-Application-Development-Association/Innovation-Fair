@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />		
@@ -12,11 +14,12 @@
 		<!-- Timeline css -->
 		<link rel="stylesheet" href="css/timeline.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
     <title>Innovation Fair</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" id="header">
@@ -86,7 +89,7 @@
         </a>
       </div>
 
-    <div class="card mb-3">
+    <div class="card mb-3" id="header-card">
       <div class="card-body">
         <h5 class="card-title">About this event</h5>
         <p class="card-text">Innovation Fair的运作规则是让参赛者们在有限的时间内通过提供的主题进行头脑风暴，从而做出专属于自己队伍的作品以及产品。本次比赛形式是让参赛者自由组成2-5人团队，在规定的时间内进行作品创作。每个团队则需要在创作结束后统一向评审展示他们的作品或者产品原型，由评委选出表现最优团队赢得比赛。而比赛的具体形式根据比赛内容，比赛的标准形式和比赛目的而有所差别。</p>
@@ -160,11 +163,239 @@
 		</section>
 
     <!-- Judges section -->
-    <section class="fill you class">
-        <div class="container" id="fill the section id">
-            <!--Write the design for the section-->
-            Helloworld
+    <section class="judge">
+      <div class="container" id="fill the section id">
+        <!--Write the design for the section-->
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs nav-justified md-tabs indigo" id="myTabJust" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="speaker-panel-tab" data-toggle="tab" href="#speaker-panel" role="tab"
+              aria-selected="true">SPEAKERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="judge-panel-tab" data-toggle="tab" href="#judge-panel" role="tab"
+              aria-selected="false">JUDGES</a>
+          </li>
+        </ul>
+        <div class="tab-content card pt-5" id="myTabContentJust">
+          <div class="tab-pane fade show active" id="speaker-panel" role="tabpanel">
+            <!-- Card deck -->
+            <div class="row" id="speaker-row">
+              <div class="col-sm-6 col-md-4"  id="sp1">
+                  <div class="profile-card">
+                      <div class="profile-img">
+                          <img src="https://i.postimg.cc/VNs6dtw4/profile2.jpg" alt="Team Image"/>
+                      </div>
+                      <div class="profile-content">
+                          <h2 class="title">Brayden
+                              <span>Designer & Developer</span>
+                              <p>A senior web front end developer at asdsadsadasdasd. 5 years of experience in dsad, sdaas, and dasd.</p>
+                          </h2>
+                          <ul class="social-link">
+                              <li><a href="#" class="fa fa-facebook"></a></li>
+                              <li><a href="#" class="fa fa-google"></a></li>
+                              <li><a href="#" class="fa fa-twitter"></a></li>
+                              <li><a href="#" class="fa fa-youtube"></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-6 col-md-4"   id="sp2">
+                  <div class="profile-card">
+                      <div class="profile-img">
+                          <img src="https://i.postimg.cc/XYkqj8Rp/profile3.jpg" alt="Team Image"/>
+                      </div>
+                      <div class="profile-content">
+                          <h2 class="title">Jasephine
+                              <span>Designer & Developer</span>
+                          </h2>
+                          <ul class="social-link">
+                              <li><a href="#" class="fa fa-facebook"></a></li>
+                              <li><a href="#" class="fa fa-google"></a></li>
+                              <li><a href="#" class="fa fa-twitter"></a></li>
+                              <li><a href="#" class="fa fa-youtube"></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+            <!-- Card deck -->
+          </div>
+          <div class="tab-pane fade" id="judge-panel" role="tabpanel">
+            <!--judge carousel wrapper-->
+            <div
+                  id="multi-item-carousel"
+                  class="carousel slide carousel-multi-item"
+                  data-ride="carousel"
+                >
+                  <!--Controls-->
+                  <a
+                    class="carousel-control-prev"
+                    href="#multi-item-carousel"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#multi-item-carousel"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  <!--/.Controls-->
+        
+                  <!--Indicators-->
+                  <ol class="carousel-indicators">
+                    <li
+                      data-target="#multi-item-carousel"
+                      data-slide-to="0"
+                      class="indicator"
+                      class="active"
+                    ></li>
+                    <li
+                      data-target="#multi-item-carousel"
+                      data-slide-to="1"
+                      class="indicator"
+                    ></li>
+                  </ol>
+                  <!--/.Indicators-->
+        
+                  <!--Slides-->
+                  <div class="carousel-inner" role="listbox">
+                    <!--First slide-->
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                          <div class="profile-card">
+                              <div class="profile-img">
+                                  <img src="https://i.postimg.cc/VNs6dtw4/profile2.jpg" alt="Team Image"/>
+                              </div>
+                              <div class="profile-content">
+                                  <h2 class="title">Brayden
+                                      <span>Designer & Developer</span>
+                                  </h2>
+                                  <ul class="social-link">
+                                      <li><a href="#" class="fa fa-facebook"></a></li>
+                                      <li><a href="#" class="fa fa-google"></a></li>
+                                      <li><a href="#" class="fa fa-twitter"></a></li>
+                                      <li><a href="#" class="fa fa-youtube"></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <img src="https://i.postimg.cc/VNs6dtw4/profile2.jpg" alt="Team Image"/>
+                            </div>
+                            <div class="profile-content">
+                                <h2 class="title">Brayden
+                                    <span>Designer & Developer</span>
+                                </h2>
+                                <ul class="social-link">
+                                    <li><a href="#" class="fa fa-facebook"></a></li>
+                                    <li><a href="#" class="fa fa-google"></a></li>
+                                    <li><a href="#" class="fa fa-twitter"></a></li>
+                                    <li><a href="#" class="fa fa-youtube"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <div class="profile-card">
+                          <div class="profile-img">
+                              <img src="https://i.postimg.cc/VNs6dtw4/profile2.jpg" alt="Team Image"/>
+                          </div>
+                          <div class="profile-content">
+                              <h2 class="title">Brayden
+                                  <span>Designer & Developer</span>
+                              </h2>
+                              <ul class="social-link">
+                                  <li><a href="#" class="fa fa-facebook"></a></li>
+                                  <li><a href="#" class="fa fa-google"></a></li>
+                                  <li><a href="#" class="fa fa-twitter"></a></li>
+                                  <li><a href="#" class="fa fa-youtube"></a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                      </div>
+                    </div>
+                    <!--/.First slide-->
+        
+                    <!--Second slide-->
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                          <div class="profile-card">
+                              <div class="profile-img">
+                                  <img src="https://i.postimg.cc/XYkqj8Rp/profile3.jpg" alt="Team Image"/>
+                              </div>
+                              <div class="profile-content">
+                                  <h2 class="title">Jasephine
+                                      <span>Designer & Developer</span>
+                                  </h2>
+                                  <ul class="social-link">
+                                      <li><a href="#" class="fa fa-facebook"></a></li>
+                                      <li><a href="#" class="fa fa-google"></a></li>
+                                      <li><a href="#" class="fa fa-twitter"></a></li>
+                                      <li><a href="#" class="fa fa-youtube"></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <img src="https://i.postimg.cc/XYkqj8Rp/profile3.jpg" alt="Team Image"/>
+                            </div>
+                            <div class="profile-content">
+                                <h2 class="title">Jasephine
+                                    <span>Designer & Developer</span>
+                                </h2>
+                                <ul class="social-link">
+                                    <li><a href="#" class="fa fa-facebook"></a></li>
+                                    <li><a href="#" class="fa fa-google"></a></li>
+                                    <li><a href="#" class="fa fa-twitter"></a></li>
+                                    <li><a href="#" class="fa fa-youtube"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <div class="profile-card">
+                          <div class="profile-img">
+                              <img src="https://i.postimg.cc/XYkqj8Rp/profile3.jpg" alt="Team Image"/>
+                          </div>
+                          <div class="profile-content">
+                              <h2 class="title">Jasephine
+                                  <span>Designer & Developer</span>
+                              </h2>
+                              <ul class="social-link">
+                                  <li><a href="#" class="fa fa-facebook"></a></li>
+                                  <li><a href="#" class="fa fa-google"></a></li>
+                                  <li><a href="#" class="fa fa-twitter"></a></li>
+                                  <li><a href="#" class="fa fa-youtube"></a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                      </div>
+                    </div>
+                    <!--/.Second slide-->
+        
+                  </div>
+                  <!--/.Slides-->
+            </div>
+            <!--judge carousel wrapper-->
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer section -->

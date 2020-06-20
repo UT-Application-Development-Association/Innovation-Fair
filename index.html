@@ -67,13 +67,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img id="about-img" src="images/QJ6516388947.jpg" alt="First slide">
+            <input type="image" class = "about-img" src="images/QJ6516388947.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img id="about-img" src="images/Hc01d4d94c4fc47de94c05f2532770534s.jpg" alt="Second slide">
+            <input type="image" class = "about-img" src="images/Hc01d4d94c4fc47de94c05f2532770534s.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img id="about-img" src="images/utada.png" alt="Third slide">
+            <input type="image" class = "about-img" src="images/utada.png" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -86,14 +86,57 @@
         </a>
       </div>
 
-    <div class="card mb-3">
-      <div class="card-body">
-        <h5 class="card-title">About this event</h5>
-        <p class="card-text">Innovation Fair的运作规则是让参赛者们在有限的时间内通过提供的主题进行头脑风暴，从而做出专属于自己队伍的作品以及产品。本次比赛形式是让参赛者自由组成2-5人团队，在规定的时间内进行作品创作。每个团队则需要在创作结束后统一向评审展示他们的作品或者产品原型，由评委选出表现最优团队赢得比赛。而比赛的具体形式根据比赛内容，比赛的标准形式和比赛目的而有所差别。</p>
+<div class = "about-introduction">
+  <h3>关于这个活动</h3>
+<div class = "introduction-contents">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#focus" role="tab" aria-controls="profile" aria-selected="false">活动主旨目的</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="home-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="home" aria-selected="true">基本情况介绍</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#participants" role="tab" aria-controls="contact" aria-selected="false">参与对象</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+
+  <div class="tab-pane fade show active" id="focus" role="tabpanel" aria-labelledby="profile-tab">
+    <p> UTADA Innovation Fair 2020是由UTADA举办的一场以计算机编程为基础的应用设计展会,旨在为有创新意识和对计算机编程感兴趣的学生提供一个与各行业精英对话的
+      机会和展示自身才华的舞台。参赛者们在本次活动中可以与专业评审进行交流,同时,专业评审也会对参赛者的作品进行点评和提供修改建议。本次活动有三个主题,分别是:人工智能,大学生活和后疫情时代。</p>
+      <p id = "more-1">UTADA Innovation Fair 对参赛者的编程技术没有任何限制。参赛者需要在一个月内以团队为单位进行产品策划和开发,
+        最后向评审展示作品或者应用原型。由专家评审根据比赛内容,比赛形式和比赛目的三个方面评选出优项目。</p>
+      <input id = "read-more-1" type="button" value="Read More" onclick="expandText()">
       </div>
+      <div class="tab-pane fade" id="overview" role="tabpanel" aria-labelledby="home-tab">
+        <p>Innovation Fair的运作规则是让参赛者们在有限的时间内通过提供的主题进行头脑风暴,从而做出专属于自己队伍的应用。
+          本次比赛形式是让参赛者自由组成1-5人团队,在规定的时间内进行作品创作。每个团队则需要在创作结束后统一向评审展示他们的作品或者应用原型,
+          由评委选出表现最优团队赢得比赛。</p></div>
+      <div class="tab-pane fade" id="participants" role="tabpanel" aria-labelledby="contact-tab">
+    <p>  本次活动面向全部学生群体,欢迎对活动主题有兴趣,对计算机编程有兴趣且有初步了解,和希望通过本次活动提升个人技能的同学报名参加。</p>
+    <p>参赛者可自行组队或独自报名。每组人数限制为1-5人,暂定15组。总人数预计为 15-75 之间。</p>
   </div>
 </div>
+</div>
+</div>
+<div class="images-modal">
+  <span class="CloseButton">&times;</span>
+    <img id="img-larger" src="images/QJ6516388947.jpg" alt="Third slide">
+</div>
+<div class="images-modal">
+    <span class="CloseButton">&times;</span>
+      <img id="img-larger" src="images/Hc01d4d94c4fc47de94c05f2532770534s.jpg" alt="Third slide">
+</div>
+<div class="images-modal">
+  <span class="CloseButton">&times;</span>
+    <img id="img-larger" src="images/utada.png" alt="Third slide">
+</div>
+
+<script src="js/about-section.js"></script>
 </section>
+
+
     <!-- Timeline section -->
     <section class="timelin-section">
 			<div class="timeline-selection">

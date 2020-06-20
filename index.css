@@ -10,6 +10,9 @@ body {
     align-items: center;
 }
 
+
+/* Header section */
+
 header {
     height: 3.5em;
     align-items: center;
@@ -54,10 +57,9 @@ footer {
     margin-top: 1em;
 }
 
-.navbar-brand {
+header .navbar-brand {
     font-weight: bold;
 }
-
 
 .about #carouselExampleIndicators{
     width: 45em;
@@ -76,7 +78,7 @@ footer {
     margin: 5em;
     display: flex;
     backdrop-filter: blur(50px);
-    background-color:rgba(247, 243, 243, 0.863);
+    background-color: rgba(248, 244, 244, 0.959);
     box-shadow: 3px 3px 5px 6px #ccc;
     align-content: center;
 }
@@ -89,7 +91,7 @@ footer {
     height: 400px;
 }
 
-.navbar-toggler {
+header .navbar-toggler {
     border-width: 0;
     /* Neomorph effect */
     border-radius: 50px;
@@ -97,18 +99,18 @@ footer {
     box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
 }
 
-.navbar-toggler:focus {
+header .navbar-toggler:focus {
     outline: none !important;
 }
 
-.navbar-toggler:active {
+header .navbar-toggler:active {
     /* Neomorph effect */
     border-radius: 50px;
     background: linear-gradient(145deg, #dbdedd, #ffffff);
     box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
 }
 
-#announcement {
+#announcementCarousel {
     left: 5%;
     height: 3em;
     width: 90%;
@@ -121,14 +123,15 @@ footer {
     box-shadow: 6px 6px 13px #d8dcdb, -6px -6px 13px #ffffff;
 }
 
-#announcement p {
+#announcementCarousel p {
     /* Neomorph effect */
     text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
 }
 
-.carousel-item p {
+#announcement .carousel-item p {
     margin-top: 0.8em;
     /* margin-bottom: 0.5em; */
+}
 }
 
 /* judge css below */

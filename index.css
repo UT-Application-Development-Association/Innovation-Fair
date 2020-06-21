@@ -11,6 +11,103 @@ body {
 }
 
 
+/* Head Image section */
+
+#headImageSection {
+    background: black;
+    backdrop-filter: blur(50px);
+}
+
+#headImage {
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    filter: blur(20px);
+}
+
+#headMain {
+    z-index: 20;
+    position: absolute;
+    top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #F3F7F6;
+    text-align: left;
+}
+
+#headMain h1 {
+    font-size: 8em;
+}
+
+#headMain #headSecondRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: start;
+}
+
+#headMain h2 {
+    font-size: 10em;
+    color: #45B5E8;
+}
+
+#headMain h6 {
+    font-size: 4em;
+    margin-left: 5%;
+    position: relative;
+    bottom: 0.5em;
+}
+
+#headMain #headSignup {
+    margin-top: 1em;
+    width: 10em;
+    height: 3em;
+    outline: none !important;
+    border: 2px solid #F3F7F6;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #F3F7F6;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#headMain #headSignup:hover {
+    background-color: #F3F7F6;
+    color: #45B5E8;
+}
+
+#headMain #headSignup:active {
+    background-color: #fff;
+    color: #45B5E8;
+}
+
+@media screen and (max-width: 768px) {
+    #headImage {
+        width: auto;
+        height: 30em;
+    }
+    #headMain {
+        z-index: 20;
+        position: absolute;
+        top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: #F3F7F6;
+        text-align: left;
+    }
+    #headMain h1 {
+        font-size: 5em;
+    }
+    #headMain h2 {
+        font-size: 5em;
+    }
+    #headMain h6 {
+        font-size: 2em;
+        bottom: 0.3em;
+    }
+}
+
+
 /* Header section */
 
 header {
@@ -61,7 +158,7 @@ header .navbar-brand {
     font-weight: bold;
 }
 
-.about #carouselExampleIndicators{
+.about #carouselExampleIndicators {
     width: 45em;
     height: 30em;
     margin: 5em;
@@ -82,11 +179,12 @@ header .navbar-brand {
     box-shadow: 3px 3px 5px 6px #ccc;
     align-content: center;
 }
-.about .about-section{
+
+.about .about-section {
     display: flex;
 }
 
-.about #about-img{
+.about #about-img {
     width: 400px;
     height: 400px;
 }
@@ -133,6 +231,7 @@ header .navbar-toggler:active {
     /* margin-bottom: 0.5em; */
 }
 
+
 /* judge css below */
 
 .judge {
@@ -144,7 +243,7 @@ header .navbar-toggler:active {
     background-color: lightblue;
 }
 
-.judge .carousel-indicators .active{
+.judge .carousel-indicators .active {
     background-color: rgba(111, 191, 218, 0.801);
 }
 
@@ -162,24 +261,23 @@ header .navbar-toggler:active {
     margin-bottom: 3%;
 }
 
-.judge .carousel-control-next-icon:before
-{
-  content: '>';
-  font-size: 65px;
-  font-weight: bold;
-  color: rgba(173, 216, 230, 0.8);
-  margin: auto;
+.judge .carousel-control-next-icon:before {
+    content: '>';
+    font-size: 65px;
+    font-weight: bold;
+    color: rgba(173, 216, 230, 0.8);
+    margin: auto;
 }
 
-.judge .carousel-control-prev-icon:before{
-  content: '<';
-  font-size: 65px;
-  font-weight: bold;
-  color: rgba(173, 216, 230, 0.8);
-  margin-left: -25px;
+.judge .carousel-control-prev-icon:before {
+    content: '<';
+    font-size: 65px;
+    font-weight: bold;
+    color: rgba(173, 216, 230, 0.8);
+    margin-left: -25px;
 }
 
-.judge .nav-link{
+.judge .nav-link {
     padding: 16px;
     color: rgb(70, 139, 161);
     font-weight: bold;
@@ -187,148 +285,147 @@ header .navbar-toggler:active {
     background-color: rgba(173, 216, 230, 0.171);
 }
 
-.judge .nav-link:hover{
+.judge .nav-link:hover {
     color: rgb(28, 28, 121);
     background-color: white;
 }
 
-
-
-.judge .profile-card{
-    position:relative;
+.judge .profile-card {
+    position: relative;
     overflow: hidden;
-    margin-bottom:10px;
-    box-shadow:0px 2px 3px #222;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 3px #222;
 }
 
-.judge #sp1{
+.judge #sp1 {
     margin-left: 10%;
     margin-right: 5%;
 }
 
-.judge #sp2{
+.judge #sp2 {
     margin-left: 5%;
     margin-right: 10%;
 }
 
-.judge .profile-card:hover .profile-img img
-{
+.judge .profile-card:hover .profile-img img {
     transform: scale(1.2);
 }
 
-.judge .profile-card .profile-img img{
-    width:100%;
-    height:auto;
+.judge .profile-card .profile-img img {
+    width: 100%;
+    height: auto;
     transition: transform 1s;
 }
 
-.judge .profile-card .profile-content::before{
+.judge .profile-card .profile-content::before {
     content: "";
-    position:absolute;
-    top:0;
-    left:0;
-    width:50%;
-    height:40%;
-    border:3px solid #333;
-    border-right:3px solid transparent;
-    border-bottom:3px solid transparent;
-    transform: scale(1,1);
-    transition: all 0.50s linear;
-}
-.judge .profile-card .profile-content::after{
-    content: "";
-    position:absolute;
-    bottom:0;
-    right:0;
-    width:50%;
-    height:40%;
-    border:3px solid #222;
-    border-left:3px solid transparent;
-    border-top:3px solid transparent;
-    transition: all 0.50s linear;
-    
-}
-
-.judge .profile-card:hover .profile-content:before{
-    top:20px;
-    left:20px;
-}
-
-.judge .profile-card:hover .profile-content:after{
-    bottom:20px;
-    right:20px;
-}
-
-.judge .profile-card .profile-content{
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    padding:50% 4%;
-    text-align: center;
-   
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 40%;
+    border: 3px solid #333;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transform: scale(1, 1);
+    transition: all 0.50s linear;
 }
-.judge .profile-card .profile-content:hover{
+
+.judge .profile-card .profile-content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 40%;
+    border: 3px solid #222;
+    border-left: 3px solid transparent;
+    border-top: 3px solid transparent;
+    transition: all 0.50s linear;
+}
+
+.judge .profile-card:hover .profile-content:before {
+    top: 20px;
+    left: 20px;
+}
+
+.judge .profile-card:hover .profile-content:after {
+    bottom: 20px;
+    right: 20px;
+}
+
+.judge .profile-card .profile-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50% 4%;
+    text-align: center;
+}
+
+.judge .profile-card .profile-content:hover {
     background-color: rgba(173, 216, 230, 0.603);
 }
 
-.judge .profile-card .profile-content .title{
-    font-size:24px;
-    color:#333;
-    opacity:0;
-    letter-spacing:2px;
-    text-transform:uppercase;
+.judge .profile-card .profile-content .title {
+    font-size: 24px;
+    color: #333;
+    opacity: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     transform: translateY(-100px);
-    transition:all 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.20s;
+    transition: all 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.20s;
 }
 
-.judge .profile-card:hover .title{
-    opacity:1;
+.judge .profile-card:hover .title {
+    opacity: 1;
     transform: translateY(0);
 }
 
-.judge .profile-card:hover .title::after{
-    content:"";
-    display:block;
-    width:50%;
-    margin:10px auto;
-    border-bottom:2px solid #222;
+.judge .profile-card:hover .title::after {
+    content: "";
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    border-bottom: 2px solid #222;
 }
 
-.judge .profile-card .profile-content .title > span{
-    display:block;
-    margin:5px 0;
+.judge .profile-card .profile-content .title>span {
+    display: block;
+    margin: 5px 0;
     font-size: 14px;
     text-transform: capitalize;
 }
 
-.judge .profile-card .profile-content .social-link{
-    margin:20px 0;
-    padding:0;
-    opacity:0;
+.judge .profile-card .profile-content .social-link {
+    margin: 20px 0;
+    padding: 0;
+    opacity: 0;
     transform: translateY(100px);
-    transition:all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.20s;
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.20s;
 }
 
-.judge .profile-card:hover .social-link{
-    opacity:1;
+.judge .profile-card:hover .social-link {
+    opacity: 1;
     transform: translateY(0);
 }
 
-.judge .profile-card .profile-content .social-link li{
+.judge .profile-card .profile-content .social-link li {
     display: inline-block;
     list-style: none;
-    margin:0 4px;
+    margin: 0 4px;
 }
 
-.judge .profile-card .profile-content .social-link li a{
-    color:#333;
-    width:30px;
-    height:25px;
-    line-height:24px;
+.judge .profile-card .profile-content .social-link li a {
+    color: #333;
+    width: 30px;
+    height: 25px;
+    line-height: 24px;
     text-align: center;
-    border-radius:5px;
+    border-radius: 5px;
     background-color: #fff;
 }
+
+
 /* judge css above */

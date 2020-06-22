@@ -79,6 +79,12 @@ footer {
 }
 
 .card {
-    border-radius: 10px;
+    border: transparent;
+    background-color: transparent;
 }
+
+.card-body{
+    text-align: left;
+}
+
 

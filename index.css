@@ -8,6 +8,7 @@ body {
     background-color: #F3F7F6;
     justify-content: center;
     align-items: center;
+    outline: none !important;
 }
 
 
@@ -47,8 +48,10 @@ body {
 }
 
 #headMain h2 {
-    font-size: 10em;
+    font-size: 12em;
     color: #45B5E8;
+    font-family: fantasy;
+    font-style: italic;
 }
 
 #headMain h6 {
@@ -112,15 +115,11 @@ body {
 
 header {
     height: 3.5em;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     position: sticky;
     top: 0;
     z-index: 50;
-    /* backdrop-filter: blur(50px);
-    background-color: rgba(243, 247, 246, .6); */
-    /* box-shadow: 0px 0px 20px gray; */
-    /* margin-bottom: 1em; */
 }
 
 #header {
@@ -134,14 +133,41 @@ header a {
     text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
 }
 
-header a:hover {
+
+/* header .nav-item {
+    margin-left: 100%;
+    margin-right: 100%; 
+    width: 200%;
+
+} */
+
+header #navLinks {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .nav-item:hover {
     color: #000;
+    font-weight: 600;
 }
 
 header a:focus {
     color: #000;
     /* Neomorph effect */
     text-shadow: inset 2px 2px 4px #c7cbca, inset -2px -2px 4px #ffffff;
+}
+
+header #navSignup {
+    outline: none !important;
+    font-weight: bold;
+    color: #45B5E8;
+}
+
+header #navSignup:hover {
+    font-weight: 900;
 }
 
 footer {
@@ -219,14 +245,20 @@ header .navbar-toggler:active {
     border-radius: 19px;
     background: #F3F7F6;
     box-shadow: 6px 6px 13px #d8dcdb, -6px -6px 13px #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-#announcementCarousel p {
+#announcementCarousel a {
+    color: black;
+    font-weight: bold;
     /* Neomorph effect */
     text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
 }
 
-#announcement .carousel-item p {
+#announcement .carousel-item a {
     margin-top: 0.8em;
     /* margin-bottom: 0.5em; */
 }

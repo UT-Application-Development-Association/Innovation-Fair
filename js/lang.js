@@ -13,6 +13,7 @@ var dict = {
         "navAbout": "简介",
         "navTimeline": "时间表",
         "navJudges": "评审",
+        "navSignup": "报名！",
         "announcement-1": "第一条消息！",
         "announcement-2": "第二条消息！"
     },
@@ -20,6 +21,7 @@ var dict = {
         "navAbout": "About",
         "navTimeline": "Timeline",
         "navJudges": "Judges",
+        "navSignup": "SIGNUP",
         "announcement-1": "First Announcement!",
         "announcement-2": "Second Announcement!"
     }

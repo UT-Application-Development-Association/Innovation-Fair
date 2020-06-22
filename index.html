@@ -31,19 +31,19 @@
                 <!-- <h2>2020</h2> -->
                 <h6>August 8th</h6>
             </div>
-            <button id="headSignup">SIGN UP NOW</button>
+            <a href="https://www.wjx.top/jq/82064673.aspx"><button id="headSignup" >SIGN UP NOW</button></a>
         </div>
     </section>
 
     <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" id="header">
-            <a class="navbar-brand" href="#">INNOVATION FAIR 2020</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" id="navBrand" href="#" hidden="true">INNOVATION FAIR 2020</a>
+            <button id='navToggleBtn' hidden='true' class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse" id="navbarItems">
+                <ul class="navbar-nav mr-auto" id="navLinks">
                     <li class="nav-item">
                         <a class="nav-link lang" href="#" data-key="navAbout">About</a>
                     </li>
@@ -53,10 +53,13 @@
                     <li class="nav-item">
                         <a class="nav-link lang" href="#" data-key="navJudges">Judges</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link lang" data-key="navSignup" id="navSignup" hidden="true" href="https://www.wjx.top/jq/82064673.aspx">SIGN UP</a>
+                    </li>
                 </ul>
                 <span class="navbar-text">
-                  <a href="#" id="zhBtn">中文</a> |
-                  <a href="#" id="enBtn">ENG</a>
+                  <a href="" id="zhBtn">中文</a> |
+                  <a href="" id="enBtn">ENG</a>
                 </span>
             </div>
         </nav>
@@ -67,10 +70,10 @@
         <div id="announcementCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <p class="lang" data-key="announcement-1">First Announcement!</p>
+                    <a href="#" class="lang" data-key="announcement-1">First Announcement!</a>
                 </div>
                 <div class="carousel-item">
-                    <p class="lang" data-key="announcement-2">Second Announcement!</p>
+                    <a href="#" class="lang" data-key="announcement-2">Second Announcement!</a>
                 </div>
             </div>
         </div>
@@ -500,6 +503,8 @@
     <script src="js/timeline.js"></script>
     <!-- Language js -->
     <script src="js/lang.js"></script>
+    <!-- some js -->
+    <script src="js/index.js"></script>
 </body>
 
 </html>

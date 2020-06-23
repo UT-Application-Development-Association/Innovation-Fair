@@ -8,22 +8,20 @@ body {
     background-color: #F3F7F6;
     justify-content: center;
     align-items: center;
+    outline: none !important;
 }
+
+
+/* Head Image section */
 
 
 /* Header section */
 
 header {
     height: 3.5em;
-    align-items: center;
-    justify-content: center;
     position: sticky;
     top: 0;
     z-index: 50;
-    /* backdrop-filter: blur(50px);
-    background-color: rgba(243, 247, 246, .6); */
-    /* box-shadow: 0px 0px 20px gray; */
-    /* margin-bottom: 1em; */
 }
 
 #header {
@@ -37,14 +35,42 @@ header a {
     text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
 }
 
-header a:hover {
-    color: #000;
+
+/* header .nav-item {
+    margin-left: 100%;
+    margin-right: 100%; 
+    width: 200%;
+} */
+
+header #navList {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .nav-item:hover {
+    color: black;
+    font-weight: 600;
 }
 
 header a:focus {
-    color: #000;
+    color: black;
     /* Neomorph effect */
     text-shadow: inset 2px 2px 4px #c7cbca, inset -2px -2px 4px #ffffff;
+}
+
+header #navSignup,
+header #navSignupMobile {
+    outline: none !important;
+    font-weight: bold;
+    color: #45B5E8;
+}
+
+header #navSignup:hover,
+header #navSignupMobile:hover {
+    font-weight: 900;
 }
 
 footer {
@@ -64,7 +90,7 @@ header .navbar-brand {
     font-weight: bold;
 }
 
-.about #carouselExampleIndicators{
+.about #carouselExampleIndicators {
     width: 45em;
     height: 30em;
     margin: 5em;
@@ -85,11 +111,12 @@ header .navbar-brand {
     box-shadow: 3px 3px 5px 6px #ccc;
     align-content: center;
 }
-.about .about-section{
+
+.about .about-section {
     display: flex;
 }
 
-.about #about-img{
+.about #about-img {
     width: 400px;
     height: 400px;
 }
@@ -124,17 +151,24 @@ header .navbar-toggler:active {
     border-radius: 19px;
     background: #F3F7F6;
     box-shadow: 6px 6px 13px #d8dcdb, -6px -6px 13px #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-#announcementCarousel p {
+#announcementCarousel a {
+    color: #555555;
+    font-weight: 400;
     /* Neomorph effect */
     text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
 }
 
-#announcement .carousel-item p {
+#announcement .carousel-item a {
     margin-top: 0.8em;
     /* margin-bottom: 0.5em; */
 }
+
 
 /* judge css below */
 
@@ -147,7 +181,7 @@ header .navbar-toggler:active {
     background-color: lightblue;
 }
 
-.judge .carousel-indicators .active{
+.judge .carousel-indicators .active {
     background-color: rgba(111, 191, 218, 0.801);
 }
 
@@ -165,24 +199,23 @@ header .navbar-toggler:active {
     margin-bottom: 3%;
 }
 
-.judge .carousel-control-next-icon:before
-{
-  content: '>';
-  font-size: 65px;
-  font-weight: bold;
-  color: rgba(173, 216, 230, 0.8);
-  margin: auto;
+.judge .carousel-control-next-icon:before {
+    content: '>';
+    font-size: 65px;
+    font-weight: bold;
+    color: rgba(173, 216, 230, 0.8);
+    margin: auto;
 }
 
-.judge .carousel-control-prev-icon:before{
-  content: '<';
-  font-size: 65px;
-  font-weight: bold;
-  color: rgba(173, 216, 230, 0.8);
-  margin-left: -25px;
+.judge .carousel-control-prev-icon:before {
+    content: '<';
+    font-size: 65px;
+    font-weight: bold;
+    color: rgba(173, 216, 230, 0.8);
+    margin-left: -25px;
 }
 
-.judge .nav-link{
+.judge .nav-link {
     padding: 16px;
     color: rgb(70, 139, 161);
     font-weight: bold;
@@ -190,148 +223,147 @@ header .navbar-toggler:active {
     background-color: rgba(173, 216, 230, 0.171);
 }
 
-.judge .nav-link:hover{
+.judge .nav-link:hover {
     color: rgb(28, 28, 121);
     background-color: white;
 }
 
-
-
-.judge .profile-card{
-    position:relative;
+.judge .profile-card {
+    position: relative;
     overflow: hidden;
-    margin-bottom:10px;
-    box-shadow:0px 2px 3px #222;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 3px #222;
 }
 
-.judge #sp1{
+.judge #sp1 {
     margin-left: 10%;
     margin-right: 5%;
 }
 
-.judge #sp2{
+.judge #sp2 {
     margin-left: 5%;
     margin-right: 10%;
 }
 
-.judge .profile-card:hover .profile-img img
-{
+.judge .profile-card:hover .profile-img img {
     transform: scale(1.2);
 }
 
-.judge .profile-card .profile-img img{
-    width:100%;
-    height:auto;
+.judge .profile-card .profile-img img {
+    width: 100%;
+    height: auto;
     transition: transform 1s;
 }
 
-.judge .profile-card .profile-content::before{
+.judge .profile-card .profile-content::before {
     content: "";
-    position:absolute;
-    top:0;
-    left:0;
-    width:50%;
-    height:40%;
-    border:3px solid #333;
-    border-right:3px solid transparent;
-    border-bottom:3px solid transparent;
-    transform: scale(1,1);
-    transition: all 0.50s linear;
-}
-.judge .profile-card .profile-content::after{
-    content: "";
-    position:absolute;
-    bottom:0;
-    right:0;
-    width:50%;
-    height:40%;
-    border:3px solid #222;
-    border-left:3px solid transparent;
-    border-top:3px solid transparent;
-    transition: all 0.50s linear;
-    
-}
-
-.judge .profile-card:hover .profile-content:before{
-    top:20px;
-    left:20px;
-}
-
-.judge .profile-card:hover .profile-content:after{
-    bottom:20px;
-    right:20px;
-}
-
-.judge .profile-card .profile-content{
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    padding:50% 4%;
-    text-align: center;
-   
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 40%;
+    border: 3px solid #333;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transform: scale(1, 1);
+    transition: all 0.50s linear;
 }
-.judge .profile-card .profile-content:hover{
+
+.judge .profile-card .profile-content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 40%;
+    border: 3px solid #222;
+    border-left: 3px solid transparent;
+    border-top: 3px solid transparent;
+    transition: all 0.50s linear;
+}
+
+.judge .profile-card:hover .profile-content:before {
+    top: 20px;
+    left: 20px;
+}
+
+.judge .profile-card:hover .profile-content:after {
+    bottom: 20px;
+    right: 20px;
+}
+
+.judge .profile-card .profile-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50% 4%;
+    text-align: center;
+}
+
+.judge .profile-card .profile-content:hover {
     background-color: rgba(173, 216, 230, 0.603);
 }
 
-.judge .profile-card .profile-content .title{
-    font-size:24px;
-    color:#333;
-    opacity:0;
-    letter-spacing:2px;
-    text-transform:uppercase;
+.judge .profile-card .profile-content .title {
+    font-size: 24px;
+    color: #333;
+    opacity: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     transform: translateY(-100px);
-    transition:all 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.20s;
+    transition: all 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.20s;
 }
 
-.judge .profile-card:hover .title{
-    opacity:1;
+.judge .profile-card:hover .title {
+    opacity: 1;
     transform: translateY(0);
 }
 
-.judge .profile-card:hover .title::after{
-    content:"";
-    display:block;
-    width:50%;
-    margin:10px auto;
-    border-bottom:2px solid #222;
+.judge .profile-card:hover .title::after {
+    content: "";
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    border-bottom: 2px solid #222;
 }
 
-.judge .profile-card .profile-content .title > span{
-    display:block;
-    margin:5px 0;
+.judge .profile-card .profile-content .title>span {
+    display: block;
+    margin: 5px 0;
     font-size: 14px;
     text-transform: capitalize;
 }
 
-.judge .profile-card .profile-content .social-link{
-    margin:20px 0;
-    padding:0;
-    opacity:0;
+.judge .profile-card .profile-content .social-link {
+    margin: 20px 0;
+    padding: 0;
+    opacity: 0;
     transform: translateY(100px);
-    transition:all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.20s;
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.20s;
 }
 
-.judge .profile-card:hover .social-link{
-    opacity:1;
+.judge .profile-card:hover .social-link {
+    opacity: 1;
     transform: translateY(0);
 }
 
-.judge .profile-card .profile-content .social-link li{
+.judge .profile-card .profile-content .social-link li {
     display: inline-block;
     list-style: none;
-    margin:0 4px;
+    margin: 0 4px;
 }
 
-.judge .profile-card .profile-content .social-link li a{
-    color:#333;
-    width:30px;
-    height:25px;
-    line-height:24px;
+.judge .profile-card .profile-content .social-link li a {
+    color: #333;
+    width: 30px;
+    height: 25px;
+    line-height: 24px;
     text-align: center;
-    border-radius:5px;
+    border-radius: 5px;
     background-color: #fff;
 }
+
+
 /* judge css above */

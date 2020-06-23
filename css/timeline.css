@@ -2,6 +2,8 @@
   padding: 2ex 0;
 }
 
+
+
 .timelin-section html, body {
   overflow-x: hidden;
 }
@@ -15,6 +17,12 @@
     display: inline-block;
     font-size: 16px;
 		margin: 1ex 0;
+}
+.timelin-section .button:hover{
+	background-color:orange;
+}
+.timelin-section .active{
+	background-color:orange;
 }
 
 .timelin-section body {
@@ -176,7 +184,7 @@
 }
 
 .timeline-img-header {
-  height: 200px;
+  height: 7em;
   position: relative;
   margin-bottom: 20px;
 }

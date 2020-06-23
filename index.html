@@ -16,6 +16,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Innovation Fair</title>
   </head>
 
@@ -74,12 +75,12 @@
           <div class="carousel-item active">
             <img id="about-img" src="images/QJ6516388947.jpg" alt="First slide">
           </div>
-          <div class="carousel-item">
-            <img id="about-img" src="images/Hc01d4d94c4fc47de94c05f2532770534s.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img id="about-img" src="images/utada.png" alt="Third slide">
-          </div>
+<!--          <div class="carousel-item">-->
+<!--            <img id="about-img" src="images/Hc01d4d94c4fc47de94c05f2532770534s.jpg" alt="Second slide">-->
+<!--          </div>-->
+<!--          <div class="carousel-item">-->
+<!--            <img id="about-img" src="images/utada.png" alt="Third slide">-->
+<!--          </div>-->
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -456,47 +457,50 @@
 
     </section>
 
+
+    <!--
+    Footer: Created by Xiaoyi(Sean) Wang
+    Click the association logo to go to the official website
+    -->
     <!-- Footer -->
     <footer class="page-footer font-small py-3">
-        <div class="row">
+        <div class="row align-items-center justify-content-center">
             <!-- Copyright -->
-            <div class="col">
+            <div class="col-3">
                 <div id="footer_logo" class="container">
-                    <img src="http://uoftada.com/img/logo-long-black.svg"
-                         alt="Logo" height="50" width="200"/>
+                    <a href="http://uoftada.com/">
+                        <img src="http://uoftada.com/img/logo-long-black.svg" class="img-fluid"
+                             alt="Logo" height="50" width="200"/></a>
+                </div>
+                <div>
+                    UT Application Development Association
                 </div>
             </div>
 
-
-            <div class="col">
-                <div id="footer_name" class="container">
-                    <div class="col">
-                        UT Application Development Association
+            <div class="col-4">
+                <div class="row justify-content-center">
+                    <div class="col-2" id="footer_email">
+                        <a href="mailto:uoftada@gmail.com" target="_blank" class="btn btn-primary">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
                     </div>
-                    <div class="col">
-                        Website: <a href="http://uoftada.com/">http://uoftada.com/</a>
-                        <br>
-                        Email: <a href="uoftada@gmail.com">uoftada@gmail.com</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col">
-                <div id="footer_wechat" class="container">
-                    <div class="col">
-                        WeChat: UT助手
-                    </div>
-                    <div class="col">
-                        <img src="https://i.postimg.cc/Dz0vPvM6/Screenshot-2020-06-20-at-1-31-34-AM.png"
-                             alt="WeChat QRcode" height="50" width="50"/>
+                    <div class="col-2" id="footer_wechat">
+                        <a data-toggle="popover"
+                           data-html="true"
+                           data-content="<img src='https://i.postimg.cc/Dz0vPvM6/Screenshot-2020-06-20-at-1-31-34-AM.png'
+                        alt='WeChat QRcode' height='200' width='200'/>"
+                        >
+                            <button type="button" class="btn btn-success">
+                                <i class="fa fa-weixin" aria-hidden="true"></i>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
+
         </div>
     </footer>
 
-    <!-- Bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -505,6 +509,7 @@
     <script src="js/timeline.js"></script>
     <!-- Language js -->
     <script src="js/lang.js"></script>
+    <script src="js/footer.js"></script>
 </body>
 
 </html>

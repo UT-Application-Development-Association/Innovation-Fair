@@ -14,16 +14,16 @@ var dict = {
         "navTimeline": "时间表",
         "navJudges": "评审",
         "navSignup": "报名！",
-        "announcement-1": "第一条消息！",
-        "announcement-2": "第二条消息！"
+        "announcement-1": "欢迎参加IF2020！报名已经开始啦！",
+        "announcement-2": "欢迎参加IF2020！报名已经开始啦！"
     },
     'en': {
         "navAbout": "About",
         "navTimeline": "Timeline",
         "navJudges": "Judges",
-        "navSignup": "SIGNUP",
-        "announcement-1": "First Announcement!",
-        "announcement-2": "Second Announcement!"
+        "navSignup": "SIGN UP!",
+        "announcement-1": "Welcome to IF2020! Registration started!",
+        "announcement-2": "Welcome to IF2020! Registration started!"
     }
 }
 

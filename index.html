@@ -18,43 +18,40 @@
 </head>
 
 <body>
-    <!-- IMAGE -->
-    <section id="headImageSection">
-        <img id="headImage" src="/images/headimage.jpg" alt="">
-        <div id="headMain">
-            <h1>Innovation Fair</h1>
-            <div id="headSecondRow">
-                <h2 style="color:khaki;">2</h2>
-                <h2 style="color:aqua;">0</h2>
-                <h2 style="color:aquamarine;">2</h2>
-                <h2 style="color:cornflowerblue;">0</h2>
-                <!-- <h2>2020</h2> -->
-                <h6>August 8th</h6>
+    <!-- Head Image -->
+    <div id="headImageCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/headImageCarousel1.png" class="d-block w-100" alt="INNOVATION FAIR 2020 UTADA">
             </div>
-            <a href="https://www.wjx.top/jq/82064673.aspx"><button id="headSignup" >SIGN UP NOW</button></a>
+            <div class="carousel-item">
+                <img src="/images/headImageCarousel2.png" class="d-block w-100" alt="INNOVATION FAIR 2020 UTADA">
+            </div>
+
         </div>
-    </section>
+    </div>
 
     <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" id="header">
             <a class="navbar-brand" id="navBrand" href="#" hidden="true">INNOVATION FAIR 2020</a>
+            <a class="nav-link lang" data-key="navSignup" id="navSignupMobile" href="https://www.wjx.top/jq/82064673.aspx">SIGN UP</a>
             <button id='navToggleBtn' hidden='true' class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarItems">
                 <ul class="navbar-nav mr-auto" id="navLinks">
                     <li class="nav-item">
-                        <a class="nav-link lang" href="#" data-key="navAbout">About</a>
+                        <a class="nav-link lang" href="#aboutSection" data-key="navAbout">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lang" href="#" data-key="navTimeline">Timeline</a>
+                        <a class="nav-link lang" href="#timelineSection" data-key="navTimeline">Timeline</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lang" href="#" data-key="navJudges">Judges</a>
+                        <a class="nav-link lang" href="#judgesSection" data-key="navJudges">Judges</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lang" data-key="navSignup" id="navSignup" hidden="true" href="https://www.wjx.top/jq/82064673.aspx">SIGN UP</a>
+                        <a class="nav-link lang" data-key="navSignup" id="navSignup" href="https://www.wjx.top/jq/82064673.aspx">SIGN UP</a>
                     </li>
                 </ul>
                 <span class="navbar-text">

@@ -14,109 +14,11 @@ body {
 
 /* Head Image section */
 
-#headImageSection {
-    background: black;
-    backdrop-filter: blur(50px);
-}
-
-#headImage {
-    width: 100vw;
-    height: 100vh;
-    z-index: 0;
-    top: 0;
-    filter: blur(20px);
-}
-
-#headMain {
-    z-index: 20;
-    position: absolute;
-    top: 15%;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: #F3F7F6;
-    text-align: left;
-}
-
-#headMain h1 {
-    font-size: 8em;
-}
-
-#headMain #headSecondRow {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: start;
-}
-
-#headMain h2 {
-    font-size: 12em;
-    color: #45B5E8;
-    font-family: fantasy;
-}
-
-#headMain h6 {
-    font-size: 4em;
-    margin-left: 5%;
-    position: relative;
-    bottom: 0.5em;
-}
-
-#headMain #headSignup {
-    margin-top: 1em;
-    width: 10em;
-    height: 3em;
-    outline: none !important;
-    border: 2px solid #F3F7F6;
-    border-radius: 50px;
-    background-color: transparent;
-    color: #F3F7F6;
-    font-size: 1.5em;
-    font-weight: 600;
-}
-
-#headMain #headSignup:hover {
-    background-color: #F3F7F6;
-    color: #45B5E8;
-}
-
-#headMain #headSignup:active {
-    background-color: #fff;
-    color: #45B5E8;
-}
-
-@media screen and (max-width: 768px) {
-    #headImage {
-        width: auto;
-        height: 30em;
-    }
-    #headMain {
-        z-index: 20;
-        position: absolute;
-        top: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
-        color: #F3F7F6;
-        text-align: left;
-    }
-    #headMain h1 {
-        font-size: 5em;
-    }
-    #headMain h2 {
-        font-size: 5em;
-    }
-    #headMain h6 {
-        font-size: 2em;
-        bottom: 0.3em;
-    }
-}
-
 
 /* Header section */
 
 header {
     height: 3.5em;
-    /* align-items: center;
-    justify-content: center; */
     position: sticky;
     top: 0;
     z-index: 50;
@@ -138,7 +40,6 @@ header a {
     margin-left: 100%;
     margin-right: 100%; 
     width: 200%;
-
 } */
 
 header #navLinks {
@@ -160,13 +61,15 @@ header a:focus {
     text-shadow: inset 2px 2px 4px #c7cbca, inset -2px -2px 4px #ffffff;
 }
 
-header #navSignup {
+header #navSignup,
+header #navSignupMobile {
     outline: none !important;
     font-weight: bold;
     color: #45B5E8;
 }
 
-header #navSignup:hover {
+header #navSignup:hover,
+header #navSignupMobile:hover {
     font-weight: 900;
 }
 
@@ -253,7 +156,7 @@ header .navbar-toggler:active {
 
 #announcementCarousel a {
     color: black;
-    font-weight: bold;
+    font-weight: 400;
     /* Neomorph effect */
     text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
 }

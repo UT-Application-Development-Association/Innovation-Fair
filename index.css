@@ -225,8 +225,8 @@ footer {
     position:absolute;
     top:0;
     left:0;
-    width:50%;
-    height:40%;
+    width:10%;
+    height:10%;
     border:3px solid #333;
     border-right:3px solid transparent;
     border-bottom:3px solid transparent;
@@ -238,8 +238,8 @@ footer {
     position:absolute;
     bottom:0;
     right:0;
-    width:50%;
-    height:40%;
+    width:10%;
+    height:10%;
     border:3px solid #222;
     border-left:3px solid transparent;
     border-top:3px solid transparent;
@@ -328,5 +328,14 @@ footer {
     text-align: center;
     border-radius:5px;
     background-color: #fff;
+}
+
+.judge #judge-row-2 {
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+.judge #judge-row-1 {
+    margin-top: 3%;
 }
 /* judge css above */

@@ -60,7 +60,7 @@ footer {
 header .navbar-brand {
     font-weight: bold;
 }
-
+/*
 .about #carouselExampleIndicators{
     width: 45em;
     height: 30em;
@@ -90,7 +90,7 @@ header .navbar-brand {
     width: 400px;
     height: 400px;
 }
-
+*/
 header .navbar-toggler {
     border-width: 0;
     /* Neomorph effect */
@@ -108,6 +108,388 @@ header .navbar-toggler:active {
     border-radius: 50px;
     background: linear-gradient(145deg, #dbdedd, #ffffff);
     box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
+}
+
+
+.about #about-1-background{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url("images/software-3682509_1920-5.jpg") ;
+}
+.about #about-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.about #aboutTextbox {
+    height: 20em;
+    /* margin-bottom: 2em; */
+    border-width: 0;
+}
+
+.about #image-showcase {
+    border-radius: 20px;
+    width: 100%;
+    height: 25em;
+    /* change height to auto if keep using this image*/
+}
+
+.about #about-img {
+    /* width: 45em; */
+    width: 40%;
+    height: 25em;
+    margin-right: 1em;
+    border-width: 0;
+    /* border: 1px solid; */
+    /* background-color: hsla(50, 33%, 25%, .75); */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    /* Neomorph */
+    border-radius: 20px;
+    background: #F3F7F6;
+    /* modify with background image*/
+    /*box-shadow: 5px 5px 10px #cacdcc, -5px -5px 10px #ffffff;*/
+}
+
+.about #aboutTextbox {
+    /* width: 35em; */
+    width: 60%;
+    display: flex;
+    padding-top: 2em;
+    /* padding-bottom: auto; */
+    margin-left: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    /* backdrop-filter: blur(50px);
+background-color: rgba(248, 244, 244, 0.959);
+box-shadow: 3px 3px 5px 6px #ccc; */
+    /* align-content: center; */
+    background: transparent;
+}
+
+.about #aboutTextbox h2 {
+    font-size: xx-large;
+    text-align: start;
+    position: relative;    
+    color: #45B5E8 ;
+}
+
+.about #aboutTextbox p {
+    text-align: start;
+    font-size: 0.55cm;
+    word-spacing: 0.1em;
+    color:rgba(243, 247, 246, 0.973);
+    font-weight: 500;
+}
+
+.about .border{
+    margin: 0.25em 0em;
+    /*width: 13em;*/
+    width: 18em;
+    height: 0.25em;
+    background-color: #446ead;
+    background-image: linear-gradient(to right, #9b44ad,  #446ead);
+    border: none !important;
+    /*-webkit-backface-visibility: hidden;*/
+    border-radius: 10px;
+    position: relative;
+    /*right: -1.5em;*/
+}
+
+
+.about .event-theme{
+    width: 90%;
+    margin: 1.5em auto 2em auto;
+}
+
+.about .border-2{
+    margin: 0.25em 0em;
+    /*width: 13em;*/
+    width: 11em;
+    height: 0.25em;
+    background-color: #446ead;
+    background-image: linear-gradient(to right, #9b44ad,  #446ead);
+    border: none !important;
+    /*-webkit-backface-visibility: hidden;*/
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    margin: -0.5em auto auto -5.2em;
+    /*right: -1.5em;*/
+}
+
+.about .border-3{
+    margin: 0.25em 0em;
+    /*width: 13em;*/
+    width: 11em;
+    height: 0.25em;
+    background-color: #446ead;
+    background-image: linear-gradient(to right, #9b44ad,  #446ead);
+    border: none !important;
+    /*-webkit-backface-visibility: hidden;*/
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    margin: 0.5em auto auto -5.2em;
+    /*right: -1.5em;*/
+}
+
+.about .theme-header{
+    justify-content: center;
+}
+
+.about .theme-demo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 8em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about #ai-icon,
+.about #university-icon,
+.about #pandemic-icon{
+    /*
+    left: 50%;
+    transform: translate(-50%, -50%);
+    */
+left: 50%;
+transform: translate(0%, -50%);
+margin-right: auto;
+margin-left: auto;
+}
+
+.about .first-theme h3,
+.about .second-theme h3,
+.about .third-theme h3{
+    padding-top: 1em;    
+    justify-content: center;
+}
+
+.about .event-theme a{
+    text-align: start;
+    display: flex;
+    font-size: 0.3cm;
+}
+/*
+.about .first-theme p{
+    text-align: start;    
+}
+.about .second-theme p{
+    text-align: start;    
+    
+    padding-left: 13.41565em;
+    padding-right: 13.41565em;
+    
+}
+.about .third-theme p{    
+    text-align: start;
+}
+*/
+.about .first-theme{
+    width: 30%;
+    
+}
+.about .second-theme{
+    width: 30%;
+}
+.about .third-theme{
+    width: 30%;
+}
+
+.about .third-theme p,
+.about .second-theme p,
+.about .first-theme p{
+    text-align: start;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about .form-background{
+    width: 100%;
+    background-color: rgba(228, 232, 235, 0.678);
+}
+.about .forms{
+    width: 90%;
+    margin: 1.5em auto 2em auto;
+    padding-top: 2em;
+
+}
+.about .forms h2{
+    display: flex;
+}
+
+.about .border-5{
+    margin: 0.25em 0em;
+    /*width: 13em;*/
+    width: 18em;
+    height: 0.25em;
+    background-color: #446ead;
+    background-image: linear-gradient(to right, #9b44ad,  #446ead);
+    border: none !important;
+    /*-webkit-backface-visibility: hidden;*/
+    border-radius: 10px;
+}
+.about .participation-content{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+}
+.about .form-img-position{
+        /* width: 45em; */
+        width: 80%;
+        height: auto;
+        margin-right: 1em;
+        border-width: 0;
+        /* border: 1px solid; */
+        /* background-color: hsla(50, 33%, 25%, .75); */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        /* Neomorph */
+        border-radius: 20px;
+        /*background: #F3F7F6;*/
+}
+.about #form-attach-img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.about .participation-texts{
+    display: flex;
+    flex-direction: column;
+}
+.about .teams,
+.about .presentation,
+.about .zoom{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
+.about #teams-icon,
+.about #presentation-icon,
+.about #zoom-icon{
+    height: auto;
+    margin: auto;
+}
+
+.about .participation-texts h4{
+    justify-content: center;
+    margin: auto 0;
+    /*padding-left: 0.5em;*/
+}
+
+.about .teams-intro,
+.about .presentation-intro,
+.about .zoom-intro{
+    text-align: start;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    float: right;
+}
+.about .forms a{
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    font-size: 0.3cm;
+}
+.about #more-1,
+.about #more-2,
+.about #more-3{
+    display: none;
+}
+.about #read-more-1,
+.about #read-more-2,
+.about #read-more-3{
+    background: none;
+    border: none;
+    display: flex;
+    margin: 0em, 0em;
+    padding-left: 0em;
+    padding-top: 0em;
+    color: blue;
+    text-decoration:underline;
+    outline: none;
+}
+.about #read-more-1:hover{
+    color:rgb(0, 174, 255);
+}
+.about #read-more-2:hover{
+    color:rgb(0, 174, 255);
+}
+.about #read-more-3:hover{
+    color:rgb(0, 174, 255);
+}
+@media screen and (max-width: 768px) {
+    .about #about-1-backgroud,
+    .about #about-container {
+        flex-direction: column-reverse;
+       /* flex-direction: column;*/
+        justify-content: center;
+        align-items: center;
+    }
+    .about #about-img,
+    .about #aboutTextbox {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+    .about #aboutTextbox {
+        height: auto;
+        padding-top: 0em;
+    }
+    .about .theme-demo{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .about .first-theme,
+    .about .second-theme,
+    .about .third-theme{
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        padding-top: 5em;
+    }
+    .about .first-theme #university-icon{
+        justify-content: center;
+        margin: auto;
+    }
+    .about .forms,
+    .about .participation-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about .form-img-position{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+    .about .participation-texts{
+        width: 100%;
+        height: auto;
+        padding-top: 0em;
+    }
 }
 
 #announcementCarousel {

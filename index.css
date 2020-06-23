@@ -42,7 +42,7 @@ header a {
     width: 200%;
 } */
 
-header #navLinks {
+header #navList {
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -51,12 +51,12 @@ header #navLinks {
 }
 
 header .nav-item:hover {
-    color: #000;
+    color: black;
     font-weight: 600;
 }
 
 header a:focus {
-    color: #000;
+    color: black;
     /* Neomorph effect */
     text-shadow: inset 2px 2px 4px #c7cbca, inset -2px -2px 4px #ffffff;
 }
@@ -155,7 +155,7 @@ header .navbar-toggler:active {
 }
 
 #announcementCarousel a {
-    color: black;
+    color: #555555;
     font-weight: 400;
     /* Neomorph effect */
     text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;

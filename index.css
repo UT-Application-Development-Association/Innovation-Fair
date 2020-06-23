@@ -20,7 +20,8 @@ body {
 }
 
 #headImage {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 0;
     top: 0;
     filter: blur(20px);
@@ -51,7 +52,6 @@ body {
     font-size: 12em;
     color: #45B5E8;
     font-family: fantasy;
-    font-style: italic;
 }
 
 #headMain h6 {

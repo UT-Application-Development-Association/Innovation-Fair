@@ -333,9 +333,15 @@ footer {
 .judge #judge-row-2 {
     margin-bottom: 5%;
     margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .judge #judge-row-1 {
     margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 /* judge css above */

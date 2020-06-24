@@ -14,8 +14,8 @@ header {
     height: 3.5em;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    top: 0;
+    position: static;
+    /* top: 0; */
     z-index: 50;
     /* backdrop-filter: blur(50px);
     background-color: rgba(243, 247, 246, .6); */
@@ -55,22 +55,22 @@ footer {
 }
 
 .sidenav {
-    height: 30%; 
-    width: 15%; 
-    position: fixed; 
+    height: 30%;
+    width: 15%;
+    position: fixed;
     left: 8%;
     padding-top: 20px;
     border-radius: 10px;
     backdrop-filter: blur(50px);
-    background-color:rgba(248, 244, 244, 0.959);
+    background-color: rgba(248, 244, 244, 0.959);
     box-shadow: 1px 1px 3px 3px #ccc;
 }
 
-.announcement-container{
+.announcement-container {
     margin-left: 20%;
 }
 
-.announcement-section{
+.announcement-section {
     margin: 5%;
 }
 
@@ -83,8 +83,6 @@ footer {
     background-color: transparent;
 }
 
-.card-body{
+.card-body {
     text-align: left;
 }
-
-

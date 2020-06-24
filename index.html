@@ -3,213 +3,594 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
     <!-- Bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />		
-		<link rel="stylesheet" href="index.css">
-		<!-- Timeline css -->
-		<link rel="stylesheet" href="css/timeline.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="index.css">
+    <!-- Timeline css -->
+    <link rel="stylesheet" href="css/timeline.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Innovation Fair</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light" id="header">
-            <a class="navbar-brand" href="#">INNOVATION FAIR 2020</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link lang" href="#" data-key="navAbout">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link lang" href="#" data-key="navTimeline">Timeline</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link lang" href="#" data-key="navJudges">Judges</a>
-                    </li>
-                </ul>
-                <span class="navbar-text">
-                  <a href="#" id="zhBtn">中文</a> |
-                  <a href="#" id="enBtn">ENG</a>
-                </span>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Announcement section -->
-    <div id="announcement" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <p class="lang" data-key="announcement-1">Welcome to IF2020! Registration started! <a href="announcement.html">Learn more.</a></p>
-            </div>
+<!-- Head Image -->
+<div id="headImageCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/headImageCarousel1.png" class="d-block w-100" alt="INNOVATION FAIR 2020 UTADA">
         </div>
-    </div>
-
-    <!-- About section -->
-
-    <div class="about-section">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img id="about-img" src="images/QJ6516388947.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img id="about-img" src="images/Hc01d4d94c4fc47de94c05f2532770534s.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img id="about-img" src="images/utada.png" alt="Third slide">
-          </div>
+        <div class="carousel-item">
+            <img src="images/headImageCarousel2.png" class="d-block w-100" alt="INNOVATION FAIR 2020 UTADA">
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-    </div>
 
-    <div class="card mb-3">
-      <div class="card-body">
-        <h5 class="card-title">About this event</h5>
-        <p class="card-text">Innovation Fair的运作规则是让参赛者们在有限的时间内通过提供的主题进行头脑风暴，从而做出专属于自己队伍的作品以及产品。本次比赛形式是让参赛者自由组成2-5人团队，在规定的时间内进行作品创作。每个团队则需要在创作结束后统一向评审展示他们的作品或者产品原型，由评委选出表现最优团队赢得比赛。而比赛的具体形式根据比赛内容，比赛的标准形式和比赛目的而有所差别。</p>
-      </div>
-  </div>
+    </div>
 </div>
 
-
-    <!-- Timeline section -->
-    <section class="timelin-section">
-			<div class="timeline-selection">
-				<button id="timeline_btn_1" class="button">前期</button>
-				<button id="timeline_btn_2" class="button">当天</button>
-			</div>
-
-			<div class="container">
-				<section class="timeline" id="timeline1">
-					<div class="container">
-						<!-- even start -->
-						<div class="timeline-item">
-							<div class="timeline-img"></div>
-							<div class="timeline-content js--fadeInLeft">
-								<h2>Title</h2>
-								<div class="date">1 July 2020</div>
-								<p>something happened</p>
-								<a class="bnt-more" href="#">More</a>
-							</div>
-						</div>
-
-						<div class="timeline-item">
-							<div class="timeline-img"></div>
-							<div class="timeline-content timeline-card js--fadeInRight">
-								<div class="timeline-img-header">
-									<h2>Card Title</h2>
-								</div>
-								<div class="date">1 July 2020</div>
-								<p>something else happened</p>
-								<a class="bnt-more" href="#">More</a>
-							</div>
-						</div>
-						<!-- event end -->
-					</div>
-				</section>
-				
-				<section class="timeline" id="timeline2">
-					<div class="container">
-						<!-- even start -->
-						<div class="timeline-item">
-							<div class="timeline-img"></div>
-							<div class="timeline-content js--fadeInLeft">
-								<h2>Title</h2>
-								<div class="date">0:00</div>
-								<p>something happened</p>
-								<a class="bnt-more" href="#">More</a>
-							</div>
-						</div>
-				
-						<div class="timeline-item">
-							<div class="timeline-img"></div>
-							<div class="timeline-content timeline-card js--fadeInRight">
-								<div class="timeline-img-header">
-									<h2>Card Title</h2>
-								</div>
-								<div class="date">24:00</div>
-								<p>something else happened</p>
-								<a class="bnt-more" href="#">More</a>
-							</div>
-						</div>
-						<!-- event end -->
-					</div>
-				</section>
-		</section>
-
-    <!-- Judges section -->
-    <section class="fill you class">
-        <div class="container" id="fill the section id">
-            <!--Write the design for the section-->
-            Helloworld
+<!-- Header -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light" id="header">
+        <a class="navbar-brand" id="navBrand" href="#" hidden="true">INNOVATION FAIR 2020</a>
+        <a class="nav-link lang" data-key="navSignup" id="navSignupMobile" href="https://www.wjx.top/jq/82064673.aspx">SIGN
+            UP</a>
+        <button id='navToggleBtn' hidden='true' class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarItems">
+            <ul class="navbar-nav mr-auto" id="navList">
+                <li class="nav-item">
+                    <a class="nav-link lang" href="#aboutSection" data-key="navAbout">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link lang" href="#timelineSection" data-key="navTimeline">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link lang" href="#judgesSection" data-key="navJudges">Judges</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link lang" href="announcement.html" data-key="navAnnouncement">Announcement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link lang" data-key="navSignup" id="navSignup"
+                       href="https://www.wjx.top/jq/82064673.aspx">SIGN UP</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                  <a href="" id="zhBtn">中文</a> |
+                  <a href="" id="enBtn">ENG</a>
+                </span>
         </div>
-    </section>
+    </nav>
+</header>
 
-    <!-- Footer section -->
-    <section class="fill you class">
-        <div class="container" id="fill the section id">
-            <!--Write the design for the section-->
-            Helloworld
-        </div>
-		
-    </section>
-
-    <!-- Footer -->
-    <footer class="page-footer font-small fixed-bottom py-3">
-
-        <div class="row">
-            <!-- Copyright -->
-            <div class="col">
-                <div id="footer_name" class="container">UT Application Development Association
-                </div>
-            </div>
-            <div class="col">
-                <div id="footer_wechat" class="container">WeChat ID:
-                </div>
-            </div>
-            <div class="col">
-                <div id="footer_website" class="container">Web Link:
-                    <a href="https://www.google.ca/">google.ca</a>
-                </div>
-            </div>
-            <div class="col">
-                <div id="footer_email" class="container">Email:
-                    <a href="uoftada@gmail.com">uoftada@gmail.com</a>
-                </div>
+<!-- Announcement section -->
+<section id="announcement">
+    <div id="announcementCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <p class="lang" data-key="announcement-1">Welcome to IF2020! Registration started!</p>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- About section -->
+<section class="about">
+    <div class="about-section">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img id="about-img" src="images/QJ6516388947.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img id="about-img" src="images/Hc01d4d94c4fc47de94c05f2532770534s.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img id="about-img" src="images/utada.png" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="card mb-3" id="header-card">
+            <div class="card-body">
+                <h5 class="card-title">About this event</h5>
+                <p class="card-text">Innovation
+                    Fair的运作规则是让参赛者们在有限的时间内通过提供的主题进行头脑风暴，从而做出专属于自己队伍的作品以及产品。本次比赛形式是让参赛者自由组成2-5人团队，在规定的时间内进行作品创作。每个团队则需要在创作结束后统一向评审展示他们的作品或者产品原型，由评委选出表现最优团队赢得比赛。而比赛的具体形式根据比赛内容，比赛的标准形式和比赛目的而有所差别。</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Timeline section -->
+<section class="timelin-section">
+    <h2>TimeLine</h2>
+    <div class="timeline-selection">
+        <button id="timeline_btn_1" class="button">前期</button>
+        <button id="timeline_btn_2" class="button">当天</button>
+    </div>
+
+    <div class="container">
+        <section class="timeline" id="timeline1">
+            <div class="container">
+                <!-- even start -->
+                <div class="timeline-item">
+                    <div class="timeline-img"></div>
+                    <div class="timeline-content js--fadeInLeft">
+                        <h2>Sign-up</h2>
+                        <div class="date">June 28 ~ July 15</div>
+                        <p>Team Sign-up Period <br>(团队报名阶段)</p>
+                        <a class="bnt-more" href="#">More</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-img"></div>
+                    <div class="timeline-content timeline-card js--fadeInRight">
+                        <div class="timeline-img-header">
+                            <h2>Workshop</h2>
+                        </div>
+                        <div class="date">18 July</div>
+                        <p>How to present your project well? <br>(讲座：如何更好地展示你的作品)</p>
+                        <a class="bnt-more" href="#">More</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-img"></div>
+                    <div class="timeline-content timeline-card js--fadeInRight">
+                        <div class="timeline-img-header">
+                            <h2>Registration</h2>
+                        </div>
+                        <div class="date">Aug 1 ~ Aug 7</div>
+                        <p>Presentation Registration <br>(团队信息提交)</p>
+                        <a class="bnt-more" href="#">More</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-img"></div>
+                    <div class="timeline-content timeline-card js--fadeInRight">
+                        <div class="timeline-img-header">
+                            <h2>Schedule</h2>
+                        </div>
+                        <div class="date">Aug 7</div>
+                        <p>Announcement of Presentation Schedule<br>(公开项目展示时间表)</p>
+                        <a class="bnt-more" href="#">More</a>
+                    </div>
+                </div>
+                <!-- event end -->
+            </div>
+        </section>
+
+        <section class="timeline" id="timeline2">
+            <div class="container">
+                <!-- even start -->
+                <div class="timeline-item">
+                    <div class="timeline-img"></div>
+                    <div class="timeline-content timeline-card js--fadeInRight">
+                        <div class="timeline-img-header">
+                            <h2>Preliminary Presentations</h2>
+                        </div>
+                        <div class="date">9:00 am</div>
+                        <h3>初赛</h3>
+                        <p>9:00 am - 11:00 am</p>
+                        <a class="bnt-more" href="#">More</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-img"></div>
+                    <div class="timeline-content timeline-card js--fadeInRight">
+                        <div class="timeline-img-header">
+                            <h2>Partner Panel Talk</h2>
+                        </div>
+                        <div class="date">11:00 am</div>
+                        <h3>嘉宾座谈会</h3>
+                        <p>11:00 am - 11:30 am</p>
+                        <a class="bnt-more" href="#">More</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-img"></div>
+                    <div class="timeline-content timeline-card js--fadeInRight">
+                        <div class="timeline-img-header">
+                            <h2>Finalist Presentation</h2>
+                        </div>
+                        <div class="date">11:30 am</div>
+                        <h3>决赛</h3>
+                        <p>11:30 am - 12:30 am</p>
+                        <a class="bnt-more" href="#">More</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-img"></div>
+                    <div class="timeline-content timeline-card js--fadeInRight">
+                        <div class="timeline-img-header">
+                            <h2>Awards</h2>
+                        </div>
+                        <div class="date">12:40 pm</div>
+                        <h3>颁奖典礼</h3>
+                        <p>12:40 pm - 1:00 pm</p>
+                        <a class="bnt-more" href="#">More</a>
+                    </div>
+                </div>
+                <!-- event end -->
+            </div>
+        </section>
+    </div>
+</section>
+
+<!-- Judges section -->
+<section class="judge">
+    <div class="container" id="fill the section id">
+        <!--Write the design for the section-->
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs nav-justified md-tabs indigo" id="myTabJust" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="speaker-panel-tab" data-toggle="tab" href="#speaker-panel"
+                   role="tab" aria-selected="true">SPEAKERS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="judge-panel-tab" data-toggle="tab" href="#judge-panel" role="tab"
+                   aria-selected="false">JUDGES</a>
+            </li>
+        </ul>
+        <div class="tab-content card pt-5" id="myTabContentJust">
+            <div class="tab-pane fade show active" id="speaker-panel" role="tabpanel">
+                <!-- Card deck -->
+                <div class="row" id="speaker-row">
+                    <div class="col-sm-6 col-md-4" id="sp1">
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <img src="https://i.postimg.cc/VNs6dtw4/profile2.jpg" alt="Team Image"/>
+                            </div>
+                            <div class="profile-content">
+                                <h2 class="title">Brayden
+                                    <span>Designer & Developer</span>
+                                    <p>A senior web front end developer at asdsadsadasdasd. 5 years of
+                                        experience in dsad, sdaas, and dasd.</p>
+                                </h2>
+                                <ul class="social-link">
+                                    <li>
+                                        <a href="#" class="fa fa-facebook"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fa fa-google"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fa fa-twitter"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fa fa-youtube"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4" id="sp2">
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <img src="https://i.postimg.cc/XYkqj8Rp/profile3.jpg" alt="Team Image"/>
+                            </div>
+                            <div class="profile-content">
+                                <h2 class="title">Jasephine
+                                    <span>Designer & Developer</span>
+                                </h2>
+                                <ul class="social-link">
+                                    <li>
+                                        <a href="#" class="fa fa-facebook"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fa fa-google"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fa fa-twitter"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fa fa-youtube"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card deck -->
+            </div>
+            <div class="tab-pane fade" id="judge-panel" role="tabpanel">
+                <!--judge carousel wrapper-->
+                <div id="multi-item-carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#multi-item-carousel" role="button"
+                       data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#multi-item-carousel" role="button"
+                       data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!--/.Controls-->
+
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#multi-item-carousel" data-slide-to="0" class="indicator"
+                            class="active"></li>
+                        <li data-target="#multi-item-carousel" data-slide-to="1" class="indicator"></li>
+                    </ol>
+                    <!--/.Indicators-->
+
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="profile-card">
+                                        <div class="profile-img">
+                                            <img src="https://i.postimg.cc/VNs6dtw4/profile2.jpg"
+                                                 alt="Team Image"/>
+                                        </div>
+                                        <div class="profile-content">
+                                            <h2 class="title">Brayden
+                                                <span>Designer & Developer</span>
+                                            </h2>
+                                            <ul class="social-link">
+                                                <li>
+                                                    <a href="#" class="fa fa-facebook"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-google"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-twitter"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-youtube"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="profile-card">
+                                        <div class="profile-img">
+                                            <img src="https://i.postimg.cc/VNs6dtw4/profile2.jpg"
+                                                 alt="Team Image"/>
+                                        </div>
+                                        <div class="profile-content">
+                                            <h2 class="title">Brayden
+                                                <span>Designer & Developer</span>
+                                            </h2>
+                                            <ul class="social-link">
+                                                <li>
+                                                    <a href="#" class="fa fa-facebook"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-google"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-twitter"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-youtube"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="profile-card">
+                                        <div class="profile-img">
+                                            <img src="https://i.postimg.cc/VNs6dtw4/profile2.jpg"
+                                                 alt="Team Image"/>
+                                        </div>
+                                        <div class="profile-content">
+                                            <h2 class="title">Brayden
+                                                <span>Designer & Developer</span>
+                                            </h2>
+                                            <ul class="social-link">
+                                                <li>
+                                                    <a href="#" class="fa fa-facebook"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-google"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-twitter"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-youtube"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.First slide-->
+
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="profile-card">
+                                        <div class="profile-img">
+                                            <img src="https://i.postimg.cc/XYkqj8Rp/profile3.jpg"
+                                                 alt="Team Image"/>
+                                        </div>
+                                        <div class="profile-content">
+                                            <h2 class="title">Jasephine
+                                                <span>Designer & Developer</span>
+                                            </h2>
+                                            <ul class="social-link">
+                                                <li>
+                                                    <a href="#" class="fa fa-facebook"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-google"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-twitter"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-youtube"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="profile-card">
+                                        <div class="profile-img">
+                                            <img src="https://i.postimg.cc/XYkqj8Rp/profile3.jpg"
+                                                 alt="Team Image"/>
+                                        </div>
+                                        <div class="profile-content">
+                                            <h2 class="title">Jasephine
+                                                <span>Designer & Developer</span>
+                                            </h2>
+                                            <ul class="social-link">
+                                                <li>
+                                                    <a href="#" class="fa fa-facebook"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-google"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-twitter"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-youtube"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="profile-card">
+                                        <div class="profile-img">
+                                            <img src="https://i.postimg.cc/XYkqj8Rp/profile3.jpg"
+                                                 alt="Team Image"/>
+                                        </div>
+                                        <div class="profile-content">
+                                            <h2 class="title">Jasephine
+                                                <span>Designer & Developer</span>
+                                            </h2>
+                                            <ul class="social-link">
+                                                <li>
+                                                    <a href="#" class="fa fa-facebook"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-google"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-twitter"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="fa fa-youtube"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Second slide-->
+
+                    </div>
+                    <!--/.Slides-->
+                </div>
+                <!--judge carousel wrapper-->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--
+Footer: Created by Xiaoyi(Sean) Wang
+Click the association logo to go to the official website
+-->
+<!-- Footer -->
+<footer class="page-footer font-small py-3">
+    <div class="row align-items-center justify-content-center">
         <!-- Copyright -->
+        <div class="col-3">
+            <div id="footer_logo" class="container">
+                <a href="http://uoftada.com/">
+                    <img src="http://uoftada.com/img/logo-long-black.svg" class="img-fluid"
+                         alt="Logo" height="50" width="200"/></a>
+            </div>
+            <div>
+                UT Application Development Association
+            </div>
+        </div>
 
-    </footer>
-    <!-- Footer -->
+        <div class="col-4">
+            <div class="row justify-content-center">
+                <div class="col-2" id="footer_email">
+                    <a href="mailto:uoftada@gmail.com" target="_blank" class="btn btn-primary">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="col-2" id="footer_wechat">
+                    <a data-toggle="popover"
+                       data-html="true"
+                       data-content="<img src='https://i.postimg.cc/Dz0vPvM6/Screenshot-2020-06-20-at-1-31-34-AM.png'
+                        alt='WeChat QRcode' height='200' width='200'/>"
+                    >
+                        <button type="button" class="btn btn-success">
+                            <i class="fa fa-weixin" aria-hidden="true"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-    <!-- Bootstrap js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-		<!-- Timeline js -->
-		<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
-		<script src="js/timeline.js"></script>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script
+>
+<!-- Timeline js -->
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+<script src="js/timeline.js"></script>
+<!-- Language js -->
+<script src="js/lang.js"></script>
+<!-- some js -->
+<script src="js/index.js"></script>
+<script src="js/footer.js"></script>
 </body>
 
 </html>

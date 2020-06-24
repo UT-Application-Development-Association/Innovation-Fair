@@ -25,12 +25,12 @@ var dict = {
         "theme-3-1": "后疫情时代",
        // "theme-3-2": "暂无翻译",
         "form-header": "包含的形式",
-        "form-1-1": "组队：",
-       // "form-1-2": "暂无翻译",
-        "form-2-1": "展示：",
-       // "form-2-2": "暂无翻译",
-        "form-3-1": "Zoom:",
-       // "form-3-2": "暂无翻译"
+        "form-1-1": "组队",
+        "form-1-2": "在本次活动中，你可以自行组成2-5个人的队伍或独自参加。一个人进行项目的设计与开发将会是一个困难与漫长的过程，因此本次竞赛将采取组队参加的形式。可能你有想法但没有能力实现，可能你有技术但却缺乏创意，但通过组队的方式使得队员间达到能力上的互补便可获得意想不到的成功。同时，与他人组队也能锻炼合作与沟通能力，让你在今后与他人进行的项目开发更加顺利。",
+        "form-2-1": "展示",
+       "form-2-2": "一个项目的成功，不仅仅是超前的理念和高超的技术能够实现的，你同时还需要能向他人展现这个项目的优异之处。完成项目的设计与初步开发后，你与你的团队将需要向评委展示你们的作品。在展示中你可以能锻炼自己的自信，这也会是一个提升自己的表达能力与随机应变能力的机会",
+        "form-3-1": "答疑",
+       "form-3-2": "一个竞赛如果除了奖品之外你什么也无法获得，那这便是一个无意义的竞赛。在项目开发时，你与你的团队将会有机会与专业人士进行开发方面的讨论，他们也会给出针对你们项目的开发建议。同时，在展示环节结束时，专业评委将会对你们的项目进行点评与建议。通过这次竞赛，你可以获得项目开发的经验同时了解行业内的项目开发方式。"
     },
     'en': {
         "navAbout": "About",
@@ -48,12 +48,12 @@ var dict = {
         "theme-3-1": "Post-Pandemic Era",
        // "theme-3-2":"One important theme for this event is Post-Pandemic Era. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. <span id=\"more-3\">Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
         "form-header": "Participation Forms",
-        "form-1-1": "Teams:",
-       // "form-1-2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "form-2-1": "Presentation:",
-       // "form-2-2":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "form-3-1": "Zoom:",
-       // "form-3-2":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        "form-1-1": "Teams",
+        "form-1-2": "In this event, you may form a team of 2-5 members by yourself or work individually. It is difficult and painful to develop an application within a short period of time; thus, participants are allowed to form a team with others. Nobody is perfect to have everything done by himself, so collaborate with teammates is important to reach success. The Innovation Fair is a chance for you to improve your communication and collaboration skills.",
+        "form-2-1": "Presentation",
+        "form-2-2":"The success of a project is not only caused by innovative ideas or superb techniques, but you also need to let others know the excellence of your project. In the Innovation Fair, you will need to present your project to Judges after finished the prototype. In the presentation, you can enhance the ability to express your ideas and react to question from judges.",
+        "form-3-1": "Meeting",
+        "form-3-2":"It is meaningless if the only thing you can get from a contest is the reward. During the development of your project, skilled TAs will give you advice about the development process. Also, there will be industry and community representatives to rate and give suggestions about your project. It is a good way to know how to develop a project in the industry."
     }
 }
 

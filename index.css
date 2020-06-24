@@ -82,7 +82,7 @@ footer {
     background-color: rgba(255, 255, 255, .4);
     box-shadow: 0px 0px 10px gray;
     margin-top: 1em;
-    font-size:1vw;
+    font-size: 1vw;
     white-space: nowrap;
 }
 
@@ -145,28 +145,23 @@ header .navbar-toggler:active {
     height: 3em;
     width: 90%;
     text-align: center;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    /* Neomorph effect */
-    border-radius: 19px;
-    background: #F3F7F6;
-    box-shadow: 6px 6px 13px #d8dcdb, -6px -6px 13px #ffffff;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    /* Neomorph effect */
+    border-radius: 19px;
+    background: #F3F7F6;
+    box-shadow: 6px 6px 13px #d8dcdb, -6px -6px 13px #ffffff;
 }
 
 #announcementCarousel a {
     color: #555555;
-    font-weight: 400;
+    font-weight: 500;
     /* Neomorph effect */
     text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
-}
-
-#announcement .carousel-item a {
-    margin-top: 0.8em;
-    /* margin-bottom: 0.5em; */
 }
 
 

@@ -13,6 +13,7 @@ var dict = {
         "navAbout": "简介",
         "navTimeline": "时间表",
         "navJudges": "评审",
+        "navAnnouncement": "公告",
         "navSignup": "报名！",
         "announcement-1": "欢迎参加IF2020！报名已经开始啦！",
         "announcement-2": "欢迎参加IF2020！报名已经开始啦！"
@@ -21,6 +22,7 @@ var dict = {
         "navAbout": "About",
         "navTimeline": "Timeline",
         "navJudges": "Judges",
+        "navAnnouncement": "Announcement",
         "navSignup": "SIGN UP!",
         "announcement-1": "Welcome to IF2020! Registration started!",
         "announcement-2": "Welcome to IF2020! Registration started!"

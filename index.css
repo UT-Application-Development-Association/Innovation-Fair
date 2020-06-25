@@ -525,72 +525,11 @@ header .navbar-toggler:active {
     margin-bottom: 5%;
 }
 
-.judge .carousel-indicators .indicator {
-    background-color: lightblue;
-}
-
-.judge .carousel-indicators .active {
-    background-color: rgba(111, 191, 218, 0.801);
-}
-
-.judge #multi-item-carousel {
-    display: flex;
-}
-
-.judge .carousel-inner {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%;
-}
-
-.judge #speaker-row {
-    margin-bottom: 3%;
-}
-
-.judge .carousel-control-next-icon:before {
-    content: '>';
-    font-size: 65px;
-    font-weight: bold;
-    color: rgba(173, 216, 230, 0.8);
-    margin: auto;
-}
-
-.judge .carousel-control-prev-icon:before {
-    content: '<';
-    font-size: 65px;
-    font-weight: bold;
-    color: rgba(173, 216, 230, 0.8);
-    margin-left: -25px;
-}
-
-.judge .nav-link {
-    padding: 16px;
-    color: rgb(70, 139, 161);
-    font-weight: bold;
-    font-size: 20px;
-    background-color: rgba(173, 216, 230, 0.171);
-}
-
-.judge .nav-link:hover {
-    color: rgb(28, 28, 121);
-    background-color: white;
-}
-
 .judge .profile-card {
     position: relative;
     overflow: hidden;
     margin-bottom: 10px;
     box-shadow: 0px 2px 3px #222;
-}
-
-.judge #sp1 {
-    margin-left: 10%;
-    margin-right: 5%;
-}
-
-.judge #sp2 {
-    margin-left: 5%;
-    margin-right: 10%;
 }
 
 .judge .profile-card:hover .profile-img img {
@@ -605,28 +544,28 @@ header .navbar-toggler:active {
 
 .judge .profile-card .profile-content::before {
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 40%;
-    border: 3px solid #333;
-    border-right: 3px solid transparent;
-    border-bottom: 3px solid transparent;
-    transform: scale(1, 1);
+    position:absolute;
+    top:0;
+    left:0;
+    width:10%;
+    height:10%;
+    border:3px solid #333;
+    border-right:3px solid transparent;
+    border-bottom:3px solid transparent;
+    transform: scale(1,1);
     transition: all 0.50s linear;
 }
 
 .judge .profile-card .profile-content::after {
     content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 50%;
-    height: 40%;
-    border: 3px solid #222;
-    border-left: 3px solid transparent;
-    border-top: 3px solid transparent;
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:10%;
+    height:10%;
+    border:3px solid #222;
+    border-left:3px solid transparent;
+    border-top:3px solid transparent;
     transition: all 0.50s linear;
 }
 
@@ -651,7 +590,7 @@ header .navbar-toggler:active {
 }
 
 .judge .profile-card .profile-content:hover {
-    background-color: rgba(173, 216, 230, 0.603);
+    background-color: rgba(255, 127, 126, 0.5);
 }
 
 .judge .profile-card .profile-content .title {
@@ -713,5 +652,24 @@ header .navbar-toggler:active {
     background-color: #fff;
 }
 
+.judge #judge-row-2 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
 
+.judge #judge-row-1 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.judge #speaker-row {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
 /* judge css above */

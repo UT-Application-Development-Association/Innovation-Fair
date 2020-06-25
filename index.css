@@ -50,10 +50,22 @@ header #navList {
     align-items: center;
 }
 
-header .nav-item:hover {
+/* header .nav-item:hover {
     color: black;
     font-weight: 600;
-}
+} */
+
+.nav-item::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #005242;
+    transition: 0.2s;
+  }
+  .nav-item:hover::after {
+    width: 100%;
+  }
 
 header a:focus {
     color: black;
@@ -64,13 +76,13 @@ header a:focus {
 header #navSignup,
 header #navSignupMobile {
     outline: none !important;
-    font-weight: bold;
-    color: #45B5E8;
+    /* font-weight: bold; */
+    color: #05355B;
 }
 
 header #navSignup:hover,
 header #navSignupMobile:hover {
-    font-weight: 900;
+    font-weight: 500;
 }
 
 footer {
@@ -113,8 +125,8 @@ header .navbar-toggler:active {
 .about #about-1-background{
     display: flex;
     justify-content: space-around;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     margin-left: auto;
     margin-right: auto;    
     height: auto;
@@ -140,10 +152,8 @@ header .navbar-toggler:active {
 }
 
 .about #image-showcase {
-    border-radius: 20px;
     width: 100%;
-    height: 25em;
-    /* change height to auto if keep using this image*/
+    object-fit: contain;
 }
 
 .about #about-img {
@@ -187,7 +197,7 @@ header .navbar-toggler:active {
 
 .about .border{
     margin: 0.25em 0em;
-    width: 18em;
+    width: 100%;
     height: 0.25em;
     background-color: #446ead;
     background-image: linear-gradient(to right, #9b44ad,  #446ead);
@@ -314,8 +324,6 @@ header .navbar-toggler:active {
 .about .forms{
     width: 90%;
     margin: 1.5em auto 2em auto;
-    padding-top: 2em;
-
 }
 .about .forms h2{
     display: flex;
@@ -323,7 +331,7 @@ header .navbar-toggler:active {
 
 .about .border-5{
     margin: 0.25em 0em;
-    width: 18em;
+    width: 100%;
     height: 0.25em;
     background-color: #446ead;
     background-image: linear-gradient(to right, #9b44ad,  #446ead);
@@ -492,6 +500,26 @@ header .navbar-toggler:active {
         margin: auto;
     }
 }
+
+button {
+    background: none;
+    text-decoration: inherit;
+    font-family: system-ui;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+
+.button:hover {background-color: #fad2d2; color: white;}
+
+.border-gradient {
+border: 2px solid;
+border-image-slice: 1;
+border-width: 2px;
+}
+.border-gradient-purple {
+border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
+}
+
 /*----------------------------------------*/
 #announcementCarousel {
     left: 5%;
@@ -590,12 +618,12 @@ header .navbar-toggler:active {
 }
 
 .judge .profile-card .profile-content:hover {
-    background-color: rgba(255, 127, 126, 0.5);
+    background-color: rgba(29, 79, 132, 0.5);
 }
 
 .judge .profile-card .profile-content .title {
     font-size: 24px;
-    color: #333;
+    color: #ffffff;
     opacity: 0;
     letter-spacing: 2px;
     text-transform: uppercase;

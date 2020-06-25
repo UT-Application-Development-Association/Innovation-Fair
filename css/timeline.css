@@ -7,7 +7,7 @@
 .timelin-section html, body {
   overflow-x: hidden;
 }
-.timelin-section .button {
+/* .timelin-section .button {
     background-color: #008CBA;
     color: white;
     padding: 15px 32px;
@@ -22,7 +22,7 @@
 .timelin-section .button:hover{
 	background-color:orange;
   border: none;
-}
+} */
 
 
 .timelin-section body {

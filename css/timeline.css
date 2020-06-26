@@ -122,9 +122,14 @@
 .timeline-card {
   padding: 0 !important;
 }
-.timeline-card p {
-  padding: 0 20px;
+.timeline-card .pa {
+  padding: 1em 1em;
 }
+.timeline-card .pa p{
+  font-size: 1.3em;
+  margin: 0;
+}
+
 .timelin-section header p {
   color: rgba(255, 255, 255, 0.2);
   margin-bottom: 0;
@@ -140,9 +145,10 @@
   text-decoration: none;
 }
 .timeline-img-header {
-  height: 7em;
+  border-radius: 0.2em;
+  height: 9em;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 0em;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.4))
 }
 .timeline-img-header h2 {
@@ -155,10 +161,12 @@
   background: #FF4081;
   display: inline-block;
   color: #FFFFFF;
-  padding: 10px;
+  padding: 0.3em;
   position: absolute;
   top: 0;
   right: 0;
+  opacity: 0.9;
+  border-radius: 0.2em;
 }
 .timeline-item:nth-child(even) .timeline-content {
   float: right;
@@ -181,44 +189,52 @@
 }
 
 .timeline-item .timeline-img-header#sign{
-  background: url(../images/Hc01d4d94c4fc47de94c05f2532770534s.jpg);
+  background: url(../images/sign%20up.jpg);
   background-repeat: no-repeat;
-  background-size: auto
+  background-size: cover;
+  background-position: center center;
 }
 .timeline-item .timeline-img-header#workshop{
-  background: url(../images/Hc01d4d94c4fc47de94c05f2532770534s.jpg);
+  background: url(../images/workshop.jpg);
   background-repeat: no-repeat;
-  background-size: auto
+  background-size: cover;
+  background-position: center center;
 }
 .timeline-item .timeline-img-header#reg{
-  background: url(../images/Hc01d4d94c4fc47de94c05f2532770534s.jpg);
+  background: url(../images/Registration.jpg);
   background-repeat: no-repeat;
-  background-size: auto
+  background-size: cover;
+  background-position: center center;
 }
 .timeline-item .timeline-img-header#sche{
-  background: url(../images/Hc01d4d94c4fc47de94c05f2532770534s.jpg);
+  background: url(../images/schedule.jpg);
   background-repeat: no-repeat;
-  background-size: auto
+  background-size: cover;
+  background-position: center center;
 }
 .timeline-item .timeline-img-header#preliminary{
-  background: url(../images/Hc01d4d94c4fc47de94c05f2532770534s.jpg);
+  background: url(../images/perliminary.jpg);
   background-repeat: no-repeat;
-  background-size: auto
+  background-size: cover;
+  background-position: center center;
 }
 .timeline-item .timeline-img-header#talk{
-  background: url(../images/Hc01d4d94c4fc47de94c05f2532770534s.jpg);
+  background: url(../images/talk.jpg);
   background-repeat: no-repeat;
-  background-size: auto
+  background-size: cover;
+  background-position: center center;
 }
 .timeline-item .timeline-img-header#finalist{
-  background: url(../images/Hc01d4d94c4fc47de94c05f2532770534s.jpg);
+  background: url(../images/Finial.jpg);
   background-repeat: no-repeat;
-  background-size: auto
+  background-size: cover;
+  background-position: center center;
 }
 .timeline-item .timeline-img-header#awards{
-  background: url(../images/Hc01d4d94c4fc47de94c05f2532770534s.jpg);
+  background: url(../images/awards.jpg);
   background-repeat: no-repeat;
-  background-size: auto
+  background-size: cover;
+  background-position: center center;
 }
 
 

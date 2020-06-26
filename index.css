@@ -392,7 +392,7 @@ header .navbar-toggler:active {
 
 .about .teams-title,
 .about .presentation-title,
-.about .zoom-title {
+.about .meeting-title {
     flex-direction: row;
     margin-right: auto;
     text-align: left

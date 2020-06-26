@@ -709,7 +709,14 @@ border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
     flex-direction: row;
 }
 
-.judge #speaker-row {
+.judge #speaker-row-1 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.judge #speaker-row-2 {
     margin-top: 3%;
     display: flex;
     justify-content: center;

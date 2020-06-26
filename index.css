@@ -373,7 +373,7 @@ header .navbar-toggler:active {
 }
 .about .teams,
 .about .presentation,
-.about .zoom{
+.about .meeting{
     display: flex;
     flex-direction: row;
     padding-left: 2em;
@@ -381,7 +381,7 @@ header .navbar-toggler:active {
 }
 .about #teams-icon,
 .about #presentation-icon,
-.about #zoom-icon{
+.about #meeting-icon{
     height: auto;
     margin: 0.2em 1em auto 0;
 }
@@ -392,14 +392,19 @@ header .navbar-toggler:active {
 }
 .about .teams-title,
 .about .presentation-title,
+<<<<<<< HEAD
 .about .zoom-title{
+=======
+.about .meeting-title{
+    display: flex;
+>>>>>>> a3683e4cb9b36e42399a9e14d1910b0a766c5d9f
     flex-direction: row;
     margin-right:auto;
     text-align: left
 }
 .about .teams-intro,
 .about .presentation-intro,
-.about .zoom-intro{
+.about .meeting-intro{
     text-align: start;
     justify-content: center;
     margin-left: 0;
@@ -494,13 +499,13 @@ header .navbar-toggler:active {
     }
     .about .teams,
     .about .presentation,
-    .about .zoom{
+    .about .meeting{
         display: flex;
         flex-direction: column;
     }
     .about .teams-intro,
     .about .presentation-intro,
-    .about .zoom-intro{
+    .about .meeting-intro{
         margin: auto;
     }
 }

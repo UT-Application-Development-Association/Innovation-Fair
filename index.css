@@ -12,7 +12,6 @@ body {
     font-family: "Rubik", sans-serif;
 }
 
-
 p {
     line-height: 1.75em;
     color: #999;
@@ -28,23 +27,15 @@ header {
     z-index: 50;
 }
 
-/* #header {
+#header {
     background-color: #F3F7F6;
-    color: #F3F7F6;
-} */
+}
 
 header a {
     color: #211725;
     /* Neomorph effect */
     text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
 }
-
-
-/* header .nav-item {
-    margin-left: 100%;
-    margin-right: 100%; 
-    width: 200%;
-} */
 
 header #navList {
     width: 90%;
@@ -54,27 +45,23 @@ header #navList {
     align-items: center;
 }
 
-/* header .nav-item:hover {
-    color: black;
-    font-weight: 600;
-} */
-
 .nav-item::after {
     content: "";
     display: block;
     width: 0px;
     height: 2px;
-    background:#ED787A;;
+    background: #ED787A;
+    ;
     transition: 0.2s;
+}
 
-  }
-  .nav-item:hover::after {
+.nav-item:hover::after {
     width: 100%;
-  }
-
+}
 
 header a:focus {
-    color: #ED787A;;
+    color: #ED787A;
+    ;
     /* Neomorph effect */
     text-shadow: inset 2px 2px 4px #c7cbca, inset -2px -2px 4px #ffffff;
 }
@@ -105,39 +92,40 @@ footer {
     white-space: nowrap;
 }
 
-
 header .navbar-toggler {
     border-width: 0;
     /* Neomorph effect */
     border-radius: 50px;
     background: linear-gradient(145deg, #ffffff, #dbdedd);
-    /* box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff; */
+    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
 }
 
 header .navbar-toggler:focus {
     outline: none !important;
-    
 }
 
 header .navbar-toggler:active {
     /* Neomorph effect */
     border-radius: 50px;
     background: linear-gradient(145deg, #dbdedd, #ffffff);
-    /* box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff; */
+    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
 }
 
+
 /*---------------------------------About Section-----------------------------*/
-.about #about-1-background{
+
+.about #about-1-background {
     display: flex;
     justify-content: space-around;
     margin-top: 4rem;
     margin-bottom: 4rem;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
     height: auto;
-    background-image: url("images/software-3682509_1920-5.jpg") ;
+    background-image: url("images/software-3682509_1920-5.jpg");
     align-items: center;
 }
+
 .about #about-container {
     display: flex;
     justify-content: space-around;
@@ -147,9 +135,7 @@ header .navbar-toggler:active {
     margin-left: auto;
     margin-right: auto;
     height: auto;
-
 }
-
 
 .about #aboutTextbox {
     height: auto;
@@ -188,40 +174,40 @@ header .navbar-toggler:active {
 .about #aboutTextbox h2 {
     font-size: xx-large;
     text-align: start;
-    position: relative;    
-    color: #45B5E8 ;
+    position: relative;
+    color: #45B5E8;
 }
 
 .about #aboutTextbox p {
     text-align: start;
     font-size: 1.3em;
     word-spacing: 0.1em;
-    color:rgba(243, 247, 246, 0.973);
+    color: rgba(243, 247, 246, 0.973);
     font-weight: 500;
 }
 
-.about .border{
+.about .border {
     margin: 0.25em 0em;
     width: 100%;
-    height: 2px;;
+    height: 2px;
+    ;
     background-color: #446ead;
     background-image: linear-gradient(to right, #05355B, #005242);
     border: none !important;
     position: relative;
 }
 
-
-.about .event-theme{
+.about .event-theme {
     width: 90%;
     margin: 1.5em auto 2em auto;
 }
 
-.about .border-2{
+.about .border-2 {
     margin: 0.25em 0em;
     width: 11em;
     height: 0.25em;
     background-color: #446ead;
-    background-image: linear-gradient(to right, #9b44ad,  #446ead);
+    background-image: linear-gradient(to right, #9b44ad, #446ead);
     border: none !important;
     border-radius: 10px;
     position: absolute;
@@ -229,7 +215,7 @@ header .navbar-toggler:active {
     margin: -0.5em auto auto -5.2em;
 }
 
-.about .border-3{
+.about .border-3 {
     margin: 0.25em 0em;
     width: 11em;
     height: 0.25em;
@@ -242,11 +228,11 @@ header .navbar-toggler:active {
     margin: 0.5em auto auto -5.2em;
 }
 
-.about .theme-header{
+.about .theme-header {
     justify-content: center;
 }
 
-.about .theme-demo{
+.about .theme-demo {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -257,7 +243,7 @@ header .navbar-toggler:active {
 
 .about #ai-icon,
 .about #university-icon,
-.about #pandemic-icon{
+.about #pandemic-icon {
     left: 50%;
     transform: translate(0%, -50%);
     margin-right: auto;
@@ -266,25 +252,29 @@ header .navbar-toggler:active {
 
 .about .first-theme h2,
 .about .second-theme h2,
-.about .third-theme h2{
-    padding-top: 1em;    
+.about .third-theme h2 {
+    padding-top: 1em;
     justify-content: center;
 }
-.about #block-holder{
+
+.about #block-holder {
     height: 2em;
 }
+
 .about #icon-link-1,
 .about #icon-link-2,
 .about #icon-link-3,
 .about #icon-link-4,
 .about #icon-link-5,
-.about #icon-link-6{
+.about #icon-link-6 {
     display: flex;
 }
-.about .event-theme a{
+
+.about .event-theme a {
     text-align: start;
     font-size: 0.7em;
 }
+
 
 /*
 .about .first-theme p{
@@ -302,52 +292,58 @@ header .navbar-toggler:active {
 }
 */
 
-.about .first-theme{
-    width: 30%;
-    
-}
-.about .second-theme{
+.about .first-theme {
     width: 30%;
 }
-.about .third-theme{
+
+.about .second-theme {
+    width: 30%;
+}
+
+.about .third-theme {
     width: 30%;
 }
 
 .about .third-theme p,
 .about .second-theme p,
-.about .first-theme p{
+.about .first-theme p {
     text-align: start;
     justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
 }
-.about .form-background{
+
+.about .form-background {
     width: 100%;
     background-color: rgba(228, 232, 235, 0.678);
 }
-.about .forms{
+
+.about .forms {
     width: 90%;
     margin: 1.5em auto 2em auto;
 }
-.about .forms h2{
+
+.about .forms h2 {
     display: flex;
 }
 
-.about .border-5{
+.about .border-5 {
     margin: 0.25em 0em;
     width: 100%;
     height: 0.25em;
     background-color: #446ead;
-    background-image: linear-gradient(to right, #9b44ad,  #446ead);
+    background-image: linear-gradient(to right, #9b44ad, #446ead);
     border: none !important;
     border-radius: 10px;
 }
-.about .participation-content{
+
+.about .participation-content {
     display: flex;
     flex-direction: row;
     padding-top: 1em;
 }
-.about .form-img-position{
+
+.about .form-img-position {
     width: 75%;
     height: auto;
     margin-right: 0;
@@ -357,6 +353,7 @@ header .navbar-toggler:active {
     align-content: center;
     border-radius: 20px;
 }
+
 .about #form-attach-img {
     border-radius: 20px;
     width: 100%;
@@ -365,41 +362,45 @@ header .navbar-toggler:active {
     margin: auto;
 }
 
-.about .participation-texts{
+.about .participation-texts {
     display: flex;
     flex-direction: column;
     width: 130%;
     padding-left: 3em;
 }
+
 .about .teams,
 .about .presentation,
-.about .meeting{
+.about .meeting {
     display: flex;
     flex-direction: row;
     padding-left: 2em;
     padding-bottom: 0.5em;
 }
+
 .about #teams-icon,
 .about #presentation-icon,
-.about #meeting-icon{
+.about #meeting-icon {
     height: auto;
     margin: 0.2em 1em auto 0;
 }
 
-.about .participation-texts h5{
+.about .participation-texts h5 {
     justify-content: center;
     margin: 0.2em 0.5em auto 0;
 }
+
 .about .teams-title,
 .about .presentation-title,
-.about .zoom-title{
+.about .zoom-title {
     flex-direction: row;
-    margin-right:auto;
+    margin-right: auto;
     text-align: left
 }
+
 .about .teams-intro,
 .about .presentation-intro,
-.about .meeting-intro{
+.about .meeting-intro {
     text-align: start;
     justify-content: center;
     margin-left: 0;
@@ -408,20 +409,22 @@ header .navbar-toggler:active {
     float: right;
 }
 
-.about .forms a{
+.about .forms a {
     display: flex;
     text-align: start;
     flex-direction: column;
     font-size: 0.7em;
 }
+
 .about #more-1,
 .about #more-2,
-.about #more-3{
+.about #more-3 {
     display: none;
 }
+
 .about #read-more-1,
 .about #read-more-2,
-.about #read-more-3{
+.about #read-more-3 {
     background: none;
     border: none;
     display: flex;
@@ -429,18 +432,22 @@ header .navbar-toggler:active {
     padding-left: 0em;
     padding-top: 0em;
     color: blue;
-    text-decoration:underline;
+    text-decoration: underline;
     outline: none;
 }
-.about #read-more-1:hover{
-    color:rgb(0, 174, 255);
+
+.about #read-more-1:hover {
+    color: rgb(0, 174, 255);
 }
-.about #read-more-2:hover{
-    color:rgb(0, 174, 255);
+
+.about #read-more-2:hover {
+    color: rgb(0, 174, 255);
 }
-.about #read-more-3:hover{
-    color:rgb(0, 174, 255);
+
+.about #read-more-3:hover {
+    color: rgb(0, 174, 255);
 }
+
 @media screen and (max-width: 768px) {
     .about #about-1-backgroud,
     .about #about-container {
@@ -458,49 +465,49 @@ header .navbar-toggler:active {
         height: auto;
         padding-top: 0em;
     }
-    .about .theme-demo{
+    .about .theme-demo {
         display: flex;
         flex-direction: column;
         margin: auto;
     }
     .about .first-theme,
     .about .second-theme,
-    .about .third-theme{
+    .about .third-theme {
         justify-content: center;
         margin: auto;
         width: 100%;
         padding-top: 5em;
     }
-    .about .first-theme #university-icon{
+    .about .first-theme #university-icon {
         justify-content: center;
         margin: auto;
     }
     .about .forms,
-    .about .participation-content{
+    .about .participation-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .about .form-img-position{
+    .about .form-img-position {
         width: 100%;
         margin: auto;
         margin-bottom: 2em;
     }
-    .about .participation-texts{
+    .about .participation-texts {
         width: 100%;
         height: auto;
         padding-top: 0em;
     }
     .about .teams,
     .about .presentation,
-    .about .meeting{
+    .about .meeting {
         display: flex;
         flex-direction: column;
     }
     .about .teams-intro,
     .about .presentation-intro,
-    .about .meeting-intro{
+    .about .meeting-intro {
         margin: auto;
     }
 }
@@ -511,20 +518,26 @@ button {
     font-family: system-ui;
     font-size: 1rem;
     padding: 1rem 2rem;
-  }
+}
 
-.button:hover {background-color: #fad2d2; color: white;}
+.button:hover {
+    background-color: #fad2d2;
+    color: white;
+}
 
 .border-gradient {
-border: 2px solid;
-border-image-slice: 1;
-border-width: 2px;
-}
-.border-gradient-purple {
-border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
 }
 
+.border-gradient-purple {
+    border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
+}
+
+
 /*----------------------------------------*/
+
 #announcementCarousel {
     left: 5%;
     height: 3em;
@@ -545,7 +558,6 @@ border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
 #announcementCarousel a {
     font-weight: 500;
 }
-
 
 .grounded-radiants {
     height: 3em;
@@ -587,28 +599,28 @@ border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
 
 .judge .profile-card .profile-content::before {
     content: "";
-    position:absolute;
-    top:0;
-    left:0;
-    width:10%;
-    height:10%;
-    border:3px solid #333;
-    border-right:3px solid transparent;
-    border-bottom:3px solid transparent;
-    transform: scale(1,1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    border: 3px solid #333;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transform: scale(1, 1);
     transition: all 0.50s linear;
 }
 
 .judge .profile-card .profile-content::after {
     content: "";
-    position:absolute;
-    bottom:0;
-    right:0;
-    width:10%;
-    height:10%;
-    border:3px solid #222;
-    border-left:3px solid transparent;
-    border-top:3px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    height: 10%;
+    border: 3px solid #222;
+    border-left: 3px solid transparent;
+    border-top: 3px solid transparent;
     transition: all 0.50s linear;
 }
 
@@ -715,6 +727,6 @@ border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
     justify-content: center;
     flex-direction: row;
 }
+
+
 /* judge css above */
-
-

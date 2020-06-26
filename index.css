@@ -9,10 +9,14 @@ body {
     justify-content: center;
     align-items: center;
     outline: none !important;
+    font-family: "Rubik", sans-serif;
 }
 
 
-/* Head Image section */
+p {
+    line-height: 1.75em;
+    color: #999;
+}
 
 
 /* Header section */
@@ -24,10 +28,10 @@ header {
     z-index: 50;
 }
 
-#header {
+/* #header {
     background-color: #F3F7F6;
     color: #F3F7F6;
-}
+} */
 
 header a {
     color: #211725;
@@ -60,15 +64,17 @@ header #navList {
     display: block;
     width: 0px;
     height: 2px;
-    background: #005242;
+    background:#ED787A;;
     transition: 0.2s;
+
   }
   .nav-item:hover::after {
     width: 100%;
   }
 
+
 header a:focus {
-    color: black;
+    color: #ED787A;;
     /* Neomorph effect */
     text-shadow: inset 2px 2px 4px #c7cbca, inset -2px -2px 4px #ffffff;
 }
@@ -83,6 +89,7 @@ header #navSignupMobile {
 header #navSignup:hover,
 header #navSignupMobile:hover {
     font-weight: 500;
+    color: #ED787A;
 }
 
 footer {
@@ -98,27 +105,25 @@ footer {
     white-space: nowrap;
 }
 
-header .navbar-brand {
-    font-weight: bold;
-}
 
 header .navbar-toggler {
     border-width: 0;
     /* Neomorph effect */
     border-radius: 50px;
     background: linear-gradient(145deg, #ffffff, #dbdedd);
-    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
+    /* box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff; */
 }
 
 header .navbar-toggler:focus {
     outline: none !important;
+    
 }
 
 header .navbar-toggler:active {
     /* Neomorph effect */
     border-radius: 50px;
     background: linear-gradient(145deg, #dbdedd, #ffffff);
-    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
+    /* box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff; */
 }
 
 /*---------------------------------About Section-----------------------------*/
@@ -198,11 +203,10 @@ header .navbar-toggler:active {
 .about .border{
     margin: 0.25em 0em;
     width: 100%;
-    height: 0.25em;
+    height: 2px;;
     background-color: #446ead;
-    background-image: linear-gradient(to right, #9b44ad,  #446ead);
+    background-image: linear-gradient(to right, #05355B, #005242);
     border: none !important;
-    border-radius: 10px;
     position: relative;
 }
 
@@ -230,7 +234,7 @@ header .navbar-toggler:active {
     width: 11em;
     height: 0.25em;
     background-color: #446ead;
-    background-image: linear-gradient(to right, #9b44ad,  #446ead);
+    background-image: linear-gradient(to right, #05355B, #005242, #ED787A, #dd6279);
     border: none !important;
     border-radius: 10px;
     position: absolute;
@@ -388,10 +392,10 @@ header .navbar-toggler:active {
 }
 .about .teams-title,
 .about .presentation-title,
-.about .meeting-title{
-    display: flex;
+.about .zoom-title{
     flex-direction: row;
     margin-right:auto;
+    text-align: left
 }
 .about .teams-intro,
 .about .presentation-intro,
@@ -539,10 +543,21 @@ border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
 }
 
 #announcementCarousel a {
-    color: #555555;
     font-weight: 500;
-    /* Neomorph effect */
-    text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
+}
+
+
+.grounded-radiants {
+    height: 3em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    flex-direction: row;
+    border: double 2px transparent;
+    border-radius: 16px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top, #F0BA59, #ED787A, #dd6279);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 
 
@@ -701,3 +716,5 @@ border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
     flex-direction: row;
 }
 /* judge css above */
+
+

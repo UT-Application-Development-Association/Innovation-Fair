@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="index.css" />
     <!-- Timeline css -->
     <link rel="stylesheet" href="css/timeline.css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700"
       rel="stylesheet"
@@ -91,8 +92,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="navbar-nav mr-auto" id="navList">
-            <li class="nav-item">
-              <a class="nav-link lang" href="#aboutSection" data-key="navAbout"
+            <li class="nav-item" style="border-image-source: linear-gradient(to top, #743ad5, #d53a9d);">
+              <a class="nav-link lang" href="#aboutSection" 
+              data-key="navAbout" 
+              style="font-weight: 500;"
                 >About</a
               >
             </li>
@@ -101,6 +104,7 @@
                 class="nav-link lang"
                 href="#timelineSection"
                 data-key="navTimeline"
+                style="font-weight: 500;"
                 >Timeline</a
               >
             </li>
@@ -109,6 +113,7 @@
                 class="nav-link lang"
                 href="#judgesSection"
                 data-key="navJudges"
+                style="font-weight: 500;"
                 >Judges</a
               >
             </li>
@@ -117,15 +122,20 @@
                 class="nav-link lang"
                 href="announcement.html"
                 data-key="navAnnouncement"
+                style="font-weight: 500;"
                 >Announcement</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item" style="border: 2px solid;
+            border-width: 2px;
+            border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
+            ">
               <a
                 class="nav-link lang"
                 data-key="navSignup"
                 id="navSignup"
                 href="https://www.wjx.top/jq/82064673.aspx"
+                style="font-weight: 500;"
                 >SIGN UP</a
               >
             </li>
@@ -145,13 +155,25 @@
         class="carousel slide"
         data-ride="carousel"
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div class="carousel-inner grounded-radiants ">
+          <div class="carousel-item active p-1">
             <a
               class="lang"
               data-key="announcement-1"
               href="announcement.html#announcement1"
-              >Welcome to IF2020! Registration started!</a
+              style="
+              color: #ed787a; font-size: 1.3rem;"
+              >Welcome to IF2020!</a
+            >
+          </div>
+          <div class="carousel-item p-1">
+            <a
+              class="lang"
+              data-key="announcement-1"
+              href="announcement.html#announcement1"
+              style="
+              color: #ed787a; font-size: 1.3rem;"
+              >Register NOW!</a
             >
           </div>
         </div>
@@ -196,7 +218,7 @@
                 id="about-intro-1"
                 class="lang"
                 data-key="about-intro-1"
-                style="font-size: 2.5rem; font-weight: 500; color: #05355b;"
+                style="font-size: 1.5rem; font-weight: 500; color: #05355b;"
               >
                 About this event
               </div>
@@ -227,12 +249,14 @@
           <div
             class="lang"
             data-key="theme-header"
-            style="font-size: 2.5rem; font-weight: 500; color: #05355b;"
+            style="font-size: 2rem; font-weight: 500; 
+            background: -webkit-linear-gradient(#F0BA59, #ED787A, #dd6279);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;"
           >
-          2020 Themes
+          2020 THEMES
           </div>
-
-          <div class="border-3"></div>
         </div>
         <div class="container" style="
         padding: 1rem;
@@ -321,11 +345,16 @@
         <div class="participation-texts">
           <div class="teams">
             <div class="teams-title">
-              <img
-                id="teams-icon"
-                src="images/team.png"
-              />
               <h5 class="lang" data-key="form-1-1">Teams</h5>
+              <div class="justify-content-left">
+                <img
+                id="teams-icon"
+                src="/images/team-icon.png"
+                style="height: 80px;"
+                />
+              </div>
+              
+              
             </div>
             <div class="teams-intro">
               <p class="lang" data-key="form-1-2">
@@ -342,11 +371,15 @@
           </div>
           <div class="presentation">
             <div class="presentation-title">
-              <img
-                id="presentation-icon"
-                src="images/presentation.png"
-              />
               <h5 class="lang" data-key="form-2-1">Presentation</h5>
+              <div class="justify-content-left">
+                <img
+                id="teams-icon"
+                src="/images/present-icon.png"
+                style="height: 80px;"
+                />
+              </div>
+              
             </div>
             <div class="presentation-intro">
               <p class="lang" data-key="form-2-2">
@@ -360,25 +393,31 @@
               </p>
             </div>
           </div>
-          <div class="meeting">
-            <div class="meeting-title">
-              <img
-                id="meeting-icon"
-                src="images/meeting.png"
-              />
+
+          
+          <div class="zoom">
+            <div class="zoom-title">
               <h5 class="lang" data-key="form-3-1">Meeting</h5>
+              <div class="justify-content-left">
+                <img
+
+                src="/images/meeting-icon.png"
+                style="height: 80px;"
+              />
+              </div>
             </div>
             <div class="meeting-intro">
-              <p class="lang" data-key="form-3-2">
-                It is meaningless if the only thing you can get from a
-                contest is the reward. During the development of your
-                project, skilled TAs will give you advice about the
-                development process. Also, there will be industry and
-                community representatives to rate and give suggestions about
-                your project. It is a good way to know how to develop a
-                project in the industry.
-              </p>
-            </div>
+                <p class="lang" data-key="form-3-2">
+                  It is meaningless if the only thing you can get from a
+                  contest is the reward. During the development of your
+                  project, skilled TAs will give you advice about the
+                  development process. Also, there will be industry and
+                  community representatives to rate and give suggestions about
+                  your project. It is a good way to know how to develop a
+                  project in the industry.
+                </p>
+              </div>
+            
           </div>
         </div>
       </div>
@@ -386,6 +425,10 @@
   </div>
   <script src="js/about-readmore.js"></script>
 </section>
+
+
+<!-- /services -->
+
 
 
     <!-- Timeline section -->

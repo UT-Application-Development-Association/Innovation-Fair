@@ -721,7 +721,14 @@ button {
     flex-direction: row;
 }
 
-.judge #speaker-row {
+.judge #speaker-row-1 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.judge #speaker-row-2 {
     margin-top: 3%;
     display: flex;
     justify-content: center;

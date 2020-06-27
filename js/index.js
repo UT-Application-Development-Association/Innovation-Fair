@@ -37,9 +37,9 @@ window.onscroll = () => {
 
     // header box shadow
     if (window.scrollY >= (document.querySelector('#headImageCarousel').offsetHeight) * 1.1){
-        document.querySelector('header').style.boxShadow = "0 5px 2px -2px rgba(216,220,219,0.4)";
+        document.querySelector('#header').style.boxShadow = "0 5px 2px -2px rgba(216,220,219,0.4)";
     } else {
-        document.querySelector('header').style.boxShadow = "none";
+        document.querySelector('#header').style.boxShadow = "none";
     }
 }
 

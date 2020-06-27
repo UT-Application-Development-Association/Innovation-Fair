@@ -79,19 +79,6 @@ header #navSignupMobile:hover {
     color: #ED787A;
 }
 
-footer {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    backdrop-filter: blur(50px);
-    background-color: rgba(255, 255, 255, .4);
-    box-shadow: 0px 0px 10px gray;
-    margin-top: 1em;
-    font-size: 1vw;
-    white-space: nowrap;
-}
-
 header .navbar-toggler {
     border-width: 0;
     /* Neomorph effect */
@@ -109,6 +96,43 @@ header .navbar-toggler:active {
     border-radius: 50px;
     background: linear-gradient(145deg, #dbdedd, #ffffff);
     box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
+}
+
+
+/* -------------- announcement -------------- */
+
+#announcementCarousel {
+    left: 5%;
+    height: 3em;
+    width: 90%;
+    text-align: center;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* Neomorph effect */
+    /* border-radius: 19px;
+    background: #F3F7F6;
+    box-shadow: 6px 6px 13px #d8dcdb, -6px -6px 13px #ffffff; */
+}
+
+#announcementCarousel a {
+    font-weight: 500;
+}
+
+.grounded-radiants {
+    height: 3em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    flex-direction: row;
+    border: double 2px transparent;
+    border-radius: 16px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top, #F0BA59, #ED787A, #dd6279);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 
 
@@ -184,6 +208,12 @@ header .navbar-toggler:active {
     word-spacing: 0.1em;
     color: rgba(243, 247, 246, 0.973);
     font-weight: 500;
+}
+
+.about-text p {
+    text-align: start;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .about .border {
@@ -274,23 +304,6 @@ header .navbar-toggler:active {
     text-align: start;
     font-size: 0.7em;
 }
-
-
-/*
-.about .first-theme p{
-    text-align: start;    
-}
-.about .second-theme p{
-    text-align: start;    
-    
-    padding-left: 13.41565em;
-    padding-right: 13.41565em;
-    
-}
-.about .third-theme p{    
-    text-align: start;
-}
-*/
 
 .about .first-theme {
     width: 30%;
@@ -538,40 +551,6 @@ button {
 
 /*----------------------------------------*/
 
-#announcementCarousel {
-    left: 5%;
-    height: 3em;
-    width: 90%;
-    text-align: center;
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    /* Neomorph effect */
-    border-radius: 19px;
-    background: #F3F7F6;
-    box-shadow: 6px 6px 13px #d8dcdb, -6px -6px 13px #ffffff;
-}
-
-#announcementCarousel a {
-    font-weight: 500;
-}
-
-.grounded-radiants {
-    height: 3em;
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    flex-direction: row;
-    border: double 2px transparent;
-    border-radius: 16px;
-    background-image: linear-gradient(white, white), radial-gradient(circle at top, #F0BA59, #ED787A, #dd6279);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-}
-
 
 /* judge css below */
 
@@ -737,3 +716,19 @@ button {
 
 
 /* judge css above */
+
+
+/* --------------- FOOTER --------------- */
+
+footer {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, .4);
+    box-shadow: 0px 0px 10px gray;
+    margin-top: 1em;
+    font-size: 1vw;
+    white-space: nowrap;
+}

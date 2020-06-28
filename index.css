@@ -51,7 +51,6 @@ header #navList {
     width: 0px;
     height: 2px;
     background: #ED787A;
-    ;
     transition: 0.2s;
 }
 
@@ -61,7 +60,6 @@ header #navList {
 
 header a:focus {
     color: #ED787A;
-    ;
     /* Neomorph effect */
     text-shadow: inset 2px 2px 4px #c7cbca, inset -2px -2px 4px #ffffff;
 }
@@ -305,15 +303,9 @@ header .navbar-toggler:active {
     font-size: 0.7em;
 }
 
-.about .first-theme {
-    width: 30%;
-}
-
-.about .second-theme {
-    width: 30%;
-}
-
-.about .third-theme {
+.about .first-theme,
+.second-theme,
+.third-theme {
     width: 30%;
 }
 
@@ -408,7 +400,7 @@ header .navbar-toggler:active {
 .about .meeting-title {
     flex-direction: row;
     margin-right: auto;
-    text-align: left
+    text-align: left;
 }
 
 .about .teams-intro,
@@ -721,13 +713,13 @@ button {
 /* --------------- FOOTER --------------- */
 
 footer {
-    width: 100%;
+    width: 110%;
     align-items: center;
     justify-content: center;
     position: sticky;
     backdrop-filter: blur(50px);
     background-color: rgba(255, 255, 255, .4);
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: inset 0px 0px 10px lightgray;
     margin-top: 1em;
     font-size: 1vw;
     white-space: nowrap;

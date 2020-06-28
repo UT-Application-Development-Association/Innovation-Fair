@@ -164,7 +164,7 @@ header .navbar-toggler:active {
     border-width: 0;
 }
 
-.about #image-showcase {
+.about .image-showcase {
     width: 100%;
     object-fit: contain;
 }

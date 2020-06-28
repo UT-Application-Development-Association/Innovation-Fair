@@ -342,7 +342,37 @@ header .navbar-toggler:active {
     border-radius: 10px;
 }
 
-.about .participation-content {
+.about .participation-main {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 5%;
+    margin-left: 5%; */
+    width: 100%;
+}
+
+.about .participation-item {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1em;
+}
+
+.about .participation-title {
+    width: 18%;
+    margin-left: 7%;
+    text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
+}
+
+.about .participation-text {
+    width: 70%;
+    margin-right: 5%;
+}
+
+
+/* .about .participation-content {
     display: flex;
     flex-direction: row;
     padding-top: 1em;
@@ -365,7 +395,7 @@ header .navbar-toggler:active {
     height: auto;
     align-items: flex-start;
     margin: auto;
-}
+}  
 
 .about .participation-texts {
     display: flex;
@@ -383,9 +413,7 @@ header .navbar-toggler:active {
     padding-bottom: 0.5em;
 }
 
-.about #teams-icon,
-.about #presentation-icon,
-.about #meeting-icon {
+.about .participation-icon {
     height: auto;
     margin: 0.2em 1em auto 0;
 }
@@ -412,7 +440,7 @@ header .navbar-toggler:active {
     margin-right: 0;
     width: 70%;
     float: right;
-}
+} */
 
 .about .forms a {
     display: flex;
@@ -487,33 +515,19 @@ header .navbar-toggler:active {
         justify-content: center;
         margin: auto;
     }
-    .about .forms,
-    .about .participation-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .about .form-img-position {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 2em;
-    }
-    .about .participation-texts {
-        width: 100%;
-        height: auto;
-        padding-top: 0em;
-    }
-    .about .teams,
-    .about .presentation,
-    .about .meeting {
-        display: flex;
+    /* Participation Forms */
+    .about .participation-item {
         flex-direction: column;
     }
-    .about .teams-intro,
-    .about .presentation-intro,
-    .about .meeting-intro {
-        margin: auto;
+    .about .participation-title {
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+    .about .participation-text {
+        width: 100%;
+        text-align: start;
     }
 }
 

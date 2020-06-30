@@ -649,6 +649,13 @@ button {
     flex-direction: row;
 }
 
+.judge #judge-row-3 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 
 /* judge css above */
 

@@ -374,13 +374,14 @@ header .navbar-toggler:active {
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 1em;
+    justify-content: space-between;
 }
 
-.about .participation-title {
+/* .about .participation-title {
     width: 18%;
     margin-left: 7%;
     text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
-}
+} */
 
 .about .participation-text {
     width: 70%;

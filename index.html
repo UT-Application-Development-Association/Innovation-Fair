@@ -9,6 +9,7 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <!-- Timeline css -->
     <link rel="stylesheet" href="css/timeline.css" />
 
@@ -32,12 +33,12 @@
         </div>
     </div>
 
-    <!-- Header -->
-    <header>
+    <!-- nav -->
+    <div>
         <nav class="navbar navbar-expand-lg navbar-light" id="header">
             <a class="navbar-brand ml-4" id="navBrand" href="#" hidden="true">
-                <img id="image-showcase" src="images/iflogo2.png" alt="Event-Image" style="height: 40px;" /></a>
-            <a class="nav-link lang" data-key="navSignup" id="navSignupMobile" href="https://www.wjx.top/jq/82064673.aspx">SIGN UP</a
+                <img class="image-showcase" src="images/iflogo2.png" alt="Event-Image" style="height: 40px;" /></a>
+            <a class="nav-link lang" data-key="navSignup" id="navSignupMobile"  href="https://www.wjx.top/jq/82064673.aspx">SIGN UP</a
         >
         <button
           id="navToggleBtn"
@@ -88,16 +89,13 @@
                 >Announcement</a
               >
             </li>
-            <li class="nav-item" style="border: 2px solid;
-            border-width: 2px;
-            border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
-            ">
+            <li class="nav-item" >
               <a
                 class="nav-link lang"
                 data-key="navSignup"
                 id="navSignup"
                 href="https://www.wjx.top/jq/82064673.aspx"
-                style="font-weight: 500;"
+                style="font-weight: bold;"
                 >SIGN UP</a
               >
             </li>
@@ -108,10 +106,10 @@
             </span>
             </div>
         </nav>
-    </header>
+      </div>
 
     <!-- Announcement section -->
-    <section id="announcement">
+    <section class="p-0" id="announcement">
         <div id="announcementCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner grounded-radiants ">
                 <div class="carousel-item active p-1">
@@ -127,14 +125,14 @@
     </section>
 
     <!-- About section -->
-    <section class="about mt-5" id="aboutSection">
+    <section class="about pt-3" id="aboutSection">
         <div class="row align-items-center p-5 ml-5">
             <div class="col-md-5">
                 <div class="row align-items-center">
-                    <img id="image-showcase" src="images/iflogo2.png" alt="Event-Image" />
+                    <img class="image-showcase" src="images/iflogo2.png" alt="Event-Image" />
                 </div>
                 <div class="row align-items-center">
-                    <img id="image-showcase" src="images/iflogo2.png" alt="Event-Image" />
+                    <img class="image-showcase" src="images/iflogo2.png" alt="Event-Image" />
                 </div>
             </div>
             <div class="col-md-7">
@@ -156,7 +154,7 @@
                             <div class="border"></div>
                         </div>
 
-                        <div class="about-text">
+                        <div class="about-text mt-3">
                             <p class="lang" data-key="about-intro-2">
                                 UTADA Innovation Fair 2020 is a computer programming(coding)-based application design competition. There are three topics of this event: Artificial Intelligence (AI), University Life, and Post-Epidemic Era. Participants will brainstorm through the provided
                                 themes and create designs and applications within a limited time. Students with creativity and interest in computer programming will have an opportunity to communicate with elites from various industries and to showcase
@@ -168,69 +166,53 @@
             </div>
         </div>
 
-        <div class="event-theme">
-            <div class="theme-header">
-                <div class="lang" data-key="theme-header" style="font-size: 2rem; font-weight: 500; 
-            background: -webkit-linear-gradient(#F0BA59, #ED787A, #dd6279);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-transform: uppercase;">
-                    2020 THEMES
-                </div>
-            </div>
-            <div class="container" style="
-        padding: 1rem;
-        border-width: 3px;
-        border-style: solid;
-        border-image: 
-          linear-gradient(
-            to bottom, 
-            #053558, 
-            #005242,
-            rgba(0, 0, 0, 0)
-          ) 1 100%;">
-                <div class="theme-demo">
-                    <div class="first-theme">
-                        <img id="ai-icon" src="https://img.icons8.com/cotton/100/000000/artificial-intelligence.png" />
-                        <h2 class="lang" data-key="theme-1-1">Artificial Intelligence</h2>
-                    </div>
-                    <div class="second-theme">
-                        <img id="university-icon" src="https://img.icons8.com/pastel-glyph/100/000000/university-campus.png" />
-                        <h2 class="lang" data-key="theme-2-1">University-Life</h2>
-                    </div>
-                    <div class="third-theme">
-                        <img id="pandemic-icon" src="https://img.icons8.com/color/100/000000/coronavirus.png" />
-                        <h2 class="lang" data-key="theme-3-1">Post-Pandemic Era</h2>
-                    </div>
-                </div>
-            </div>
 
 
-            <div id="block-holder"></div>
-            <div id="icon-link-1">
-                <a class="icon-reference" href="https://icons8.com/icon/97384/artificial-intelligence">(Artificial Intelligence icon by Icons8)</a
-          >
-        </div>
-        <div id="icon-link-2">
-          <a
-            class="icon-reference"
-            href="https://icons8.com/icon/14822/coronavirus"
-            >(Coronavirus icon by Icons8)</a
-          >
-        </div>
-        <div id="icon-link-3">
-          <a
-            class="icon-reference"
-            href="https://icons8.com/icon/111497/university-campus"
-            >(University Campus icon by Icons8)</a
-          >
-        </div>
+            
       </div>
     </section> 
 
-<section class="about mt-5">
-  <div class="form-background">
-    <div class="mt-8 p-5">
+<!-- Theme -->
+
+<section class="about pt-8 bg-light">
+  <div class="event-theme w-100 text-center">
+    <div class="">
+        <div class="lang" data-key="theme-header" style="font-size: 3rem;
+    background: -webkit-linear-gradient(#F0BA59, #ED787A, #dd6279);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;">
+            2020 THEMES
+        </div>
+    </div>
+    <div class="container mt-3" >
+      <div class="theme-demo row">
+          <div class="first-theme col-3">
+            <div class="module-border-wrap" style="height: 200px;"><img class="module" src="./images/theme1.png"/>
+             
+              </div>
+              <h3 class="lang mt-3" data-key="theme-1-1">Artificial Intelligence</h3>
+          </div>
+          <div class="second-theme col-3">
+            <div class="module-border-wrap" style="height: 200px;"><img class="module" src="./images/theme2.png"/>
+             
+            </div>
+              <h3 class="lang mt-3" data-key="theme-2-1">University-Life</h3>
+          </div>
+          <div class="third-theme col-3">
+            <div class="module-border-wrap" style="height: 200px;"><img class="module" src="./images/theme3.png"/>
+             
+            </div>
+              <h3 class="lang mt-3" data-key="theme-3-1">Post-Pandemic Era</h3>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container text-center">
+    <div class="">
       <div
         class="lang"
         data-key="form-header"
@@ -239,83 +221,89 @@
         Participation Forms
       </div>
       <div class="border-5"></div>
-      <div class="participation-content">
-        <div class="participation-texts">
-          <div class="teams">
-            <div class="teams-title">
-              <h5 class="lang" data-key="form-1-1">Teams</h5>
-              <div class="justify-content-left">
-                <img
-                id="teams-icon"
-                src="images/team-icon.png"
-                style="height: 80px;"
-                />
-              </div>
-              
-              
-            </div>
-            <div class="teams-intro">
-              <p class="lang" data-key="form-1-2">
-                In this event, you may form a group of 2-5 members by
-                yourself or work individually. It is difficult and painful
-                to develop an application within a short period of time;
-                thus, participants are allowed to form a team with others.
-                Nobody is perfect to have everything done by himself, so
-                collaborate with teammates is important to reach success.
-                The Innovation Fair is a chance for you to improve your
-                communication and collaboration skills.
-              </p>
-            </div>
+
+      <div class="participation-main">
+        <!-- first row -->
+        <div class="participation-item">
+          <div class="participation-title justify-content-center">
+            <h5 class="lang" data-key="form-1-1" 
+            style="
+            color: #ed787a;
+            font-weight: bold;"
+            >
+              Teams
+            </h5>
+            <div class="justify-content-left">
+              <img
+              class="participation-icon"
+              src="images/team-icon.png"
+              style="height: 80px;"
+              />
+            </div>   
           </div>
-          <div class="presentation">
-            <div class="presentation-title">
-              <h5 class="lang" data-key="form-2-1">Presentation</h5>
-              <div class="justify-content-left">
-                <img
-                id="teams-icon"
-                src="images/present-icon.png"
-                style="height: 80px;"
-                />
-              </div>
-              
-            </div>
-            <div class="presentation-intro">
-              <p class="lang" data-key="form-2-2">
-                The success of a project is not only caused by innovative
+          <div class="participation-text">
+            <p class="lang" data-key="form-1-2">
+              In this event, you may form a group of 2-5 members by
+              yourself or work individually. It is difficult and painful
+              to develop an application within a short period of time;
+              thus, participants are allowed to form a team with others.
+              Nobody is perfect to have everything done by himself, so
+              collaborate with teammates is important to reach success.
+              The Innovation Fair is a chance for you to improve your
+              communication and collaboration skills.
+            </p>
+          </div>
+        </div>
+        <!-- second row -->
+        <div class="participation-item">
+          <div class="participation-title">
+            <h5 class="lang" data-key="form-2-1" style="
+            color: #ed787a;
+            font-weight: bold;">Presentation</h5>
+            <div class="justify-content-left">
+              <img
+              class="participation-icon"
+              src="images/presentation-icon.png"
+              style="height: 80px;"
+              />
+            </div>   
+          </div>
+          <div class="participation-text">
+            <p class="lang" data-key="form-2-2">
+              The success of a project is not only caused by innovative
                 ideas or superb techniques, but you also need to let others
                 know the excellence of your project. In the Innovation Fair,
                 you will need to present your project to Judges after
                 finished the prototype. In the presentation, you can enhance
                 the ability to express your ideas and react to question from
                 judges.
-              </p>
-            </div>
+            </p>
           </div>
-
-          
-          <div class="meeting">
-            <div class="meeting-title">
-              <h5 class="lang" data-key="form-3-1">Meeting</h5>
-              <div class="justify-content-left">
-                <img
-
-                src="images/meeting-icon.png"
-                style="height: 80px;"
+        </div>
+        <!-- third row -->
+        <div class="participation-item">
+          <div class="participation-title">
+            <h5 class="lang" data-key="form-3-1" style="
+            color: #ed787a;
+            font-weight: bold;">Meeting</h5>
+            <div class="justify-content-left">
+              <img
+              class="participation-icon"
+              src="images/meeting-icon.png"
+              style="height: 80px;"
               />
-              </div>
-            </div>
-            <div class="meeting-intro">
-                <p class="lang" data-key="form-3-2">
-                  It is meaningless if the only thing you can get from a
-                  contest is the reward. During the development of your
-                  project, skilled TAs will give you advice about the
-                  development process. Also, there will be industry and
-                  community representatives to rate and give suggestions about
-                  your project. It is a good way to know how to develop a
-                  project in the industry.
-                </p>
-              </div>
-            
+            </div>   
+          </div>
+          <div class="participation-text">
+            <p class="lang" data-key="form-3-2">
+                It is meaningless if the only thing you can get from a
+                contest is the reward. During the development of your
+                project, skilled TAs will give you advice about the
+                development process. Also, there will be industry and
+                community representatives to rate and give suggestions about
+                your project. It is a good way to know how to develop a
+                project in the industry.
+            </p>
           </div>
         </div>
       </div>
@@ -330,7 +318,7 @@
 
 
     <!-- Timeline section -->
-    <section class="timelin-section mt-5" id="timelin-section">
+    <section class="timelin-section text-center p-0" id="timelin-section">
       <h2 class="lang" data-key="timeline">TimeLine</h2>
       <div class="timeline-selection">
         <button id="timeline_btn_1" class="button border-gradient border-gradient-purple lang" data-key="beforeBtn">Pre-Fair</button>
@@ -338,8 +326,8 @@
         <button id="timeline_btn_2" class="button border-gradient border-gradient-purple lang" data-key="thedayBtn">Fair Day</button>
       </div>
 
-      <div class="container">
-        <section class="timeline" id="timeline1">
+      <div class="container mt-8">
+        <div class="timeline mt-5" id="timeline1">
           <div class="container">
             <!-- even start -->
             <div class="timeline-item">
@@ -411,7 +399,7 @@
         </div>
         <!-- event end -->
         </div>
-    </section>
+      </div>
 
     <section class="timeline" id="timeline2">
         <div class="container">
@@ -484,9 +472,9 @@
     </section>
 
     <!-- Judges section -->
-    <section class="judge" id="judgesSection">
+    <section class="judge bg-light text-center" id="judgesSection">
         <div class="container" id="speaker-row">
-            <h2 style="color: #053558;">SPEAKERS</h2>
+            <h2 >SPEAKERS</h2>
             <div class="row" id="speaker-row-1">
                 <div class="col-sm-6 col-md-3">
                     <div class="profile-card">
@@ -505,38 +493,6 @@
                   <li>
                     <a
                       href="https://www.linkedin.com/in/kejiahu/"
-                      target="_blank"
-                      class="fa fa-linkedin"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://goo.gl/maps/Ux4PDW3VfrV32jWa7"
-                      target="_blank"
-                      class="fa fa-map-marker"
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="profile-card">
-              <div class="profile-img">
-                <img src="images/xinlu.jpg" alt="Team Image" />
-              </div>
-              <div class="profile-content">
-                <h2 class="title">
-                  <b>Xinlu</b><br />
-                  <span
-                    >Senior Associate <br />Mergers & Acquisitions<br /><br />
-                    VOLARIS&trade;</span
-                  >
-                </h2>
-                <ul class="social-link">
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/xldavidgao/"
                       target="_blank"
                       class="fa fa-linkedin"
                     ></a>
@@ -588,6 +544,40 @@
           <div class="col-sm-6 col-md-3">
             <div class="profile-card">
               <div class="profile-img">
+                <img src="images/xinlu.jpg" alt="Team Image" />
+              </div>
+              <div class="profile-content">
+                <h2 class="title">
+                  <b>Xinlu</b><br />
+                  <span
+                    >Senior Associate <br />Mergers & Acquisitions<br /><br />
+                    VOLARIS&trade;</span
+                  >
+                </h2>
+                <ul class="social-link">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/xldavidgao/"
+                      target="_blank"
+                      class="fa fa-linkedin"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://goo.gl/maps/Ux4PDW3VfrV32jWa7"
+                      target="_blank"
+                      class="fa fa-map-marker"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="speaker-row-2">
+          <div class="col-sm-6 col-md-3">
+            <div class="profile-card">
+              <div class="profile-img">
                 <img src="images/jamie.jpg" alt="Team Image" />
               </div>
               <div class="profile-content">
@@ -618,26 +608,24 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row" id="speaker-row-2">
           <div class="col-sm-6 col-md-3">
             <div class="profile-card">
               <div class="profile-img">
-                <img src="" alt="Team Image" />
+                <img src="images/chris.jpg" alt="Team Image" />
               </div>
               <div class="profile-content">
                 <h2 class="title">
-                  <b>NEW_SPKR</b><br />
+                  <b>Chris</b><br />
                   <span
-                    >JOB1<br />
-                    JOB2<br /><br />
-                    COMPANY&trade; PROJECT&REG;</span
+                    >Senior Director<br />
+                    Public Affairs<br /><br />
+                    HUAWEI&trade;</span
                   >
                 </h2>
                 <ul class="social-link">
                   <li>
                     <a
-                      href="https://www.linkedin.com/in/kejiahu/"
+                      href="https://www.linkedin.com/in/cp9058069511/"
                       target="_blank"
                       class="fa fa-linkedin"
                     ></a>
@@ -656,20 +644,20 @@
           <div class="col-sm-6 col-md-3">
             <div class="profile-card">
               <div class="profile-img">
-                <img src=" " alt="Team Image" />
+                <img src="images/christine.jpg" alt="Team Image" />
               </div>
               <div class="profile-content">
                 <h2 class="title">
-                  <b>NEW_SPKR</b><br />
+                  <b>Christine</b><br />
                   <span
-                    >JOB1 <br />JOB2<br /><br />
-                    COMPANY&trade; PROJECT&reg;</span
+                    >Digital & Data transformation specialist<br /><br />
+                    Ontario Digital Service</span
                   >
                 </h2>
                 <ul class="social-link">
                   <li>
                     <a
-                      href="https://www.linkedin.com/in/xldavidgao/"
+                      href="https://www.linkedin.com/in/christine-hagyard/"
                       target="_blank"
                       class="fa fa-linkedin"
                     ></a>
@@ -688,9 +676,9 @@
         </div>
       </div>
       <br />
-      <div class="container" id="judge">
+      <div class="container mt-5" id="judge">
         <!--Write the design for the section-->
-        <h2 style="color: #053558;" >JUDGES</h2>
+        <h2 >JUDGES</h2>
         <div class="row" id="judge-row-1">
           <div class="col-sm-6 col-md-3">
             <div class="profile-card">
@@ -728,7 +716,7 @@
           <div class="col-sm-6 col-md-3">
             <div class="profile-card">
               <div class="profile-img">
-                <img src="images/shannon.png" alt="Team Image" />
+                <img src="images/shannon.jpg" alt="Team Image" />
               </div>
               <div class="profile-content">
                 <h2 class="title">
@@ -759,6 +747,125 @@
               </div>
             </div>
           </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="profile-card">
+              <div class="profile-img">
+                <img src="images/gladys.jpg" alt="Team Image" />
+              </div>
+              <div class="profile-content">
+                <h2 class="title">
+                  <b>Gladys</b><br />
+                  <span
+                    >Head of Ecosystems<br /><br />
+                    HUAWEI&trade;</span
+                  >
+                </h2>
+                <ul class="social-link">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/gladys-hong/"
+                      target="_blank"
+                      class="fa fa-linkedin"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://goo.gl/maps/Ux4PDW3VfrV32jWa7"
+                      target="_blank"
+                      class="fa fa-map-marker"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="judge-row-2">
+          <div class="col-sm-6 col-md-3">
+            <div class="profile-card">
+              <div class="profile-img">
+                <img src="images/xi.jpg" alt="Team Image" />
+              </div>
+              <div class="profile-content">
+                <h2 class="title">
+                  <b>Xi</b><br />
+                  <span
+                    >Full Stack Developer <br /><br />
+                    IBM&trade; AccessHub&copy;</span
+                  >
+                </h2>
+                <ul class="social-link">
+                  <li>
+                    <a
+                      href="https://goo.gl/maps/E5KfPyPDTmGbUPfs9"
+                      target="_blank"
+                      class="fa fa-map-marker"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="profile-card">
+              <div class="profile-img">
+                <img src="images/penny.jpeg" alt="Team Image" />
+              </div>
+              <div class="profile-content">
+                <h2 class="title">
+                  <b>Penny</b><br />
+                  <span
+                    >Business Analyst<br />
+                    UofT CS Major Alumni <br /><br />
+                    IBM&trade; AccessHub&copy;</span
+                  >
+                </h2>
+                <ul class="social-link">
+                  <li>
+                    <a
+                      href="https://goo.gl/maps/E5KfPyPDTmGbUPfs9"
+                      target="_blank"
+                      class="fa fa-map-marker"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="profile-card">
+              <div class="profile-img">
+                <img src="images/gillian.jpg" alt="Team Image" />
+              </div>
+              <div class="profile-content">
+                <h2 class="title">
+                  <b>Gillian</b><br />
+                  <span
+                    >Public Relations Manager<br /><br />
+                    HUAWEI&trade;</span
+                  >
+                </h2>
+                <ul class="social-link">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/gilliancai/"
+                      target="_blank"
+                      class="fa fa-linkedin"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://goo.gl/maps/Ux4PDW3VfrV32jWa7"
+                      target="_blank"
+                      class="fa fa-map-marker"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="judge-row-3">
           <div class="col-sm-6 col-md-3">
             <div class="profile-card">
               <div class="profile-img">
@@ -826,13 +933,11 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row" id="judge-row-2">
           <div class="col-sm-6 col-md-3">
             <div class="profile-card" style="height: 100%;">
               <div class="profile-img" style="height: 100%;">
                 <img
-                  src="images/abdul.jpeg"
+                  src="images/abdul.jpg"
                   style="height: 100%;"
                   alt="Team Image"
                 />
@@ -857,83 +962,6 @@
                   <li>
                     <a
                       href="https://goo.gl/maps/Ux4PDW3VfrV32jWa7"
-                      target="_blank"
-                      class="fa fa-map-marker"
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="profile-card">
-              <div class="profile-img">
-                <img src="images/xi.jpg" alt="Team Image" />
-              </div>
-              <div class="profile-content">
-                <h2 class="title">
-                  <b>Xi</b><br />
-                  <span
-                    >Full Stack Developer <br /><br />
-                    IBM&trade; AccessHub&copy;</span
-                  >
-                </h2>
-                <ul class="social-link">
-                  <li>
-                    <a
-                      href="https://goo.gl/maps/E5KfPyPDTmGbUPfs9"
-                      target="_blank"
-                      class="fa fa-map-marker"
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="profile-card">
-              <div class="profile-img">
-                <img src="images/penny.jpeg" alt="Team Image" />
-              </div>
-              <div class="profile-content">
-                <h2 class="title">
-                  <b>Penny</b><br />
-                  <span
-                    >Business Analyst<br />
-                    UofT CS Major Alumni <br /><br />
-                    IBM&trade; AccessHub&copy;</span
-                  >
-                </h2>
-                <ul class="social-link">
-                  <li>
-                    <a
-                      href="https://goo.gl/maps/E5KfPyPDTmGbUPfs9"
-                      target="_blank"
-                      class="fa fa-map-marker"
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="profile-card">
-              <div class="profile-img">
-                <img src="" alt="Team Image" />
-              </div>
-              <div class="profile-content">
-                <h2 class="title">
-                  <b>NEW_JUDG</b><br />
-                  <span
-                    >JOB1<br />
-                    JOB2 <br /><br />
-                    COMPANY&trade; PROJECT&copy;</span
-                  >
-                </h2>
-                <ul class="social-link">
-                  <li>
-                    <a
-                      href="https://goo.gl/maps/E5KfPyPDTmGbUPfs9"
                       target="_blank"
                       class="fa fa-map-marker"
                     ></a>

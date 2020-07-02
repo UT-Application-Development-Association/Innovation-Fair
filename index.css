@@ -51,7 +51,6 @@ header #navList {
     width: 0px;
     height: 2px;
     background: #ED787A;
-    ;
     transition: 0.2s;
 }
 
@@ -61,7 +60,6 @@ header #navList {
 
 header a:focus {
     color: #ED787A;
-    ;
     /* Neomorph effect */
     text-shadow: inset 2px 2px 4px #c7cbca, inset -2px -2px 4px #ffffff;
 }
@@ -166,7 +164,7 @@ header .navbar-toggler:active {
     border-width: 0;
 }
 
-.about #image-showcase {
+.about .image-showcase {
     width: 100%;
     object-fit: contain;
 }
@@ -211,9 +209,12 @@ header .navbar-toggler:active {
 }
 
 .about-text p {
-    text-align: start;
+    text-align: justify;
     padding-left: 1em;
     padding-right: 1em;
+    line-height: 1.75em;
+    margin: auto;
+    font-size: 1.1rem;
 }
 
 .about .border {
@@ -227,10 +228,6 @@ header .navbar-toggler:active {
     position: relative;
 }
 
-.about .event-theme {
-    width: 90%;
-    margin: 1.5em auto 2em auto;
-}
 
 .about .border-2 {
     margin: 0.25em 0em;
@@ -258,15 +255,10 @@ header .navbar-toggler:active {
     margin: 0.5em auto auto -5.2em;
 }
 
-.about .theme-header {
-    justify-content: center;
-}
-
 .about .theme-demo {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 8em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -287,6 +279,32 @@ header .navbar-toggler:active {
     justify-content: center;
 }
 
+.image-block{
+    border: 1px solid black;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.module-border-wrap {
+    max-width: 250px;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(white, white), radial-gradient(circle at top, #F0BA59, #ED787A, #dd6279);
+    border-radius: 20px;
+    padding: 3px;
+  }
+  
+  .module {
+    background: white;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    /* color is for inner text color */
+    color: white;
+    /* padding: 2rem; */
+    object-fit: fill;
+  }
+
 .about #block-holder {
     height: 2em;
 }
@@ -305,15 +323,9 @@ header .navbar-toggler:active {
     font-size: 0.7em;
 }
 
-.about .first-theme {
-    width: 30%;
-}
-
-.about .second-theme {
-    width: 30%;
-}
-
-.about .third-theme {
+.about .first-theme,
+.second-theme,
+.third-theme {
     width: 30%;
 }
 
@@ -326,10 +338,6 @@ header .navbar-toggler:active {
     margin-right: auto;
 }
 
-.about .form-background {
-    width: 100%;
-    background-color: rgba(228, 232, 235, 0.678);
-}
 
 .about .forms {
     width: 90%;
@@ -350,76 +358,33 @@ header .navbar-toggler:active {
     border-radius: 10px;
 }
 
-.about .participation-content {
+.about .participation-main {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 5%;
+    margin-left: 5%; */
+    width: 100%;
+}
+
+.about .participation-item {
     display: flex;
     flex-direction: row;
+    text-align: start;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     padding-top: 1em;
 }
 
-.about .form-img-position {
-    width: 75%;
-    height: auto;
-    margin-right: 0;
-    border-width: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    border-radius: 20px;
+.about .participation-title {
+    width: 18%;
+    margin-left: 7%;
+    text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
 }
 
-.about #form-attach-img {
-    border-radius: 20px;
-    width: 100%;
-    height: auto;
-    align-items: flex-start;
-    margin: auto;
-}
-
-.about .participation-texts {
-    display: flex;
-    flex-direction: column;
-    width: 130%;
-    padding-left: 3em;
-}
-
-.about .teams,
-.about .presentation,
-.about .meeting {
-    display: flex;
-    flex-direction: row;
-    padding-left: 2em;
-    padding-bottom: 0.5em;
-}
-
-.about #teams-icon,
-.about #presentation-icon,
-.about #meeting-icon {
-    height: auto;
-    margin: 0.2em 1em auto 0;
-}
-
-.about .participation-texts h5 {
-    justify-content: center;
-    margin: 0.2em 0.5em auto 0;
-}
-
-.about .teams-title,
-.about .presentation-title,
-.about .meeting-title {
-    flex-direction: row;
-    margin-right: auto;
-    text-align: left
-}
-
-.about .teams-intro,
-.about .presentation-intro,
-.about .meeting-intro {
-    text-align: start;
-    justify-content: center;
-    margin-left: 0;
-    margin-right: 0;
+.about .participation-text {
     width: 70%;
-    float: right;
+    margin-right: 5%;
 }
 
 .about .forms a {
@@ -495,33 +460,19 @@ header .navbar-toggler:active {
         justify-content: center;
         margin: auto;
     }
-    .about .forms,
-    .about .participation-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .about .form-img-position {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 2em;
-    }
-    .about .participation-texts {
-        width: 100%;
-        height: auto;
-        padding-top: 0em;
-    }
-    .about .teams,
-    .about .presentation,
-    .about .meeting {
-        display: flex;
+    /* Participation Forms */
+    .about .participation-item {
         flex-direction: column;
     }
-    .about .teams-intro,
-    .about .presentation-intro,
-    .about .meeting-intro {
-        margin: auto;
+    .about .participation-title {
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+    .about .participation-text {
+        width: 100%;
+        text-align: start;
     }
 }
 
@@ -714,6 +665,13 @@ button {
     flex-direction: row;
 }
 
+.judge #judge-row-3 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 
 /* judge css above */
 
@@ -721,13 +679,13 @@ button {
 /* --------------- FOOTER --------------- */
 
 footer {
-    width: 100%;
+    width: 110%;
     align-items: center;
     justify-content: center;
     position: sticky;
     backdrop-filter: blur(50px);
     background-color: rgba(255, 255, 255, .4);
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: inset 0px 0px 10px lightgray;
     margin-top: 1em;
     font-size: 1vw;
     white-space: nowrap;

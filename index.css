@@ -500,7 +500,16 @@ button {
     border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
 }
 
-
+.section-title{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #05355b;
+    letter-spacing: 0.5rem;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 80%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /*----------------------------------------*/
 
 

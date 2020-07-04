@@ -1,3 +1,719 @@
+/*  UTADA-color: #45B5E8 
+    white-color: #F3F7F6
+    black-color: #211725
+*/
+
 body {
-	text-align: center;
+    text-align: center;
+    background-color: #F3F7F6;
+    justify-content: center;
+    align-items: center;
+    outline: none !important;
+    font-family: "Rubik", sans-serif;
+}
+
+p {
+    line-height: 1.75em;
+    color: #999;
+}
+
+
+/* Header section */
+
+header {
+    height: 3.5em;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+#header {
+    background-color: #F3F7F6;
+}
+
+header a {
+    color: #211725;
+    /* Neomorph effect */
+    text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
+}
+
+header #navList {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-item::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #ED787A;
+    transition: 0.2s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+header a:focus {
+    color: #ED787A;
+    /* Neomorph effect */
+    text-shadow: inset 2px 2px 4px #c7cbca, inset -2px -2px 4px #ffffff;
+}
+
+header #navSignup,
+header #navSignupMobile {
+    outline: none !important;
+    /* font-weight: bold; */
+    color: #05355B;
+}
+
+header #navSignup:hover,
+header #navSignupMobile:hover {
+    font-weight: 500;
+    color: #ED787A;
+}
+
+header .navbar-toggler {
+    border-width: 0;
+    /* Neomorph effect */
+    border-radius: 50px;
+    background: linear-gradient(145deg, #ffffff, #dbdedd);
+    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
+}
+
+header .navbar-toggler:focus {
+    outline: none !important;
+}
+
+header .navbar-toggler:active {
+    /* Neomorph effect */
+    border-radius: 50px;
+    background: linear-gradient(145deg, #dbdedd, #ffffff);
+    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
+}
+
+
+/* -------------- announcement -------------- */
+
+#announcementCarousel {
+    left: 5%;
+    height: 3em;
+    width: 90%;
+    text-align: center;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* Neomorph effect */
+    /* border-radius: 19px;
+    background: #F3F7F6;
+    box-shadow: 6px 6px 13px #d8dcdb, -6px -6px 13px #ffffff; */
+}
+
+#announcementCarousel a {
+    font-weight: 500;
+}
+
+.grounded-radiants {
+    height: 3em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    flex-direction: row;
+    border: double 2px transparent;
+    border-radius: 16px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top, #F0BA59, #ED787A, #dd6279);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+
+/*---------------------------------About Section-----------------------------*/
+
+.about #about-1-background {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    background-image: url("images/software-3682509_1920-5.jpg");
+    align-items: center;
+}
+
+.about #about-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.about #aboutTextbox {
+    height: auto;
+    border-width: 0;
+}
+
+.about .image-showcase {
+    width: 100%;
+    object-fit: contain;
+}
+
+.about #about-img {
+    width: 40%;
+    height: 25em;
+    margin-right: 1em;
+    border-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    /* Neomorph */
+    border-radius: 20px;
+    background: #F3F7F6;
+    /* modify with background image*/
+}
+
+.about #aboutTextbox {
+    width: 60%;
+    display: flex;
+    padding-top: 2em;
+    margin-left: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background: transparent;
+}
+
+.about #aboutTextbox h2 {
+    font-size: xx-large;
+    text-align: start;
+    position: relative;
+    color: #45B5E8;
+}
+
+.about #aboutTextbox p {
+    text-align: start;
+    font-size: 1.3em;
+    word-spacing: 0.1em;
+    color: rgba(243, 247, 246, 0.973);
+    font-weight: 500;
+}
+
+.about-text p {
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.75em;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+.about .border {
+    margin: 0.25em 0em;
+    width: 100%;
+    height: 2px;
+    ;
+    background-color: #446ead;
+    background-image: linear-gradient(to right, #05355B, #005242);
+    border: none !important;
+    position: relative;
+}
+
+
+.about .border-2 {
+    margin: 0.25em 0em;
+    width: 11em;
+    height: 0.25em;
+    background-color: #446ead;
+    background-image: linear-gradient(to right, #9b44ad, #446ead);
+    border: none !important;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    margin: -0.5em auto auto -5.2em;
+}
+
+.about .border-3 {
+    margin: 0.25em 0em;
+    width: 11em;
+    height: 0.25em;
+    background-color: #446ead;
+    background-image: linear-gradient(to right, #05355B, #005242, #ED787A, #dd6279);
+    border: none !important;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    margin: 0.5em auto auto -5.2em;
+}
+
+.about .theme-demo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about #ai-icon,
+.about #university-icon,
+.about #pandemic-icon {
+    left: 50%;
+    transform: translate(0%, -50%);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about .first-theme h2,
+.about .second-theme h2,
+.about .third-theme h2 {
+    padding-top: 1em;
+    justify-content: center;
+}
+
+.image-block{
+    border: 1px solid black;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.module-border-wrap {
+    max-width: 250px;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(white, white), radial-gradient(circle at top, #F0BA59, #ED787A, #dd6279);
+    border-radius: 20px;
+    padding: 3px;
+  }
+  
+  .module {
+    background: white;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    /* color is for inner text color */
+    color: white;
+    /* padding: 2rem; */
+    object-fit: fill;
+  }
+
+  .sponsor-module-border-wrap {
+    padding: 1rem;
+    position: relative;
+    background:  radial-gradient(circle at top, #F0BA59, #ED787A, #dd6279);
+    border-radius: 23px;
+    padding: 3px;
+  }
+  
+  .sponsor-module {
+    background: white;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    /* color is for inner text color */
+    color: white;
+
+  }
+.about #block-holder {
+    height: 2em;
+}
+
+.about #icon-link-1,
+.about #icon-link-2,
+.about #icon-link-3,
+.about #icon-link-4,
+.about #icon-link-5,
+.about #icon-link-6 {
+    display: flex;
+}
+
+.about .event-theme a {
+    text-align: start;
+    font-size: 0.7em;
+}
+
+.about .first-theme,
+.second-theme,
+.third-theme {
+    width: 30%;
+}
+
+.about .third-theme p,
+.about .second-theme p,
+.about .first-theme p {
+    text-align: start;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.about .forms {
+    width: 90%;
+    margin: 1.5em auto 2em auto;
+}
+
+.about .forms h2 {
+    display: flex;
+}
+
+.about .border-5 {
+    margin: 0.25em 0em;
+    width: 100%;
+    height: 0.25em;
+    background-color: #446ead;
+    background-image: linear-gradient(to right, #9b44ad, #446ead);
+    border: none !important;
+    border-radius: 10px;
+}
+
+.about .participation-main {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 5%;
+    margin-left: 5%; */
+    width: 100%;
+}
+
+.about .participation-item {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1em;
+    justify-content: space-between;
+}
+
+/* .about .participation-title {
+    width: 18%;
+    margin-left: 7%;
+    text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
+} */
+
+.about .participation-text {
+    width: 70%;
+    margin-right: 5%;
+}
+
+.about .forms a {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    font-size: 0.7em;
+}
+
+.about #more-1,
+.about #more-2,
+.about #more-3 {
+    display: none;
+}
+
+.about #read-more-1,
+.about #read-more-2,
+.about #read-more-3 {
+    background: none;
+    border: none;
+    display: flex;
+    margin: 0em, 0em;
+    padding-left: 0em;
+    padding-top: 0em;
+    color: blue;
+    text-decoration: underline;
+    outline: none;
+}
+
+.about #read-more-1:hover {
+    color: rgb(0, 174, 255);
+}
+
+.about #read-more-2:hover {
+    color: rgb(0, 174, 255);
+}
+
+.about #read-more-3:hover {
+    color: rgb(0, 174, 255);
+}
+
+@media screen and (max-width: 768px) {
+    .about #about-1-backgroud,
+    .about #about-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .about #about-img,
+    .about #aboutTextbox {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+    .about #aboutTextbox {
+        height: auto;
+        padding-top: 0em;
+    }
+    .about .theme-demo {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .about .first-theme,
+    .about .second-theme,
+    .about .third-theme {
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        padding-top: 5em;
+    }
+    .about .first-theme #university-icon {
+        justify-content: center;
+        margin: auto;
+    }
+    /* Participation Forms */
+    .about .participation-item {
+        flex-direction: column;
+    }
+    .about .participation-title {
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+    .about .participation-text {
+        width: 100%;
+        text-align: start;
+    }
+}
+
+button {
+    background: none;
+    text-decoration: inherit;
+    font-family: system-ui;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+.button:hover {
+    background-color: #fad2d2;
+    color: white;
+}
+
+.border-gradient {
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+}
+
+.border-gradient-purple {
+    border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
+}
+
+.section-title{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #05355b;
+    letter-spacing: 0.5rem;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 80%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*----------------------------------------*/
+
+
+/* judge css below */
+
+.judge {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.judge .profile-card {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 3px #222;
+}
+
+.judge .profile-card:hover .profile-img img {
+    transform: scale(1.2);
+}
+
+.judge .profile-card .profile-img img {
+    width: 100%;
+    height: auto;
+    transition: transform 1s;
+}
+
+.judge .profile-card .profile-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    border: 3px solid #333;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transform: scale(1, 1);
+    transition: all 0.50s linear;
+}
+
+.judge .profile-card .profile-content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    height: 10%;
+    border: 3px solid #222;
+    border-left: 3px solid transparent;
+    border-top: 3px solid transparent;
+    transition: all 0.50s linear;
+}
+
+.judge .profile-card:hover .profile-content:before {
+    top: 20px;
+    left: 20px;
+}
+
+.judge .profile-card:hover .profile-content:after {
+    bottom: 20px;
+    right: 20px;
+}
+
+.judge .profile-card .profile-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50% 4%;
+    text-align: center;
+}
+
+.judge .profile-card .profile-content:hover {
+    background-color: rgba(29, 79, 132, 0.5);
+}
+
+.judge .profile-card .profile-content .title {
+    font-size: 24px;
+    color: #ffffff;
+    opacity: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transform: translateY(-100px);
+    transition: all 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.20s;
+}
+
+.judge .profile-card:hover .title {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.judge .profile-card:hover .title::after {
+    content: "";
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    border-bottom: 2px solid #222;
+}
+
+.judge .profile-card .profile-content .title>span {
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.judge .profile-card .profile-content .social-link {
+    margin: 20px 0;
+    padding: 0;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.20s;
+}
+
+.judge .profile-card:hover .social-link {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.judge .profile-card .profile-content .social-link li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 4px;
+}
+
+.judge .profile-card .profile-content .social-link li a {
+    color: #333;
+    width: 30px;
+    height: 25px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.judge #judge-row-2 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.judge #judge-row-1 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.judge #speaker-row-1 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.judge #speaker-row-2 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.judge #judge-row-3 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+/* judge css above */
+
+
+/* --------------- FOOTER --------------- */
+
+footer {
+    width: 110%;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, .4);
+    box-shadow: inset 0px 0px 10px lightgray;
+    margin-top: 1em;
+    font-size: 1vw;
+    white-space: nowrap;
 }

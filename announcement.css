@@ -1,0 +1,72 @@
+/*  UTADA-color: #45B5E8 
+    white-color: #F3F7F6
+    black-color: #211725
+*/
+
+body {
+    text-align: center;
+    background-color: #F3F7F6;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    height: 3.5em;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    /* top: 0; */
+    z-index: 50;
+    /* backdrop-filter: blur(50px);
+    background-color: rgba(243, 247, 246, .6); */
+    /* box-shadow: 0px 0px 20px gray; */
+    /* margin-bottom: 1em; */
+}
+
+#header {
+    background-color: #F3F7F6;
+    color: #F3F7F6;
+}
+
+header a {
+    color: #211725;
+    /* Neomorph effect */
+    text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
+}
+
+header a:hover {
+    color: #000;
+}
+
+header a:focus {
+    color: #000;
+    /* Neomorph effect */
+    text-shadow: inset 2px 2px 4px #c7cbca, inset -2px -2px 4px #ffffff;
+}
+
+footer {
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, .4);
+    box-shadow: 0px 0px 10px gray;
+    margin-top: 1em;
+}
+
+.announcement-section {
+    margin: 5%;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    border: transparent;
+    background-color: transparent;
+}
+
+.card-body {
+    text-align: left;
+}

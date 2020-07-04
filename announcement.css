@@ -54,22 +54,6 @@ footer {
     margin-top: 1em;
 }
 
-.sidenav {
-    height: 30%;
-    width: 15%;
-    position: fixed;
-    left: 8%;
-    padding-top: 20px;
-    border-radius: 10px;
-    backdrop-filter: blur(50px);
-    background-color: rgba(248, 244, 244, 0.959);
-    box-shadow: 1px 1px 3px 3px #ccc;
-}
-
-.announcement-container {
-    margin-left: 20%;
-}
-
 .announcement-section {
     margin: 5%;
 }

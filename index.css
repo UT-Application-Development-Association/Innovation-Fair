@@ -305,6 +305,23 @@ header .navbar-toggler:active {
     object-fit: fill;
   }
 
+  .sponsor-module-border-wrap {
+    padding: 1rem;
+    position: relative;
+    background:  radial-gradient(circle at top, #F0BA59, #ED787A, #dd6279);
+    border-radius: 23px;
+    padding: 3px;
+  }
+  
+  .sponsor-module {
+    background: white;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    /* color is for inner text color */
+    color: white;
+
+  }
 .about #block-holder {
     height: 2em;
 }

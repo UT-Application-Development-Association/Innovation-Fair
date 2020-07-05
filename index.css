@@ -20,28 +20,31 @@ p {
 
 /* Header section */
 
-header {
+#headerSection {
     height: 3.5em;
     position: sticky;
     top: 0;
     z-index: 50;
+    margin-bottom: 1em;
 }
 
 #header {
-    background-color: #F3F7F6;
+    background-color: white;
 }
 
-header a {
+
+/* #headerSection a {
     color: #211725;
-    /* Neomorph effect */
     text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
-}
+} */
 
-header #navList {
+#headerSection #navList {
     width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly;
+     */
+    justify-content: start;
     align-items: center;
 }
 
@@ -58,42 +61,43 @@ header #navList {
     width: 100%;
 }
 
-header a:focus {
+#headerSection a:focus {
     color: #ED787A;
     /* Neomorph effect */
     text-shadow: inset 2px 2px 4px #c7cbca, inset -2px -2px 4px #ffffff;
 }
 
-header #navSignup,
-header #navSignupMobile {
+#headerSection #navSignup,
+#headerSection #navSignupMobile {
     outline: none !important;
-    /* font-weight: bold; */
+    font-weight: bold;
     color: #05355B;
 }
 
-header #navSignup:hover,
-header #navSignupMobile:hover {
+#headerSection #navSignup:hover,
+#headerSection #navSignupMobile:hover {
     font-weight: 500;
     color: #ED787A;
 }
 
-header .navbar-toggler {
+#headerSection .navbar-toggler {
     border-width: 0;
+    margin-right: 1em;
     /* Neomorph effect */
-    border-radius: 50px;
+    /* border-radius: 50px;
     background: linear-gradient(145deg, #ffffff, #dbdedd);
-    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
+    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff; */
 }
 
-header .navbar-toggler:focus {
+#headerSection .navbar-toggler:focus {
     outline: none !important;
 }
 
-header .navbar-toggler:active {
+#headerSection .navbar-toggler:active {
     /* Neomorph effect */
-    border-radius: 50px;
+    /* border-radius: 50px;
     background: linear-gradient(145deg, #dbdedd, #ffffff);
-    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff;
+    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff; */
 }
 
 
@@ -228,7 +232,6 @@ header .navbar-toggler:active {
     position: relative;
 }
 
-
 .about .border-2 {
     margin: 0.25em 0em;
     width: 11em;
@@ -279,7 +282,7 @@ header .navbar-toggler:active {
     justify-content: center;
 }
 
-.image-block{
+.image-block {
     border: 1px solid black;
     height: 200px;
     border-radius: 20px;
@@ -292,9 +295,9 @@ header .navbar-toggler:active {
     background: linear-gradient(white, white), radial-gradient(circle at top, #F0BA59, #ED787A, #dd6279);
     border-radius: 20px;
     padding: 3px;
-  }
-  
-  .module {
+}
+
+.module {
     background: white;
     border-radius: 20px;
     height: 100%;
@@ -303,25 +306,25 @@ header .navbar-toggler:active {
     color: white;
     /* padding: 2rem; */
     object-fit: fill;
-  }
+}
 
-  .sponsor-module-border-wrap {
+.sponsor-module-border-wrap {
     padding: 1rem;
     position: relative;
-    background:  radial-gradient(circle at top, #F0BA59, #ED787A, #dd6279);
+    background: radial-gradient(circle at top, #F0BA59, #ED787A, #dd6279);
     border-radius: 23px;
     padding: 3px;
-  }
-  
-  .sponsor-module {
+}
+
+.sponsor-module {
     background: white;
     border-radius: 20px;
     height: 100%;
     width: 100%;
     /* color is for inner text color */
     color: white;
+}
 
-  }
 .about #block-holder {
     height: 2em;
 }
@@ -354,7 +357,6 @@ header .navbar-toggler:active {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .about .forms {
     width: 90%;
@@ -393,6 +395,7 @@ header .navbar-toggler:active {
     padding-top: 1em;
     justify-content: space-between;
 }
+
 
 /* .about .participation-title {
     width: 18%;
@@ -517,16 +520,18 @@ button {
     border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
 }
 
-.section-title{
+.section-title {
     text-transform: uppercase;
     font-size: 2.2rem;
     font-weight: bold;
     color: #05355b;
     letter-spacing: 0.5rem;
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 80%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 80%, rgba(252, 176, 69, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
 /*----------------------------------------*/
 
 

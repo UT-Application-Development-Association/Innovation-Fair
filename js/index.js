@@ -1,12 +1,14 @@
 // for mobile device
 if (window.innerWidth <= 768){
+    document.querySelector('#navBrand').hidden = false;
     document.querySelector('#navToggleBtn').hidden = false;
     document.querySelector('#navSignupMobile').hidden = false;
-    document.querySelector('#navSignup').hidden = true;
+    document.querySelector('#navSignup').hidden = false;
     document.querySelector('#navList').style.flexDirection = 'column';
     document.querySelector('#navList').style.justifyContent = 'center';
     document.querySelector('#navList').style.marginLeft = 'auto';
-    
+    document.querySelector('#navList').style.width = '20%';
+    document.querySelector('#langSwitch').style.marginLeft = '40%';
 }else{
     document.querySelector('#navSignupMobile').hidden = true;
     document.querySelector('#navList').style.flexDirection='row';
@@ -27,11 +29,11 @@ window.onscroll = () => {
         
     } else {
         // When focusing on headImage
-        document.querySelector('#navBrand').hidden = true;
+        document.querySelector('#navBrand').hidden = false;
         // if not mobile device
         if(window.innerWidth > 768){
             document.querySelector('#navToggleBtn').hidden = true;
-            document.querySelector('#navList').style.justifyContent='space-evenly';
+            // document.querySelector('#navList').style.justifyContent='space-evenly';
         }
     }
 

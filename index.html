@@ -34,79 +34,39 @@
     </div>
 
     <!-- nav -->
-    <div>
+    <div id="headerSection">
         <nav class="navbar navbar-expand-lg navbar-light" id="header">
-            <a class="navbar-brand ml-4" id="navBrand" href="#" hidden="true">
+            <a class="navbar-brand ml-4" id="navBrand" href="#" hidden="false">
                 <img class="image-showcase" src="images/iflogo2.png" alt="Event-Image" style="height: 40px;" /></a>
-            <a class="nav-link lang" data-key="navSignup" id="navSignupMobile"  href="https://www.wjx.top/jq/82064673.aspx">SIGN UP</a
-        >
-        <button
-          id="navToggleBtn"
-          hidden="true"
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarItems"
-          aria-controls="navbarItems"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarItems">
-          <ul class="navbar-nav mr-auto" id="navList">
-            <li class="nav-item" style="border-image-source: linear-gradient(to top, #743ad5, #d53a9d);">
-              <a class="nav-link lang" href="#aboutSection"
-              data-key="navAbout" 
-              style="font-weight: 500;"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link lang"
-                href="#timelin-section"
-                data-key="navTimeline"
-                style="font-weight: 500;"
-                >Timeline</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link lang"
-                href="#judgesSection"
-                data-key="navJudges"
-                style="font-weight: 500;"
-                >Judges</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link lang"
-                href="announcement.html"
-                data-key="navAnnouncement"
-                style="font-weight: 500;"
-                >Announcement</a
-              >
-            </li>
-            <li class="nav-item" >
-              <a
-                class="nav-link lang"
-                data-key="navSignup"
-                id="navSignup"
-                href="https://www.wjx.top/jq/82064673.aspx"
-                style="font-weight: bold;"
-                >SIGN UP</a
-              >
-            </li>
-          </ul>
-          <span class="navbar-text">
-            <a href="" id="zhBtn">中文</a> |
-            <a href="" id="enBtn">ENG</a>
-            </span>
+            <a class="nav-link lang" data-key="navSignup" id="navSignupMobile" href="https://www.wjx.top/jq/82064673.aspx">SIGN UP</a>
+            <button id="navToggleBtn" hidden="true" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarItems">
+                <ul class="navbar-nav mr-auto" id="navList">
+                    <li class="nav-item" style="border-image-source: linear-gradient(to top, #743ad5, #d53a9d);">
+                        <a class="nav-link lang" href="#aboutSection" data-key="navAbout" style="font-weight: 500;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lang" href="#timelin-section" data-key="navTimeline" style="font-weight: 500;">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lang" href="#judgesSection" data-key="navJudges" style="font-weight: 500;">Judges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lang" href="announcement.html" data-key="navAnnouncement" style="font-weight: 500;">Announcement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lang" data-key="navSignup" id="navSignup" href="https://www.wjx.top/jq/82064673.aspx" style="font-weight: bold;">SIGN UP</a>
+                    </li>
+                </ul>
+                <span class="navbar-text mr-2" id="langSwitch">
+                  <a href="" id="zhBtn">中文</a> |
+                  <a href="" id="enBtn">ENG</a>
+                </span>
             </div>
         </nav>
-      </div>
+    </div>
 
     <!-- Announcement section -->
     <section class="p-0" id="announcement">
@@ -147,7 +107,7 @@
               background-clip: border-box;
             ">
                     <div class="card-body p-5">
-                        <h2 id="about-intro-1" class="lang section-title" data-key="about-intro-1" >
+                        <h2 id="about-intro-1" class="lang section-title" data-key="about-intro-1">
                             About this event
                         </h2>
                         <div class="row align-items-center">
@@ -168,16 +128,16 @@
 
 
 
-            
-      </div>
-    </section> 
 
-<!-- Theme -->
+        </div>
+    </section>
 
-<section class="about pt-8 bg-light">
-  <div class="event-theme w-100 text-center">
-    <div class="">
-        <!-- <div class="lang" data-key="theme-header" style="font-size: 3rem;
+    <!-- Theme -->
+
+    <section class="about pt-8 bg-light">
+        <div class="event-theme w-100 text-center">
+            <div class="">
+                <!-- <div class="lang" data-key="theme-header" style="font-size: 3rem;
     background: -webkit-linear-gradient(#F0BA59, #ED787A, #dd6279);
     -webkit-background-clip: text;
     background-clip: text;
@@ -185,299 +145,266 @@
     text-transform: uppercase;">
             2020 THEMES
         </div> -->
-        <h2 class="lang section-title" data-key="theme-header">
-          2020 THEMES
-        </h2>
-    </div>
-    <div class="container mt-3" >
-      <div class="theme-demo row">
-          <div class="first-theme col-3">
-            <div class="module-border-wrap" style="height: 200px;"><img class="module" src="./images/theme1.png" style="object-fit: fill; height: 100%;"/>
-             
-              </div>
-              <h3 class="lang mt-3" data-key="theme-1-1">Artificial Intelligence</h3>
-          </div>
-          <div class="second-theme col-3">
-            <div class="module-border-wrap" style="height: 200px;"><img class="module" src="./images/theme2.png" style="object-fit: fill; height: 100%;"/>
-             
+                <h2 class="lang section-title" data-key="theme-header">
+                    2020 THEMES
+                </h2>
             </div>
-              <h3 class="lang mt-3" data-key="theme-2-1">University-Life</h3>
-          </div>
-          <div class="third-theme col-3">
-            <div class="module-border-wrap" style="height: 200px;"><img class="module" src="./images/theme3.png" style="object-fit: fill; height: 100%;"/>
-             
-            </div>
-              <h3 class="lang mt-3" data-key="theme-3-1">Post-Pandemic Era</h3>
-          </div>
-      </div>
-  </div>
-</section>
+            <div class="container mt-3">
+                <div class="theme-demo row">
+                    <div class="first-theme col-3">
+                        <div class="module-border-wrap" style="height: 200px;"><img class="module" src="./images/theme1.png" style="object-fit: fill; height: 100%;" />
 
-<section class="about">
-  <div class="container text-center">
-    <div class="">
-      <!-- <div
+                        </div>
+                        <h3 class="lang mt-3" data-key="theme-1-1">Artificial Intelligence</h3>
+                    </div>
+                    <div class="second-theme col-3">
+                        <div class="module-border-wrap" style="height: 200px;"><img class="module" src="./images/theme2.png" style="object-fit: fill; height: 100%;" />
+
+                        </div>
+                        <h3 class="lang mt-3" data-key="theme-2-1">University-Life</h3>
+                    </div>
+                    <div class="third-theme col-3">
+                        <div class="module-border-wrap" style="height: 200px;"><img class="module" src="./images/theme3.png" style="object-fit: fill; height: 100%;" />
+
+                        </div>
+                        <h3 class="lang mt-3" data-key="theme-3-1">Post-Pandemic Era</h3>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="about">
+        <div class="container text-center">
+            <div class="">
+                <!-- <div
         class="lang"
         data-key="form-header"
         style="font-size: 2.5rem; font-weight: 500; color: #05355b;"
       >
         Participation Forms
       </div> -->
-      <h2
-        class="lang section-title"
-        data-key="form-header"
-      >
-        Participation Forms
-    </h2>
-      <div class="border-5"></div>
+                <h2 class="lang section-title" data-key="form-header">
+                    Participation Forms
+                </h2>
+                <div class="border-5"></div>
 
-      <div class="participation-main">
-        <!-- first row -->
-        <div class="participation-item">
-          <div class="participation-title justify-content-center">
-            <h5 class="lang" data-key="form-1-1" 
-            style="
+                <div class="participation-main">
+                    <!-- first row -->
+                    <div class="participation-item">
+                        <div class="participation-title justify-content-center">
+                            <h5 class="lang" data-key="form-1-1" style="
             color: #ed787a;
-            font-weight: bold;"
-            >
-              Teams
-            </h5>
-            <div class="justify-content-left">
-              <img
-              class="participation-icon"
-              src="images/team-icon.png"
-              style="height: 80px;"
-              />
-            </div>   
-          </div>
-          <div class="participation-text">
-            <p class="lang" data-key="form-1-2">
-              In this event, you may form a group of 2-5 members by
-              yourself or work individually. It is difficult and painful
-              to develop an application within a short period of time;
-              thus, participants are allowed to form a team with others.
-              Nobody is perfect to have everything done by himself, so
-              collaborate with teammates is important to reach success.
-              The Innovation Fair is a chance for you to improve your
-              communication and collaboration skills.
-            </p>
-          </div>
-        </div>
-        <!-- second row -->
-        <div class="participation-item">
-          <div class="participation-title">
-            <h5 class="lang" data-key="form-2-1" style="
+            font-weight: bold;">
+                                Teams
+                            </h5>
+                            <div class="justify-content-left">
+                                <img class="participation-icon" src="images/team-icon.png" style="height: 80px;" />
+                            </div>
+                        </div>
+                        <div class="participation-text">
+                            <p class="lang" data-key="form-1-2">
+                                In this event, you may form a group of 2-5 members by yourself or work individually. It is difficult and painful to develop an application within a short period of time; thus, participants are allowed to form a team with others. Nobody is perfect to have
+                                everything done by himself, so collaborate with teammates is important to reach success. The Innovation Fair is a chance for you to improve your communication and collaboration skills.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- second row -->
+                    <div class="participation-item">
+                        <div class="participation-title">
+                            <h5 class="lang" data-key="form-2-1" style="
             color: #ed787a;
             font-weight: bold;">Presentation</h5>
-            <div class="justify-content-left">
-              <img
-              class="participation-icon"
-              src="images/presentation-icon.png"
-              style="height: 80px;"
-              />
-            </div>   
-          </div>
-          <div class="participation-text">
-            <p class="lang" data-key="form-2-2">
-              The success of a project is not only caused by innovative
-                ideas or superb techniques, but you also need to let others
-                know the excellence of your project. In the Innovation Fair,
-                you will need to present your project to Judges after
-                finished the prototype. In the presentation, you can enhance
-                the ability to express your ideas and react to question from
-                judges.
-            </p>
-          </div>
-        </div>
-        <!-- third row -->
-        <div class="participation-item">
-          <div class="participation-title">
-            <h5 class="lang" data-key="form-3-1" style="
+                            <div class="justify-content-left">
+                                <img class="participation-icon" src="images/presentation-icon.png" style="height: 80px;" />
+                            </div>
+                        </div>
+                        <div class="participation-text">
+                            <p class="lang" data-key="form-2-2">
+                                The success of a project is not only caused by innovative ideas or superb techniques, but you also need to let others know the excellence of your project. In the Innovation Fair, you will need to present your project to Judges after finished the prototype.
+                                In the presentation, you can enhance the ability to express your ideas and react to question from judges.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- third row -->
+                    <div class="participation-item">
+                        <div class="participation-title">
+                            <h5 class="lang" data-key="form-3-1" style="
             color: #ed787a;
             font-weight: bold;">Meeting</h5>
-            <div class="justify-content-left">
-              <img
-              class="participation-icon"
-              src="images/meeting-icon.png"
-              style="height: 80px;"
-              />
-            </div>   
-          </div>
-          <div class="participation-text">
-            <p class="lang" data-key="form-3-2">
-                It is meaningless if the only thing you can get from a
-                contest is the reward. During the development of your
-                project, skilled TAs will give you advice about the
-                development process. Also, there will be industry and
-                community representatives to rate and give suggestions about
-                your project. It is a good way to know how to develop a
-                project in the industry.
-            </p>
-          </div>
+                            <div class="justify-content-left">
+                                <img class="participation-icon" src="images/meeting-icon.png" style="height: 80px;" />
+                            </div>
+                        </div>
+                        <div class="participation-text">
+                            <p class="lang" data-key="form-3-2">
+                                It is meaningless if the only thing you can get from a contest is the reward. During the development of your project, skilled TAs will give you advice about the development process. Also, there will be industry and community representatives to rate and
+                                give suggestions about your project. It is a good way to know how to develop a project in the industry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>    
-  </div>
-  <script src="js/about-readmore.js"></script>
-</section>
+        <script src="js/about-readmore.js"></script>
+    </section>
 
 
-<!-- /services -->
+    <!-- /services -->
 
 
 
     <!-- Timeline section -->
     <section class="timelin-section text-center p-0" id="timelin-section">
-      <h2 class="lang section-title" data-key="timeline">TimeLine</h2>
-      <div class="timeline-selection">
-        <button id="timeline_btn_1" class="button border-gradient border-gradient-purple lang" data-key="beforeBtn">Pre-Fair</button>
-        <span class="ml-2 mr-2"> </span>
-        <button id="timeline_btn_2" class="button border-gradient border-gradient-purple lang" data-key="thedayBtn">Fair Day</button>
-      </div>
-
-      <div class="container mt-8">
-        <div class="timeline mt-5" id="timeline1">
-          <div class="container">
-            <!-- even start -->
-            <div class="timeline-item">
-              <div class="timeline-img"></div>
-              <div class="timeline-content timeline-card js--fadeInLeft">
-                <div class="timeline-img-header" id="sign">
-                  <!-- <h2>Sign-up</h2> -->
-                </div>
-                <div class="date">June 28 ~ July 15</div>
-                <div class="pa">
-                  <h3 class="lang" data-key="timeline-pre1">
-                    Team Sign-up Period
-                  </h3>
-                  <p>June 28 ~ July 15</p>
-                 </div>
-                
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content timeline-card js--fadeInRight">
-                    <div class="timeline-img-header" id="workshop">
-                        <!-- <h2>Workshop</h2> -->
-                    </div>
-                    <div class="date">July 18</div>
-                    <div class="pa">
-                        <h3 class="lang" data-key="timeline-pre2">
-                            How to present your project well?
-                        </h3>
-                        <p>July 18</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content timeline-card js--fadeInLeft">
-                    <div class="timeline-img-header" id="reg">
-                        <!-- <h2>Registration</h2> -->
-                    </div>
-                    <div class="date">Aug 1 ~ Aug 7</div>
-                    <div class="pa">
-                        <h3 class="lang" data-key="timeline-pre3">
-                            Presentation Registration
-                        </h3>
-                        <p>August 1 ~ August 7</p>
-                    </div>
-                    <!-- <a class="bnt-more" href="#">More</a> -->
-            </div>
+        <h2 class="lang section-title" data-key="timeline">TimeLine</h2>
+        <div class="timeline-selection">
+            <button id="timeline_btn_1" class="button border-gradient border-gradient-purple lang" data-key="beforeBtn">Pre-Fair</button>
+            <span class="ml-2 mr-2"> </span>
+            <button id="timeline_btn_2" class="button border-gradient border-gradient-purple lang" data-key="thedayBtn">Fair Day</button>
         </div>
 
-        <div class="timeline-item">
-            <div class="timeline-img"></div>
-            <div class="timeline-content timeline-card js--fadeInRight">
-                <div class="timeline-img-header" id="sche">
-                    <!-- <h2>Schedule</h2> -->
+        <div class="container mt-8">
+            <div class="timeline mt-5" id="timeline1">
+                <div class="container">
+                    <!-- even start -->
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <div class="timeline-content timeline-card js--fadeInLeft">
+                            <div class="timeline-img-header" id="sign">
+                                <!-- <h2>Sign-up</h2> -->
+                            </div>
+                            <div class="date">June 28 ~ July 15</div>
+                            <div class="pa">
+                                <h3 class="lang" data-key="timeline-pre1">
+                                    Team Sign-up Period
+                                </h3>
+                                <p>June 28 ~ July 15</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <div class="timeline-content timeline-card js--fadeInRight">
+                            <div class="timeline-img-header" id="workshop">
+                                <!-- <h2>Workshop</h2> -->
+                            </div>
+                            <div class="date">July 18</div>
+                            <div class="pa">
+                                <h3 class="lang" data-key="timeline-pre2">
+                                    How to present your project well?
+                                </h3>
+                                <p>July 18</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <div class="timeline-content timeline-card js--fadeInLeft">
+                            <div class="timeline-img-header" id="reg">
+                                <!-- <h2>Registration</h2> -->
+                            </div>
+                            <div class="date">Aug 1 ~ Aug 7</div>
+                            <div class="pa">
+                                <h3 class="lang" data-key="timeline-pre3">
+                                    Presentation Registration
+                                </h3>
+                                <p>August 1 ~ August 7</p>
+                            </div>
+                            <!-- <a class="bnt-more" href="#">More</a> -->
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <div class="timeline-content timeline-card js--fadeInRight">
+                            <div class="timeline-img-header" id="sche">
+                                <!-- <h2>Schedule</h2> -->
+                            </div>
+                            <div class="date">Aug 7</div>
+                            <div class="pa">
+                                <h3 class="lang" data-key="timeline-pre4">
+                                    Announcement of Presentation Schedule
+                                </h3>
+                                <p>August 7</p>
+                            </div>
+                            <!-- <a class="bnt-more" href="#">More</a> -->
+                        </div>
+                    </div>
+                    <!-- event end -->
                 </div>
-                <div class="date">Aug 7</div>
-                <div class="pa">
-                    <h3 class="lang" data-key="timeline-pre4">
-                        Announcement of Presentation Schedule
-                    </h3>
-                    <p>August 7</p>
-                </div>
-                <!-- <a class="bnt-more" href="#">More</a> -->
             </div>
+
+            <section class="timeline" id="timeline2">
+                <div class="container">
+                    <!-- even start -->
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <div class="timeline-content timeline-card js--fadeInLeft">
+                            <div class="timeline-img-header" id="preliminary">
+                                <!-- <h2>Preliminary Presentations</h2> -->
+                            </div>
+                            <div class="date">9:00 am - 11:00 am</div>
+                            <div class="pa">
+                                <h3 class="lang" data-key="timeline-day1">初赛</h3>
+                                <p>9:00 am - 11:00 am</p>
+                            </div>
+                            <!-- <a class="bnt-more" href="#">More</a> -->
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <div class="timeline-content timeline-card js--fadeInRight">
+                            <div class="timeline-img-header" id="talk">
+                                <!-- <h2>Partner Panel Talk</h2> -->
+                            </div>
+                            <div class="date">11:00 am - 11:30 am</div>
+                            <div class="pa">
+                                <h3 class="lang" data-key="timeline-day2">嘉宾座谈会</h3>
+                                <p>11:00 am - 11:30 am</p>
+                            </div>
+                            <!-- <a class="bnt-more" href="#">More</a> -->
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <div class="timeline-content timeline-card js--fadeInLeft">
+                            <div class="timeline-img-header" id="finalist">
+                                <!-- <h2>Finalist Presentation</h2> -->
+                            </div>
+                            <div class="date">11:30 am - 12:30 am</div>
+                            <div class="pa">
+                                <h3 class="lang" data-key="timeline-day3">决赛</h3>
+                                <p>11:30 am - 12:30 am</p>
+                            </div>
+
+                            <!-- <a class="bnt-more" href="#">More</a> -->
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <div class="timeline-content timeline-card js--fadeInRight">
+                            <div class="timeline-img-header" id="awards">
+                                <!-- <h2>Awards</h2> -->
+                            </div>
+                            <div class="date">12:40 pm - 1:00 pm</div>
+                            <div class="pa">
+                                <h3 class="lang" data-key="timeline-day4">颁奖典礼</h3>
+                                <p>12:40 pm - 1:00 pm</p>
+                            </div>
+
+                            <!-- <a class="bnt-more" href="#">More</a> -->
+                        </div>
+                    </div>
+                    <!-- event end -->
+                </div>
+            </section>
         </div>
-        <!-- event end -->
-        </div>
-      </div>
-
-    <section class="timeline" id="timeline2">
-        <div class="container">
-            <!-- even start -->
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content timeline-card js--fadeInLeft">
-                    <div class="timeline-img-header" id="preliminary">
-                        <!-- <h2>Preliminary Presentations</h2> -->
-                    </div>
-                    <div class="date">9:00 am - 11:00 am</div>
-                    <div class="pa">
-                        <h3 class="lang" data-key="timeline-day1">初赛</h3>
-                        <p>9:00 am - 11:00 am</p>
-                    </div>
-                    <!-- <a class="bnt-more" href="#">More</a> -->
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content timeline-card js--fadeInRight">
-                    <div class="timeline-img-header" id="talk">
-                        <!-- <h2>Partner Panel Talk</h2> -->
-                    </div>
-                    <div class="date">11:00 am - 11:30 am</div>
-                    <div class="pa">
-                        <h3 class="lang" data-key="timeline-day2">嘉宾座谈会</h3>
-                        <p>11:00 am - 11:30 am</p>
-                    </div>
-                    <!-- <a class="bnt-more" href="#">More</a> -->
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content timeline-card js--fadeInLeft">
-                    <div class="timeline-img-header" id="finalist">
-                        <!-- <h2>Finalist Presentation</h2> -->
-                    </div>
-                    <div class="date">11:30 am - 12:30 am</div>
-                    <div class="pa">
-                        <h3 class="lang" data-key="timeline-day3">决赛</h3>
-                        <p>11:30 am - 12:30 am</p>
-                    </div>
-
-                    <!-- <a class="bnt-more" href="#">More</a> -->
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content timeline-card js--fadeInRight">
-                    <div class="timeline-img-header" id="awards">
-                        <!-- <h2>Awards</h2> -->
-                    </div>
-                    <div class="date">12:40 pm - 1:00 pm</div>
-                    <div class="pa">
-                        <h3 class="lang" data-key="timeline-day4">颁奖典礼</h3>
-                        <p>12:40 pm - 1:00 pm</p>
-                    </div>
-
-                    <!-- <a class="bnt-more" href="#">More</a> -->
-                </div>
-            </div>
-            <!-- event end -->
-        </div>
-    </section>
-    </div>
     </section>
 
     <!-- Judges section -->

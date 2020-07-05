@@ -32,11 +32,11 @@ p {
     background-color: white;
 }
 
-#headerSection a {
+
+/* #headerSection a {
     color: #211725;
-    /* Neomorph effect */
     text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
-}
+} */
 
 #headerSection #navList {
     width: 90%;
@@ -70,7 +70,7 @@ p {
 #headerSection #navSignup,
 #headerSection #navSignupMobile {
     outline: none !important;
-    /* font-weight: bold; */
+    font-weight: bold;
     color: #05355B;
 }
 

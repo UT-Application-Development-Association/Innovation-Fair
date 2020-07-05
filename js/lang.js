@@ -41,6 +41,9 @@ var dict = {
         "timeline-day2": "嘉宾座谈会",
         "timeline-day3": "决赛",
         "timeline-day4": "颁奖",
+        "speakers":"演讲嘉宾",
+        "judges":"评审",
+        "sponsorships":"赞助商"
     },
     'en': {
         "navAbout": "About",
@@ -74,6 +77,9 @@ var dict = {
         "timeline-day2": "Partner Panel Talk",
         "timeline-day3": "Finalist Presentations",
         "timeline-day4": "Awards",
+        "speakers":"Speakers",
+        "judges":"Judges",
+        "sponsorships":"Sponsorships"
 
     }
 }

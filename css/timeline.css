@@ -200,18 +200,6 @@
   background-size: cover;
   background-position: center center;
 }
-.timeline-item .timeline-img-header#huawei{
-  background: url(../images/huaweiworkshop.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.timeline-item .timeline-img-header#ods{
-  background: url(../images/odsunofficial.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
 .timeline-item .timeline-img-header#reg{
   background: url(../images/Registration.jpg);
   background-repeat: no-repeat;

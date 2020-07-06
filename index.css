@@ -93,13 +93,6 @@ p {
     outline: none !important;
 }
 
-#headerSection .navbar-toggler:active {
-    /* Neomorph effect */
-    /* border-radius: 50px;
-    background: linear-gradient(145deg, #dbdedd, #ffffff);
-    box-shadow: 6px 6px 8px #c7cbca, -6px -6px 8px #ffffff; */
-}
-
 
 /* -------------- announcement -------------- */
 
@@ -140,32 +133,18 @@ p {
 
 /*---------------------------------About Section-----------------------------*/
 
-.about #about-1-background {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    margin-left: auto;
-    margin-right: auto;
+#aboutContainer {
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 3em;
     height: auto;
-    background-image: url("images/software-3682509_1920-5.jpg");
-    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
-.about #about-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-}
-
-.about #aboutTextbox {
-    height: auto;
-    border-width: 0;
+#aboutImageContainer {
+    flex-direction: column;
+    width: 44%;
 }
 
 .about .image-showcase {
@@ -173,59 +152,65 @@ p {
     object-fit: contain;
 }
 
-.about #about-img {
-    width: 40%;
-    height: 25em;
-    margin-right: 1em;
-    border-width: 0;
+.about #aboutTextContainer {
+    width: 51%;
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    /* Neomorph */
-    border-radius: 20px;
-    background: #F3F7F6;
-    /* modify with background image*/
-}
-
-.about #aboutTextbox {
-    width: 60%;
-    display: flex;
-    padding-top: 2em;
-    margin-left: 1em;
+    flex-direction: column;
+    padding-top: 6%;
+    margin-left: 5%;
     padding-left: 1em;
     padding-right: 1em;
     background: transparent;
 }
 
-.about #aboutTextbox h2 {
-    font-size: xx-large;
+.about #aboutTextContainer h2 {
+    /* font-size: xx-large; */
     text-align: start;
     position: relative;
-    color: #45B5E8;
+    /* color: #45B5E8; */
 }
 
-.about #aboutTextbox p {
-    text-align: start;
-    font-size: 1.3em;
+.about #aboutText p {
     word-spacing: 0.1em;
-    color: rgba(243, 247, 246, 0.973);
     font-weight: 500;
-}
-
-.about-text p {
     text-align: justify;
+    padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
     line-height: 1.75em;
-    margin: auto;
+    /* margin: auto; */
     font-size: 1.1rem;
+}
+
+@media screen and (max-width: 768px) {
+    #aboutContainer {
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 0em;
+    }
+    #aboutImageContainer {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 2em;
+        margin-bottom: 3em;
+    }
+    .about #aboutTextContainer {
+        width: 80%;
+        margin-bottom: 0;
+    }
+    /* .about #aboutTextContainer h2 {
+        text-align: center;
+    } */
+    .about #aboutText p {
+        /* text-align: start; */
+    }
 }
 
 .about .border {
     margin: 0.25em 0em;
     width: 100%;
     height: 2px;
-    ;
     background-color: #446ead;
     background-image: linear-gradient(to right, #05355B, #005242);
     border: none !important;
@@ -455,12 +440,12 @@ p {
         align-items: center;
     }
     .about #about-img,
-    .about #aboutTextbox {
+    .about #aboutTextContainer {
         width: 100%;
         margin: auto;
         margin-bottom: 2em;
     }
-    .about #aboutTextbox {
+    .about #aboutTextContainer {
         height: auto;
         padding-top: 0em;
     }

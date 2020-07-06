@@ -194,7 +194,7 @@
   background-size: cover;
   background-position: center center;
 }
-.timeline-item .timeline-img-header#workshop{
+.timeline-item .timeline-img-header.workshop{
   background: url(../images/workshop.jpg);
   background-repeat: no-repeat;
   background-size: cover;

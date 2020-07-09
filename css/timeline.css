@@ -64,6 +64,19 @@
   padding: 0 20px;
 }
 
+#timeline_btn_1, #timeline_btn_2 {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+
+#timeline_btn_1:hover, #timeline_btn_2:hover {
+  background-color: #fad2d2;
+  color: white;
+}
+
 .timeline {
   position: relative;
 }

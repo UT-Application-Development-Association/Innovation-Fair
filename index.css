@@ -199,9 +199,6 @@ p {
         width: 80%;
         margin-bottom: 0;
     }
-    .about #aboutText p {
-        /* text-align: start; */
-    }
 }
 
 .about .border {
@@ -387,19 +384,6 @@ p {
     }
 }
 
-button {
-    background: none;
-    text-decoration: inherit;
-    font-family: system-ui;
-    font-size: 1rem;
-    padding: 1rem 2rem;
-}
-
-.button:hover {
-    background-color: #fad2d2;
-    color: white;
-}
-
 .border-gradient {
     border: 2px solid;
     border-image-slice: 1;
@@ -418,6 +402,7 @@ button {
     letter-spacing: 0.5rem;
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 80%, rgba(252, 176, 69, 1) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -623,4 +608,9 @@ footer {
     margin-top: 1em;
     font-size: 1vw;
     white-space: nowrap;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
 }

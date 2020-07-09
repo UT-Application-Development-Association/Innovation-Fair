@@ -240,7 +240,7 @@ p {
     margin: 0.5em auto auto -5.2em;
 }
 
-.about .theme-demo {
+.about .themes {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -248,20 +248,10 @@ p {
     margin-right: auto;
 }
 
-.about #ai-icon,
-.about #university-icon,
-.about #pandemic-icon {
-    left: 50%;
-    transform: translate(0%, -50%);
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.about .first-theme h2,
-.about .second-theme h2,
-.about .third-theme h2 {
-    padding-top: 1em;
+.theme h3 {
+    padding-top: 0em;
     justify-content: center;
+    font-size: 1.5em;
 }
 
 .image-block {
@@ -311,33 +301,8 @@ p {
     height: 2em;
 }
 
-.about #icon-link-1,
-.about #icon-link-2,
-.about #icon-link-3,
-.about #icon-link-4,
-.about #icon-link-5,
-.about #icon-link-6 {
-    display: flex;
-}
-
-.about .event-theme a {
-    text-align: start;
-    font-size: 0.7em;
-}
-
-.about .first-theme,
-.second-theme,
-.third-theme {
+.about .theme {
     width: 30%;
-}
-
-.about .third-theme p,
-.about .second-theme p,
-.about .first-theme p {
-    text-align: start;
-    justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .about .forms {
@@ -362,8 +327,6 @@ p {
 .about .participation-main {
     display: flex;
     flex-direction: column;
-    /* margin-right: 5%;
-    margin-left: 5%; */
     width: 100%;
 }
 
@@ -378,55 +341,9 @@ p {
     justify-content: space-between;
 }
 
-
-/* .about .participation-title {
-    width: 18%;
-    margin-left: 7%;
-    text-shadow: 3px 3px 6px #cfd2d1, -3px -3px 6px #ffffff;
-} */
-
 .about .participation-text {
     width: 70%;
     margin-right: 5%;
-}
-
-.about .forms a {
-    display: flex;
-    text-align: start;
-    flex-direction: column;
-    font-size: 0.7em;
-}
-
-.about #more-1,
-.about #more-2,
-.about #more-3 {
-    display: none;
-}
-
-.about #read-more-1,
-.about #read-more-2,
-.about #read-more-3 {
-    background: none;
-    border: none;
-    display: flex;
-    margin: 0em, 0em;
-    padding-left: 0em;
-    padding-top: 0em;
-    color: blue;
-    text-decoration: underline;
-    outline: none;
-}
-
-.about #read-more-1:hover {
-    color: rgb(0, 174, 255);
-}
-
-.about #read-more-2:hover {
-    color: rgb(0, 174, 255);
-}
-
-.about #read-more-3:hover {
-    color: rgb(0, 174, 255);
 }
 
 @media screen and (max-width: 768px) {
@@ -446,22 +363,13 @@ p {
         height: auto;
         padding-top: 0em;
     }
-    .about .theme-demo {
+    .themes {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin: auto;
     }
-    .about .first-theme,
-    .about .second-theme,
-    .about .third-theme {
-        justify-content: center;
-        margin: auto;
-        width: 100%;
-        padding-top: 5em;
-    }
-    .about .first-theme #university-icon {
-        justify-content: center;
-        margin: auto;
+    .theme h3 {
+        font-size: 1em;
     }
     /* Participation Forms */
     .about .participation-item {
@@ -688,6 +596,18 @@ button {
 
 
 /* judge css above */
+
+
+/* .sponsors .sponsor-logo-container {
+    flex-direction: row;
+}
+
+.sponsors .sponsor-logo {
+    flex-direction: column;
+} */
+
+
+/* ----------------------------------------SPONSORS---------------------------------------- */
 
 
 /* --------------- FOOTER --------------- */

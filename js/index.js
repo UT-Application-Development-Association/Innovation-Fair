@@ -9,9 +9,13 @@ if (window.innerWidth <= 768){
     document.querySelector('#navList').style.marginLeft = 'auto';
     document.querySelector('#navList').style.width = '20%';
     document.querySelector('#langSwitch').style.marginLeft = '40%';
+    document.querySelector('#sponsorLogoContainer').classList.remove('row');
+    document.querySelector('#sponsorLogoContainer').classList.add('col');
 }else{
     document.querySelector('#navSignupMobile').hidden = true;
     document.querySelector('#navList').style.flexDirection='row';
+    document.querySelector('#sponsorLogoContainer').classList.add('row');
+    document.querySelector('#sponsorLogoContainer').classList.remove('col');
 }
 // adjust navbar according to scroll
 window.onscroll = () => {

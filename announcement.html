@@ -86,6 +86,66 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card" id="announcement3">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            Second Workshop by Ontario Digital Service
+                          </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Guest speaker, <b>Christine from ODS, Ontario Digital Service</b> will give a presentation on the topic:
+                                <br>
+                                <br><b> Transparency and ethics, using the principles of Open for better AI </b>
+                                <br>
+                                <br>on <b>: Jul 27, 2020 05:30 PM Eastern Time (Local Toronto Time)</b>
+                                <br> 
+                                <br>Presentation can be accessed via Zoom from <a href="https://utoronto.zoom.us/j/97058294621" class="card-link">this link</a>, please also check the Discord channel or your email inbox for updates for this and upcoming events!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="announcement4">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            Workshop by IBM UX Architect
+                          </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Guest speaker, <b>Jamie Waese, UX Architect, from IBM</b> will give a presentation on the topic:
+                                <br>
+                                <br><b> UI UX Design and “failed cases when people implement them poorly" </b>
+                                <br>
+                                <br>on <b>: Jul 31, 2020 09:30 AM Eastern Time (Local Toronto Time)</b>
+                                <br> 
+                                <br>Presentation can be accessed via Zoom from <a href="https://utoronto.zoom.us/j/98913231704" class="card-link">this link</a>, please also check the Discord channel or your email inbox for updates for this and upcoming events!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="announcement4">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            Last workshop on the topic of "How To Present Well" 
+                          </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Guest speaker, <b>Jamie Waese, UX Architect, from IBM</b> will give a presentation on the topic:
+                                <br>
+                                <br><b> Helping participants present their projects efficiently and communicate professionally </b>
+                                <br>
+                                <br>on <b>: Aug 1, 2020 09:30 PM Eastern Time (Local Toronto Time)</b>
+                                <br> 
+                                <br>Presentation can be accessed via Zoom from <a href="https://utoronto.zoom.us/j/98609517870" class="card-link">this link</a>, please also check the Discord channel or your email inbox for updates for this and upcoming events!
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,6 +155,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        const temp = document.getElementsByClassName("card");
+        for (let i = 0; i < temp.length; i++){
+            temp[i].children[1].className="collapse";
+        }
+    </script>
 </body>
 
 </html>

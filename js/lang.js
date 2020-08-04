@@ -80,7 +80,7 @@ var dict = {
         "timeline-pre-ibm": "UI, UX, and Design",
         "timeline-pre-ods": "Artificial Intelligence: Ethics and Transparency",
         "timeline-day1": "Preliminary Presentations",
-        "timeline-day2": "Partner Panel Talk",
+        "timeline-day2": "Virtual Coffee Chat",
         "timeline-day3": "Finalist Presentations",
         "timeline-day4": "Awards",
         "speakers":"Speakers",
